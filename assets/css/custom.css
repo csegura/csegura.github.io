@@ -1,0 +1,15 @@
+/* Empty css file that users can override in their own /assets/css/custom.css file */
+html {
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.content {
+    max-width: 55rem;
+    margin-left: 1.75rem;
+    margin-right: 2rem;
+}
+
+code, pre {   
+    font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+}
