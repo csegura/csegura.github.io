@@ -16,7 +16,8 @@ Finally, I could boot from an image using the card, after that I tried to format
 
 [IBM Low level format](https://minuszerodegrees.net/ibm_xebec/ibm_xebec_llf_debug.htm)
 
-![Format Hard Disk](https://i.imgur.com/K2edb89.mp4)
+{{< youtube Z7FveCJFdrc >}}
+
 
 ```sh
 b>debug
@@ -43,7 +44,7 @@ int 13h
 int 3
 -g=100
 ```
-
+![Format1](https://i.imgur.com/XJqf66p.jpg)
 ![Format2](https://i.imgur.com/Xo4Ho5H.jpg)
 
 ## mTCP
