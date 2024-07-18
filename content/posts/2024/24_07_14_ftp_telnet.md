@@ -5,7 +5,7 @@ tags = ['retrocomputing', 'ibm', 'net']
 +++
 
 
-(GitHub project)[https://github.com/csegura/mtcp_tools]
+[](https://github.com/csegura/mtcp_tools)
 
 
 # ftp_server / telnet_server
