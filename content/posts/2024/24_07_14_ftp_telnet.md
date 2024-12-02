@@ -5,7 +5,6 @@ tags = ['retrocomputing', 'ibm', 'net']
 +++
 
 
-[](https://github.com/csegura/mtcp_tools)
 
 
 # ftp_server / telnet_server
@@ -40,3 +39,4 @@ sz <file> # send file     - Alt+D on mTcp (download)
 rb --ymodem # receive file  - Alt+U on mTcp (upload)
 ```
 
+[Github project](https://github.com/csegura/mtcp_tools)
