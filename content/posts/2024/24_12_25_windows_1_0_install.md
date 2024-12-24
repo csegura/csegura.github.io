@@ -1,8 +1,8 @@
 +++
-title = 'Windows 1.0 Installation'
+title = 'Windows 1 Installation'
 date = 2024-12-25T07:07:07+01:00
 draft = false
-tags = ['retrocomputing', 'windows', '1.0']
+tags = ['retrocomputing', 'windows', 'windows1']
 +++
 
 Windows 1.0 Installation
