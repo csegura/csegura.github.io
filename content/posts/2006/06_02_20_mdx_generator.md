@@ -18,11 +18,21 @@ Este ejemplo generará un archivo XML con la definición del informe con esta si
   </conexion>
   <mdx>
     <![CDATA[
-    SELECT NON EMPTY HIERARCHIZE({DrillDownLevel({[Product].[All Products]})})
+    SELECT NON EMPTY HIERARCHIZE({
+    DrillDownLevel({
+        [Product].[All Products]
+      })
+    })
     DIMENSION PROPERTIES PARENT_UNIQUE_NAME ON COLUMNS ,
-              NON EMPTY HIERARCHIZE({DrillDownMember(
-              {{DrillDownMember({DrillDownLevel({[Customers].[All Customers]})},
-              {[Customers].[All Customers].[USA]})}}, {[Customers].[All Customers].[USA].[CA]})})
+              NON EMPTY HIERARCHIZE({
+              DrillDownMember(
+              {{
+                DrillDownMember({DrillDownLevel({
+                  [Customers].[All Customers]
+                }
+              )},
+              {[Customers].[All Customers].[USA]})}}, 
+              {[Customers].[All Customers].[USA].[CA]})})
               DIMENSION PROPERTIES PARENT_UNIQUE_NAME ON ROWS
               FROM [Warehouse and Sales] WHERE ([Measures].[Sales Count])
    ]]>
