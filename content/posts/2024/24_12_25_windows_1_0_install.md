@@ -1,7 +1,6 @@
 +++
 title = 'Windows 1 Installation'
 date = 2024-12-25
-draft = false
 tags = ['retrocomputing', 'windows', 'windows1']
 +++
 
