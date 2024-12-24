@@ -28,7 +28,7 @@ Este ejemplo generará un archivo XML con la definición del informe con esta si
               DrillDownMember(
               {{
                 DrillDownMember({DrillDownLevel({
-                  [Customers].[All Customers]
+                  [Customers].[All Customers]\\
                 }
               )},
               {[Customers].[All Customers].[USA]})}}, 
