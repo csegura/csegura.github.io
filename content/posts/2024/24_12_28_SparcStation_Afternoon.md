@@ -4,7 +4,11 @@ date = 2024-12-28
 tags = ['retrocomputing', 'Sun', 'sparcstation5']
 +++
 
+
 ![](https://imgur.com/1XN3Rmt.png)
+
+Some pictures about second attempt to install T2/Sde 24.12 on my Sun SparcStation 5.
+
 ![](https://imgur.com/d3wvGAv.png)
 ![](https://imgur.com/dyvty0t.png)
 ![](https://imgur.com/LTi6lBz.png)
@@ -12,7 +16,11 @@ tags = ['retrocomputing', 'Sun', 'sparcstation5']
 ![](https://imgur.com/ExKFBlQ.png)
 ![](https://imgur.com/vPRXQcX.png)
 ![](https://imgur.com/5bQTlyr.png)
+
+And the final result, the system crashed during the installation, with the whatchdog timer error.
+
 ![](https://imgur.com/lgr1lmu.png)
+
 
 # A Technical Overview of the Sun SPARCstation 5
 
@@ -101,4 +109,3 @@ My dearest old system is still working, it's a hard machine, NVRAM chip fails so
 The Sun SPARCstation 5 represents a pivotal moment in the development of RISC workstations. Its blend of performance, expandability, and software support made it a popular choice in the 1990s. Today, it serves as both a nostalgic piece of computing history and a practical platform for exploring UNIX and SPARC architecture.
 
 Currently I have installed NetBSD 9.3
-
