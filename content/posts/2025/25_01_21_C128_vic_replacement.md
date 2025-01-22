@@ -11,6 +11,7 @@ After spent a lot of hours trying to fix the video signal on my C128, checking s
 ![VIC-II](https://imgur.com/sffkCkt.jpg)
 
 [Documentation](https://en.wikipedia.org/wiki/MOS_Technology_VIC-II)
+
 [Documentation](https://www.c64-wiki.com/wiki/VIC-II)
 
 The main problem was that the video signal was faded, dull, it was dificult to see the letters on the screen and in C64 mode the screen was almost impossible to read.
@@ -21,7 +22,7 @@ The main problem was that the video signal was faded, dull, it was dificult to s
 
 So I bought a new VIC-II chip and replaced the old one. The new chip is a 8566R3X. The old one was a 8566R3, its seems that the R3X is a newer version of the R3 but I can't find any information about the differences between them.
 
-[8566R3X](https://i.imgur.com/z5A2KPQ.jpg)
+![8566R3X](https://i.imgur.com/z5A2KPQ.jpg)
 
 An this is the result. The video signal is now perfect. The letters are sharp and the colors are bright. 
 
@@ -35,11 +36,13 @@ This phoths were taken using the mos7801 that comes with the C128. And below wit
 
 ![TSH](https://i.imgur.com/UABouIp.jpg)
 
+The TOBL module is a little board that replaces the mos7801 with an ICS-525 clock chip. The ICS-525 can generate clock signals based on a programmable input. It's versatile and commonly used in systems requiring stable clock signals, like video game consoles or computers.
+
+## USB capture dongle
 
 As screen I'm using one normal computer with a unexpensive RGB to USB capture dongle. Using mplayer to capture the video signal.
 
-
-[Imgur](https://i.imgur.com/yoqasxl.jpg)
-[Imgur](https://i.imgur.com/BQWVLqP.jpg)
+![Cable](https://i.imgur.com/yoqasxl.jpg)
+![Connection](https://i.imgur.com/BQWVLqP.jpg)
  
 
