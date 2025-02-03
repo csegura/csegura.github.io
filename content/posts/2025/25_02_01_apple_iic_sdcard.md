@@ -23,7 +23,6 @@ Some pics;
 
 ![Apple IIc](https://i.imgur.com/bvQEYxZ.jpg)
 
-
 ## Disk Images
 
 * [ProDos](https://wiki.reactivemicro.com/32_Meg_Hard_Drive_Image)
