@@ -77,3 +77,7 @@ I tried the same process with the DS/HD disks, but I was unable to recover the d
 {{< video "https://imgur.com/TQy4Dyo.mp4" "Fail" >}}
 
 ```
+DRIVE 1
+SAMPLE 
+FORMAT
+```
