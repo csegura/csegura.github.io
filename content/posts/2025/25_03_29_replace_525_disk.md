@@ -8,7 +8,7 @@ tags = ['retrocomputing', 'pc', 'disk']
 
 I have a 5.25" disk drive that is not working properly. I have tried to clean the heads, but it is still not working. I have decided to replace it with a new one. I have found a new 5.25" disk drive on Wallapop (like ebay here in Spain), and I have bought it. Most of units are used, and untested, so I have been careful selecting the one I want to buy. Seller says that the disk drive is untested but was retired working. It's no the first time I buy untested hardware, so the seller seems quite honest, and I trusted her.
 
-The new disk drive is a Panasonic JU-475-5, (1.2Mb) also had founded the complete service manual for it just in case. 
+The new disk drive is a Panasonic JU-475-5, (1.2Mb). I also found the full service manual for it, just in case. 
 
 ![New disk](https://imgur.com/jbhfXNr.jpg)
 
@@ -64,11 +64,11 @@ First I tried Norton Disk Doctor, but it was unable to recover the data from the
 
 soooo IMD again,
 
-- Sides (Heads): 2
-- Tracks (Cylinders): 80
-- Sectors per Track: 15
-- Bytes per Sector (Block Size): 512
-- Interleave: 1:1
+- Sides (Heads): **2**
+- Tracks (Cylinders): **80**
+- Sectors per Track: **15**
+- Bytes per Sector (Block Size): **512**
+- Interleave: **1:1**
 - Capacity: 1,228,800 bytes (1.2MB)
 
 ![RecoverHD](https://imgur.com/CAAHU80.jpg)
@@ -90,8 +90,8 @@ Finally
 
 ## Parameters
 
-| Parameter             | 160 KB           | 180 KB           | 320 KB           | 360 KB           | 720 KB          | 1.2 MB           | 1.44 MB          | 2.88 MB          |
-|                       | (5.25" SS SD)    | (5.25" SS SD)    | (5.25" DS SD)    | (5.25" DS DD)    | (3.5" DS DD)    | (5.25" DS HD)    | (3.5" DS HD)     | (3.5" DS ED)     |
+| Disk      /           | 160 KB           | 180 KB           | 320 KB           | 360 KB           | 720 KB           | 1.2 MB           | 1.44 MB          | 2.88 MB          |
+| Parameter             | (5.25" SS SD)    | (5.25" SS SD)    | (5.25" DS SD)    | (5.25" DS DD)    | (3.5" DS DD)     | (5.25" DS HD)    | (3.5" DS HD)     | (3.5" DS ED)     |
 |-----------------------|------------------|------------------|------------------|------------------|------------------|------------------|------------------|------------------|
 | Cylinders             | 40               | 40               | 40               | 40               | 80               | 80               | 80               | 80               |
 | Tracks per Cylinder   | 1                | 1                | 2                | 2                | 2                | 2                | 2                | 2                |
