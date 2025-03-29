@@ -10,11 +10,11 @@ I have a 5.25" disk drive that is not working properly. I have tried to clean th
 
 The installation is quite simple, just remove the old disk drive and install the new one. The disk drive is connected to the disk controller card, and it is powered by the power supply of the computer.
 
-[New disk](https://imgur.com/jbhfXNr)
+![New disk](https://imgur.com/jbhfXNr.jpg)
 
-[Old Ibm disk](https://imgur.com/b5BE9XC)
+![Old Ibm disk](https://imgur.com/b5BE9XC.jpg)
 
-[Compare](https://imgur.com/jbhfXNr)
+![Compare](https://imgur.com/jbhfXNr.jpg)
 
 ## Disks
 
@@ -33,7 +33,7 @@ A standard 360KB 5.25-inch double-sided, double-density (DSDD) floppy disk in MS
 - Interleave Factor: Typically 1:1. This means that sequential logical sectors are also physically sequential on the track. Older systems with slower controllers might have used a higher interleave (e.g., 2:1 or 3:1) to give the controller time to process data between reading sectors. However, for most standard PC systems with 360K drives, 1:1 was common.
 - Data Encoding: Modified Frequency Modulation (MFM)
 
-[ImageDisk](https://imgur.com/x9THyng)
+![ImageDisk](https://imgur.com/x9THyng.jpg)
 
 Early Floppy Disks used FM (Frequency Modulation): The very first floppy disk systems used FM encoding, often referred to as "single density." FM encoding was simpler to implement but less efficient in terms of storage capacity.   
 
@@ -50,4 +50,4 @@ them.
 format b: /f:360
 ```
 
-[Formated](https://imgur.com/XjLvrcT)
+![Formated](https://imgur.com/XjLvrcT.jpg)
