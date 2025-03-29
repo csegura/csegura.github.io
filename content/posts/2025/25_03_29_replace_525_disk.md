@@ -59,7 +59,8 @@ format b: /f:360
 
 First I tried Norton Disk Doctor, but it was unable to recover the data from the disks. I have tried to format the disks, but it was impossible. I remember that I had used a program called "Disk Doctor" to recover the data from the disks many years ago. But no luck.
 
-{{< video "https://imgur.com/sC9cC6d.mp4" "Fail" >}}
+
+{{< youtube m-sVWOMBiGo >}} 
 
 soooo IMD again,
 
@@ -72,12 +73,19 @@ soooo IMD again,
 
 ![RecoverHD](https://imgur.com/CAAHU80.jpg)
 
-I tried the same process with the DS/HD disks, but I was unable to recover the disk. 
+I tried the same process with the DS/HD disks, but I was unable to recover the disk. So I have to use other program called "Omnidisk" 
 
-{{< video "https://imgur.com/TQy4Dyo.mp4" "Fail" >}}
+{{< youtube kJJQvsD2Qds >}} 
 
 ```
 DRIVE 1
 SAMPLE 
 FORMAT
 ```
+
+Finally 
+
+![Finally](https://imgur.com/JcUB8sq.jpg)
+
+## Sources
+
