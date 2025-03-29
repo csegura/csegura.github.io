@@ -60,6 +60,8 @@ format b: /f:360
 First I tried Norton Disk Doctor, but it was unable to recover the data from the disks. I have tried to format the disks, but it was impossible. I remember that I had used a program called "Disk Doctor" to recover the data from the disks many years ago. But no luck.
 
 
+{{< youtube m-sVWOMBiGo >}} 
+
 soooo IMD again,
 
 - Sides (Heads): 2
@@ -73,6 +75,7 @@ soooo IMD again,
 
 I tried the same process with the DS/HD disks, but I was unable to recover the disk. So I have to use other program called "Omnidisk" 
 
+{{< youtube kJJQvsD2Qds >}} 
 
 ```
 DRIVE 1
@@ -84,5 +87,25 @@ Finally
 
 ![Finally](https://imgur.com/JcUB8sq.jpg)
 
+
+## Parameters
+
+| Parameter             | 160 KB           | 180 KB           | 320 KB           | 360 KB           | 720 KB          | 1.2 MB           | 1.44 MB          | 2.88 MB          |
+|                       | (5.25" SS SD)    | (5.25" SS SD)    | (5.25" DS SD)    | (5.25" DS DD)    | (3.5" DS DD)    | (5.25" DS HD)    | (3.5" DS HD)     | (3.5" DS ED)     |
+|-----------------------|------------------|------------------|------------------|------------------|------------------|------------------|------------------|------------------|
+| Cylinders             | 40               | 40               | 40               | 40               | 80               | 80               | 80               | 80               |
+| Tracks per Cylinder   | 1                | 1                | 2                | 2                | 2                | 2                | 2                | 2                |
+| Double-Sided          | False            | False            | True             | True             | True             | True             | True             | True             |
+| Sector Size           | 512              | 512              | 512              | 512              | 512              | 512              | 512              | 512              |
+| Sectors per Track     | 8                | 9                | 8                | 9                | 9                | 15               | 18               | 36               |
+| Total Size (Bytes)    | 163840           | 184320           | 327680           | 368640           | 737280           | 1228800          | 1474560          | 2949120          |
+| Interleave            | 1:1 (typical)    | 1:1              | 1:1              | 1:1              | 1:1              | 1:1              | 1:1              | 1:1              |
+
+
+
 ## Sources
 
+- [ImageDisk](http://dunfield.classiccmp.org/img/) - disk image software
+   - [Manual](https://oldcomputers-ddns.org/public/pub/manuals/imd.pdf)
+- [TestFDC](http://dunfield.classiccmp.org/img42841/testfdc.zip) - Test floppy controller
+- [OmniDisk](http://www.shlock.co.uk/Utils/OmniDisk/OmniDisk.htm) 
