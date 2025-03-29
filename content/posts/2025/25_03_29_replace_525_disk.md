@@ -60,8 +60,6 @@ format b: /f:360
 First I tried Norton Disk Doctor, but it was unable to recover the data from the disks. I have tried to format the disks, but it was impossible. I remember that I had used a program called "Disk Doctor" to recover the data from the disks many years ago. But no luck.
 
 
-{{< youtube m-sVWOMBiGo >}} 
-
 soooo IMD again,
 
 - Sides (Heads): 2
@@ -75,7 +73,6 @@ soooo IMD again,
 
 I tried the same process with the DS/HD disks, but I was unable to recover the disk. So I have to use other program called "Omnidisk" 
 
-{{< youtube kJJQvsD2Qds >}} 
 
 ```
 DRIVE 1
