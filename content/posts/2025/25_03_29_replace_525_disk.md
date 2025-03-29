@@ -6,17 +6,19 @@ tags = ['retrocomputing', 'pc', 'disk']
 
 ## Replacing the 5.25" Disk Drive
 
-I have a 5.25" disk drive that is not working properly. I have tried to clean the heads, but it is still not working. I have decided to replace it with a new one. I have found a new 5.25" disk drive on Wallapop, and I have bought it. The new disk drive is a Panasonic JU-475-5, also I found the complete service manual for it.
+I have a 5.25" disk drive that is not working properly. I have tried to clean the heads, but it is still not working. I have decided to replace it with a new one. I have found a new 5.25" disk drive on Wallapop (like ebay here in Spain), and I have bought it. Most of units are used, and untested, so I have been careful selecting the one I want to buy. Seller says that the disk drive is untested but was retired working. It's no the first time I buy untested hardware, so the seller seems quite honest, and I trusted her.
 
-The installation is quite simple, just remove the old disk drive and install the new one. The disk drive is connected to the disk controller card, and it is powered by the power supply of the computer.
+The new disk drive is a Panasonic JU-475-5, (1.2Mb) also had founded the complete service manual for it just in case. 
 
 ![New disk](https://imgur.com/jbhfXNr.jpg)
+
+The installation is quite simple, just remove the old disk drive and install the new one. The disk drive is connected to the disk controller card, and it is powered by the power supply of the computer.
 
 ![Old Ibm disk](https://imgur.com/b5BE9XC.jpg)
 
 ![Compare](https://imgur.com/jbhfXNr.jpg)
 
-## Disks
+## DS/DD Disks
 
 I don´t have many 5.25" disks, but I have some. Muy surprise is that most of them aren´t working. I have tried to recover the data from them, but I have only been able to recover some of them. 
 
@@ -29,7 +31,7 @@ A standard 360KB 5.25-inch double-sided, double-density (DSDD) floppy disk in MS
 - Tracks (Cylinders): **40** (numbered 0 to 39). Each track on both sides forms a cylinder.   
 - Sectors per Track: **9** (numbered 1 to 9)   
 - Bytes per Sector (Block Size): **512** bytes
-- Total Sectors: 2 sides * 40 tracks/side * 9 sectors/track = 720 sectors
+- Total Sectors: **2** sides * **40** tracks/side * **9** sectors/track = **720** sectors (**720** * **512** = **368,640** bytes)
 - Interleave Factor: Typically 1:1. This means that sequential logical sectors are also physically sequential on the track. Older systems with slower controllers might have used a higher interleave (e.g., 2:1 or 3:1) to give the controller time to process data between reading sectors. However, for most standard PC systems with 360K drives, 1:1 was common.
 - Data Encoding: Modified Frequency Modulation (MFM)
 
@@ -51,3 +53,27 @@ format b: /f:360
 ```
 
 ![Formated](https://imgur.com/XjLvrcT.jpg)
+
+
+## DS/HD Disks
+
+First I tried Norton Disk Doctor, but it was unable to recover the data from the disks. I have tried to format the disks, but it was impossible. I remember that I had used a program called "Disk Doctor" to recover the data from the disks many years ago. But no luck.
+
+{{< video "https://imgur.com/sC9cC6d.mp4" "Fail" >}}
+
+soooo IMD again,
+
+- Sides (Heads): 2
+- Tracks (Cylinders): 80
+- Sectors per Track: 15
+- Bytes per Sector (Block Size): 512
+- Interleave: 1:1
+- Capacity: 1,228,800 bytes (1.2MB)
+
+![RecoverHD](https://imgur.com/CAAHU80.jpg)
+
+I tried the same process with the DS/HD disks, but I was unable to recover the disk. 
+
+{{< video "https://imgur.com/TQy4Dyo.mp4" "Fail" >}}
+
+```
