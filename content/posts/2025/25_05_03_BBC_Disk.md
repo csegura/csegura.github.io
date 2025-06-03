@@ -6,20 +6,20 @@ tags = ['retrocomputing', 'bbc', 'acorn', 'disk']
 
 I recentrly bought a broken BBC Diskdrive and a Watford DFS disk controller card, to try to repair it. The disk drive is a dual 5.25" disk drive, and the controller card is a Watford Electronics DFS (Dual Disk Filing System) card version 1.54T.
 
-![BBC Disk Drive](https://imgur.com/gallery/bbc-watford-disk-levRCxl#sO43fiz)
+![BBC Disk Drive](https://i.imgur.com/zhAvJhK.png)
 
 
 The unit comes with two different disk drives, a Mitsubishi MF503A and a Mitsubishi M4853-342MG. Each drive has a switch on the front panel to select between single-density (40 tracks) and double-density (80 tracks) operation. 
 
 Each drive’s track density is 96 tracks-per-inch (for 80-track mode), but they are also switchable to emulate 48 TPI 40-track operation for compatibility. The rotational speed is fixed at 300 RPM for double-density operation, which is standard for 5.25″ DD. At this speed, one revolution takes 200 ms, and at the double-density data rate of 250 kb/s, roughly 5 KB of data can be read per rotation (enough for up to 18 × 256-byte sectors). In single-density FM mode (used by the original Acorn DFS), the data rate is half (125 kb/s), and the standard format is 10 × 256-byte sectors. 
 
-![Disk 0](https://imgur.com/gallery/bbc-watford-disk-levRCxl#MlnR1M1)
-![Disk 1](https://imgur.com/gallery/bbc-watford-disk-levRCxl#PUh14l1)
+![Disk 0](https://i.imgur.com/MlnR1M1.jpeg)
+![Disk 1](https://i.imgur.com/PUh14l1.jpeg)
 
-![Disks models](https://imgur.com/gallery/bbc-watford-disk-levRCxl#V0Jhnlu)
+![Disks models](https://i.imgur.com/V0Jhnlu.jpeg)
 
-![Disk0a](https://imgur.com/gallery/bbc-watford-disk-levRCxl#2dyQ2RI)
-![Disk1a](https://imgur.com/gallery/bbc-watford-disk-levRCxl#tfmsOKY)
+![Disk0a](https://i.imgur.com/tfmsOKY.jpeg)
+![Disk1a](https://i.imgur.com/2dyQ2RI.jpeg)
 
 
 Mitsubishi drives were considered high-speed for their era – reading Watford’s documentation notes that these half-height drives offer faster access than older full-height units, and the BBC Micro can optimize for their speed via configuration links or FX commands. 
@@ -39,7 +39,7 @@ After performing the modifications (if necessary) to link S9 the next step is to
 
 Las step add the ROM
 
-![Controller Card](https://imgur.com/gallery/bbc-watford-disk-levRCxl#extsWcn)
+![Controller Card](https://i.imgur.com/UP8czhV.jpeg)
 
 ## Drive Hardware and 40/80-Track Compatibility
 
