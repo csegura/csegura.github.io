@@ -1,6 +1,6 @@
 +++
 title = 'IRIX Services'
-date = 2025-06-08
+date = 2025-06-21
 tags = ['retrocomputing', 'irix', 'sgi']
 +++
 
@@ -8,7 +8,17 @@ Recently the hard disk of my SGI O2 has failed, and I have been trying to recove
 
 Today I'm triying to recompile Vim 8.1 as I had before. While the system is working, I'm using telnet to connect to the O2 and run the commands. I want to enable SSH so I have been exploring the system services.
 
+First ensure you are running almost tcsh if don't want suffer.
+
+```sh
+setenv TERM xterm
+/bin/tcsh
 ```
+
+
+## Checking Services
+
+```sh
 /sbin/chkconfig
 /sbin/chkconfig service_name on
 ```
@@ -17,19 +27,20 @@ In my case I'm using neko_sshd, but you can use sshd too. For neko_sshd, you can
 
 `sudo chkconfig neko_sshd on` and edit the `/usr/nekoware/etc/sshd_config` 
 
-```
-
 add a sshd group and user account:
 
-```
+```sh
 /usr/sysadm/privbin/addGroup -g sshd
 /usr/sysadm/privbin/addUserAccount -l sshd -u 2222 -g 22 -S /bin/false -H /var/empty
 passwd -l sshd
 ```
 
-Generata the SSH host keys:
+also you can add a user account for yourself editing `/etc/group` and `/etc/passwd` files.
 
-```
+
+## Generata the SSH host keys:
+
+```sh
 # Generate RSA key (highly recommended for compatibility)
 ssh-keygen -t rsa -f /usr/nekoware/etc/ssh_host_rsa_key -N ""
 
@@ -37,9 +48,24 @@ ssh-keygen -t rsa -f /usr/nekoware/etc/ssh_host_rsa_key -N ""
 ssh-keygen -t dsa -f /usr/nekoware/etc/ssh_host_dsa_key -N ""
 ```
 
-Start Service
+## Check the SSHD configuration file
 
-``` 
+Under `/usr/nekoware/etc/sshd_config`, ensure the following lines are present:
+
+We have generated only rsa and dsa keys, so we will comment the ecdsa key line:
+
+```sh
+# HostKey for protocol version 1
+#HostKey /usr/nekoware/etc/ssh_host_key
+# HostKeys for protocol version 2
+HostKey /usr/nekoware/etc/ssh_host_rsa_key
+HostKey /usr/nekoware/etc/ssh_host_dsa_key
+#HostKey /usr/nekoware/etc/ssh_host_ecdsa_key
+```
+
+## Start Service
+
+```sh
 /etc/init.d/neko_sshd start 
 ```
 
