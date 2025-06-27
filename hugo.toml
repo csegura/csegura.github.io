@@ -15,7 +15,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
 
 # NOTE: If using Disqus as commenting engine, uncomment and configure this line
 # disqusShortname = "yourDisqusShortname"
-disqusShortname = ''
+DisqusShortname = ''
 
 ignoreLogs = ['warning-goldmark-raw-html']
 
