@@ -15,7 +15,6 @@ setenv TERM xterm
 /bin/tcsh
 ```
 
-
 ## Checking Services
 
 ```sh
@@ -77,13 +76,13 @@ hide sshd from login screen modify '/var/sysadm/config`
 
 If you see 
 
-```
+```sh
 Unable to negotiate with 192.168.1.100 port 22: no matching key exchange method found. Their offer: diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
 ```
 
 I added the following to my ~/.ssh/config file to connect to my IRIX O2:
 
-```
+```sh
 Host moose 192.168.1.100
     HostName 192.168.1.100
     User user
