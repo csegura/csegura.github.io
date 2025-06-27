@@ -2,14 +2,15 @@ baseURL = "/"
 languageCode = "en-us"
 title = 'csegura'
 theme = "poison"
+pagerSize = 10
 
-[languages.en]
-    languageCode = "en"
-    languageName = "English version"
-    weight = 2
-    [languages.en.pagination]
-        pagerSize = 5
-        
+#[languages.en]
+#    languageCode = "en"
+#    languageName = "English version"
+#    weight = 2
+#    [languages.en.pagination]
+#        pagerSize = 5
+
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
 
 # NOTE: If using Disqus as commenting engine, uncomment and configure this line
@@ -114,10 +115,6 @@ ignoreLogs = ['warning-goldmark-raw-html']
 [taxonomies]
     series = 'series'
     tags = 'tags'
-
-[pagination]
-  disableAliases = false
-  pagerSize = 10
 
 [services]
   [services.disqus]
