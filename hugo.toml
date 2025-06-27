@@ -116,17 +116,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
     series = 'series'
     tags = 'tags'
 
-[services]
-  [services.disqus]
-    shortname = ''
-  [services.googleAnalytics]
-    id = ''
-  [services.instagram]
-    accessToken = ''
-    disableInlineCSS = false
-  [services.rss]
-    limit = -1
-  [services.twitter]
-    disableInlineCSS = false
-  [services.x]
-    disableInlineCSS = false
+[Services]
+  [Services.Disqus]
+    Shortname = ''
+  
