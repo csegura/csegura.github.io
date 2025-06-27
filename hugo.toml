@@ -90,7 +90,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
     text_color_dark = "#EEE"                        # default is #EEE
 
     # NOTE: If using Remark42 as commenting engine, uncomment and configure these lines
-    # remark42 = true
+    remark42 = false
     # remark42_host = "https://yourhost.com"
     # remark42_site_id = "your_site_id"
     
