@@ -7,7 +7,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
 
 # NOTE: If using Disqus as commenting engine, uncomment and configure this line
 # disqusShortname = "yourDisqusShortname"
-disqusShortname = 
+disqusShortname = 0
 
 [params]
     brand = "romheat"                      # name of your site - appears in the sidebar
