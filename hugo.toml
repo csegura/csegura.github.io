@@ -3,10 +3,19 @@ languageCode = "en-us"
 title = 'csegura'
 theme = "poison"
 
+[languages.en]
+    languageCode = "en"
+    languageName = "English version"
+    weight = 2
+    [languages.en.pagination]
+        pagerSize = 5
+        
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
 
 # NOTE: If using Disqus as commenting engine, uncomment and configure this line
 # disqusShortname = "yourDisqusShortname"
+
+ignoreLogs = ['warning-goldmark-raw-html']
 
 [params]
     brand = "romheat"                      # name of your site - appears in the sidebar
