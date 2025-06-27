@@ -5,9 +5,8 @@ tags = ['retrocomputing', 'irix', 'sgi', 'reanimator']
 +++
 
 
-# SGI Reanimator
 
-SIG reanimator is a tool for restoring and managing SGI IRIX systems. It provides all necessary tools to install IRIX. (bootp, tftd end the CD images, yeras ago I did it tio install linux on a sun sparcstation ultra and it was a pain to get it working, so this is a great tool)
+SGI reanimator is a tool for restoring and managing SGI IRIX systems. It provides all necessary tools to install IRIX. (bootp, tftd end the CD images, yeras ago I did it tio install linux on a sun sparcstation ultra and it was a pain to get it working, so this is a great tool)
 
 [SGI Reanimator](https://github.com/Linux-RISC/Reanimator)
 
@@ -88,27 +87,27 @@ sy sync
 ..
 ```
 
-![](https://imgur.com/gGn7yY9)
+![1](https://imgur.com/gGn7yY9.jpeg)
 
 Reboot the computer and go to `Install System Software`
 
 ## Installing the Software
 
-![](https://imgur.com/n1ILUGn)
+![2](https://imgur.com/n1ILUGn.jpeg)
 
-![](https://imgur.com/tgICVd2)
+![3](https://imgur.com/tgICVd2.jpeg)
 
-![](https://imgur.com/cnp9A8U)
+![4](https://imgur.com/cnp9A8U.jpeg)
 
-![](https://imgur.com/zODHHy9)
-
-
-![](https://imgur.com/tHKaqNz)
+![5](https://imgur.com/zODHHy9.jpeg)
 
 
-![](https://imgur.com/jdwRNhs)
+![6](https://imgur.com/tHKaqNz.jpeg)
 
-![](https://imgur.com/qSDPUb1)
 
-![](https://imgur.com/6IvZB2R)
+![7](https://imgur.com/jdwRNhs.jpeg)
+
+![8](https://imgur.com/qSDPUb1.jpeg)
+
+![9](https://imgur.com/6IvZB2R.jpeg)
 
