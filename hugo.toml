@@ -2,12 +2,11 @@ baseURL = "/"
 languageCode = "en-us"
 title = 'csegura'
 theme = "poison"
-paginate = 10
+
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
 
 # NOTE: If using Disqus as commenting engine, uncomment and configure this line
 # disqusShortname = "yourDisqusShortname"
-disqusShortname = 0
 
 [params]
     brand = "romheat"                      # name of your site - appears in the sidebar
@@ -106,3 +105,22 @@ disqusShortname = 0
 [taxonomies]
     series = 'series'
     tags = 'tags'
+
+[pagination]
+  disableAliases = false
+  pagerSize = 10
+
+[services]
+  [services.disqus]
+    shortname = ''
+  [services.googleAnalytics]
+    id = ''
+  [services.instagram]
+    accessToken = ''
+    disableInlineCSS = false
+  [services.rss]
+    limit = -1
+  [services.twitter]
+    disableInlineCSS = false
+  [services.x]
+    disableInlineCSS = false
