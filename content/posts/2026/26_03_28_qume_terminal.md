@@ -32,14 +32,14 @@ I bought the terminal from a wallapop seller, and looks well, later I should che
 
 Mine is the amber one
 
-[qume 119](https://i.imgur.com/zxUZ32r.jpg)
+![qume 119](https://i.imgur.com/zxUZ32r.jpg)
 
 
 I connected it to a Raspberry Pi via a USB-to-serial adapter, and configured the terminal and Linux side to match each other. The terminal is set to emulate a Wyse 50, and Linux is using `agetty` with the `wy50` terminal type. The serial settings are 38400 baud, 8 data bits, no parity, 1 stop bit (38400 8N1), and CR/LF translations are disabled.
 
 It's require a null modem cable, because the terminal is DTE and the USB serial adapter is also DTE, so a straight-through cable would not work. A null modem cable crosses the transmit and receive lines, allowing the two DTE devices to communicate properly.
 
-[Connection](https://i.imgur.com/DfscHyA.jpg)
+![Connection](https://i.imgur.com/DfscHyA.jpg)
 
 Here is the terminal configuration I used
 
