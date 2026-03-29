@@ -75,6 +75,9 @@ That usually means the menu is showing both the **parity enable state** and the 
 
 `CHAR ISO7` belongs to the **display/character interpretation layer**: it tells the terminal which character repertoire to use once bytes arrive. So it is completely possible, and often correct, to run the wire as **8-bit clean** while still using a **7-bit character set personality** on the screen. That is what you are doing here: the terminal is receiving 8-bit bytes, but it is treating them as ISO-646 (7-bit ASCII) characters. That is a common setup for serial terminals, and it matches the `wy50` terminfo entry, which also assumes a 7-bit character set. 
 
+I've changed it to IBM 8-bit character set to support the line drawing characters, but it is not strictly necessary for a working terminal session, and it is not what the `wy50` terminfo entry assumes. The `CHAR ISO7` setting is more conservative and more likely to be compatible with a wider range of software, while `CHAR IBM8` may give you better graphics support at the cost of potential compatibility issues with software that expects 7-bit ASCII.
+
+
 ## Raspberry Pi 
 
 Raspberry side, I have a systemd service that starts `agetty` on the USB serial port with the correct settings:
@@ -159,3 +162,37 @@ The reason this setup feels “right” is that it follows an old but very relia
 **wire format on the serial side, terminal personality on the application side**
 
 On the wire, I'm using a plain, conservative serial link: **38400 8N1, no translations, no output processing**. In the session, I'm advertising a known terminal personality: **Wyse 50**. That keeps the serial driver honest and gives programs a real terminal description to work with. `agetty` is doing exactly what it was designed to do on such lines, and Linux has a real `wy50` terminal description in `terminfo`. 
+
+## Note
+
+To use it I have create a new user that has already configured the shell and terminal settings, so I can just login with that user and have a working terminal session.
+
+```bash
+# Set terminal type
+export TERM=wy50
+
+export LANG=C
+export LC_ALL=C
+
+# A simple, non-ANSI prompt
+# %n = username, %m = hostname, %~ = directory
+PROMPT='%n@%m:%~%# '
+
+# Disable all colors for common commands
+alias ls='ls --color=never'
+alias grep='grep --color=never'
+alias zgrep='zgrep --color=never'
+
+# Fix backspace for Zsh
+bindkey '^H' backward-delete-char
+unset zle_bracketed_paste
+```
+
+## News ticker
+
+I've also set up a news ticker on the terminal using python that fetches news headlines from an RSS feed and displays them on the terminal. The script runs in a loop, updating the display every minute with the latest news. 
+
+![Imgur](https://i.imgur.com/TeUSywb.mp4)
+
+![Imgur](https://i.imgur.com/FxeBzfy.jpg)
+
