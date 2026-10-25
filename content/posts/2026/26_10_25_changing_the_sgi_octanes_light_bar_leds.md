@@ -74,4 +74,5 @@ The last photo shows two blue LEDs inside the opened white light-bar housing on 
 
  The completed assembly looks like a practical update to a small part of the workstation. I chose the blue LEDs for their appearance, but the resistor choice was also important. Without suitable current limiting, the LEDs could be damaged quickly.
 
-![Final](https://imgur.com/gallery/changing-dead-leds-on-sgi-octane-01ZpxjS#ogAfJ1F)
+
+{{< youtube cK5VgEg9O0E >}} 
