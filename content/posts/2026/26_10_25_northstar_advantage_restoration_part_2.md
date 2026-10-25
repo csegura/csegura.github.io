@@ -2,12 +2,12 @@
 title = 'NorthStar Advantage Restoration Part 2'
 date = 2026-10-25
 tags = ['retrocomputing', 'restoration', 'northstar', 'floppy-disk']
-draft = true
+draft = false
 +++
 
 ## Looking more closely at the drives
 
-This continues [NorthStar Advantage Restoration 1](/posts/2026/26_10_25_northstar_advantage_restoration_1_first_look_inside/), with a closer look at the drive hardware and how floppy disks mark sectors.
+This continues [NorthStar Advantage Restoration Part 1](/posts/2026/26_10_25_northstar_advantage_restoration_1_first_look_inside/), with a closer look at the drive hardware and how floppy disks mark sectors.
 
 Many computers from the late 1970s and early 1980s used 5¼-inch floppy drives. The Tandon TM100-2A is one example. These drives can become difficult to use as they age. Their radial alignment—the position of the read/write head across the disk’s tracks—can shift. If it moves far enough, the drive may not read or write disks reliably.
 
@@ -51,6 +51,6 @@ The board looks aged and has some dust, but no clear damage or repair is visible
 
 ![Close-up of an aged circuit board with chips, connectors, and wires.](https://i.imgur.com/Ova9sv4.jpeg)
 
-Case with removed drive assembly and exposed internal components.
+The case with the drive assembly removed, showing the internal components.
 
 ![Open vintage computer hardware with circuit boards, transformer, and metal drive assembly on a workbench.](https://i.imgur.com/JNiW2Rh.jpeg)

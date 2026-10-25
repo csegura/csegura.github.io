@@ -1,13 +1,13 @@
 +++
-title = 'NorthStar Advantage Restoration 1: First Look Inside'
+title = 'NorthStar Advantage Restoration Part 1: First Look Inside'
 date = 2026-10-25
 tags = ['retrocomputing', 'restoration', 'northstar', 'electronics']
-draft = true
+draft = false
 +++
 
 ## A restoration that took more than a year
 
-I bought this NorthStar Advantage on Wallapop in 2024. The seller told me that the keyboard had a fault. But at power-on, the computer still displayed a message on the screen. The restoration took longer than expected and but it was a great journey to bring this vintage machine back to life. I ended the process in 2025, but I hadn´t had a chance to document it properly until now.
+I bought this NorthStar Advantage on Wallapop in 2024. The seller told me that the keyboard had a fault. But at power-on, the computer still displayed a message on the screen. The restoration took longer than expected, but it was a great journey to bring this vintage machine back to life. I finished in 2025, but only now have I had time to document it properly.
 
 The Advantage is an early-1980s computer made by North Star Computers. It followed the company’s earlier Horizon system, but put the computer, screen, keyboard, and two floppy drives in one case. That all-in-one design made it a complete workstation in a single unit. Its graphics were also an important feature for the time.
 
@@ -21,7 +21,7 @@ The built-in monochrome screen was 11 inches. It could show 80-column text or gr
 
 The system used CP/M with graphical extensions. CP/M was an operating system used by many early personal computers. North Star also supplied a version of its own DOS, called Graphics DOS, or GDOS, with graphics support. The computer had six expansion slots. These could accept cards for features such as serial or parallel connections, or an additional processor.
 
-North Star also offered an optional 8088 co-processor board. A second processor was an Intel 8088 that allowed the Advantage to run MS-DOS 1.0. 
+North Star also offered an optional 8088 co-processor board. The second processor was an Intel 8088, which allowed the Advantage to run MS-DOS 1.0.
 
 A 5 MB Winchester disk was another optional feature. “Winchester” was a name used for an early type of fixed hard disk.
 
@@ -71,9 +71,9 @@ The main board is still in the open case. It has rows of chips, blue expansion s
 
 ![Green computer circuit board inside an open beige case.](https://i.imgur.com/S32Q2ve.jpeg)
 
-## Keyboard 
+## Keyboard
 
-The keyboard needs attention, I know that. I opened it up and removed the keycaps, exposing the switch housings and the circuit assembly.
+The keyboard needs attention. I opened it up and removed the keycaps, exposing the switch housings and the circuit assembly.
 
 ![Vintage keyboard with exposed circuit board and ribbon cable on gray fabric.](https://i.imgur.com/xHiZTbS.jpeg)
 
@@ -87,7 +87,7 @@ There is also a multipin connector attached to a gray ribbed cable.
 
 ![Blue multipin connector attached to a gray ribbed cable on carpet.](https://i.imgur.com/L7SwENa.jpeg)
 
-With the keycaps off, the dust and grime around the switches are easier to see. The keyboard is still in the disassembly and cleaning stage.  Keyboard employs foam and foil capacitive keys. As is usually the case with these 30+ year old keyboards, the foam pads have deteriorated. This type of keyboards often requires replacement of the foam pads to restore proper functionality. 
+With the keycaps off, the dust and grime around the switches are easier to see. The keyboard is still in the disassembly and cleaning stage. It uses foam and foil capacitive keys. As is usually the case with these 30+ year old keyboards, the foam pads have deteriorated. This type of keyboard often needs new foam pads to work properly again.
 
 ### Faulty Foam Pads
 
@@ -101,11 +101,11 @@ The removed keycaps are laid out below the keyboard alongside dust and debris.
 
 ![Disassembled keyboard with exposed switches and scattered keycaps during cleaning.](https://i.imgur.com/tgIHRtV.jpeg)
 
-Like this kind of keyboard is a capacitive keyboard, it is particularly sensitive to the condition of the foam pads. Proper cleaning and replacement of the foam pads are essential steps in the restoration process.
+Because this is a capacitive keyboard, it is particularly sensitive to the condition of the foam pads. Proper cleaning and replacement of the foam pads are essential steps in the restoration process.
 
 ## LOAD SYSTEM
 
-The good news is that I can type on the keyboard, even though the foam pads are deteriorated. This indicates that the basic functionality of the keys is still intact, and with proper cleaning and replacement of the foam pads, the keyboard should be fully operational again.
+The good news is that I can type on the keyboard, even though the foam pads have deteriorated. This indicates that the basic functionality of the keys is still intact, and with proper cleaning and replacement of the foam pads, the keyboard should be fully operational again.
 
 While the keyboard is undergoing cleaning and restoration, the CRT is showing repeated “LOAD SYSTEM” text, with a green block cursor below it. It was a good sign that the machine could still display this message despite the keyboard issues.
 

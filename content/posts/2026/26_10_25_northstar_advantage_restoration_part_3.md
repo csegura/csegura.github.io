@@ -2,18 +2,18 @@
 title = 'NorthStar Advantage Restoration Part 3'
 date = 2026-10-25
 tags = ['retrocomputing', 'restoration', 'northstar', 'keyboard']
-draft = true
+draft = false
 +++
 
 This continues [NorthStar Advantage Restoration Part 2](/posts/2026/26_10_25_northstar_advantage_restoration_part_2/). This time, I focus on replacing the keyboard’s foam pads.
 
-I had to wait for 3 months for the replacement pads to arrive. First package was lost in transit, so I had to reorder them, which added to the delay.   
+I had to wait three months for the replacement pads to arrive. The first package was lost in transit, so I had to reorder them, which added to the delay.
 
 Once they were in hand, I could proceed with the restoration work on the keyboard.
 
 ## The replacement pads
 
-There is not many places where these specific foam-and-foil pads are sold, so finding a reliable source is important.
+There are not many places that sell these specific foam-and-foil pads, so finding a reliable source is important.
 
 I found these pads from Texelec, a supplier known for capacitive keyboard components.
 
@@ -21,7 +21,7 @@ I found these pads from Texelec, a supplier known for capacitive keyboard compon
 
 ## Taking the key mechanisms apart
 
-With the keyboard disassembled, and clean. The key mechanisms are ready for replacement of the worn foam-and-foil pads.
+With the keyboard disassembled and cleaned, the key mechanisms are ready for new foam-and-foil pads.
 
 ![Disassembled keyboard mechanisms arranged beside a precision screwdriver.](https://i.imgur.com/jfDR2DV.jpeg)
 

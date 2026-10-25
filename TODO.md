@@ -4,3 +4,10 @@
 - [ ] Convert `content/about/about.md` front matter from YAML to TOML
 - [ ] Set a real `email_url` in `hugo.toml` if wanted
 - [ ] Review the generated post descriptions on the live site
+- [ ] Part 4 post: TODO: Explain what the IBM-marked piece is for.
+- [ ] Part 4 post: TODO: Add the printer model, print material, and case dimensions if available.
+- [ ] Part 4 post: TODO: Add the replacement firmware name, version, and installation details.
+- [ ] Part 4 post: TODO: Explain what the loose wire connects to and what the LED indicates.
+- [ ] Part 4 post: VERIFY: Confirm whether the two LED photos show the same part.
+- [ ] Part 4 post: TODO: Identify the blue-purple patch and explain what is happening in this photo.
+- [ ] Part 4 post: TODO: Add the results of testing both Goteks with the Advantage.

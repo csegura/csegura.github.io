@@ -2,7 +2,7 @@
 title = 'NorthStar Advantage Restoration Part 4'
 date = 2026-10-25
 tags = ['retrocomputing', 'restoration', 'northstar', 'gotek', '3d-printing']
-draft = true
+draft = false
 +++
 
 This continues [NorthStar Advantage Restoration Part 3](/posts/2026/26_10_25_northstar_advantage_restoration_part_3/). This time, I am making 5¼-inch drive cases and fitting Gotek replacements.
@@ -13,11 +13,11 @@ The NorthStar Advantage has two drive bays, and I want to use them with Gotek fl
 
 The original drives belong to a period when 5¼-inch floppy disks were common. Shugart Associates helped make this drive size popular in the 1970s. These drives mattered because they gave personal computers a practical way to load and save programs. The old drives in my Advantage are part of its history, but an emulator can make it easier to use without relying on aging disks and drive parts.
 
-I am designing and printing cases to fit the Advantage’s drive bays. The pieces in this photo include flat panels, side walls, holes and slots. They have visible print layers, but look intact. One small piece has “IBM” printed on it. I cannot tell its purpose from the photo. <!-- TODO: Explain what the IBM-marked piece is for. -->
+I am designing and printing cases to fit the Advantage’s drive bays. The pieces in this photo include flat panels, side walls, holes and slots. They have visible print layers, but look intact. One small piece has “IBM” printed on it. I cannot tell its purpose from the photo.
 
 ![Dark 3D-printed drive enclosure parts arranged on a green surface.](https://i.imgur.com/H1CU7Ns.jpeg)
 
-A 3D-printed case gives me a way to make a shape that fits the computer and the emulator. It also lets me place openings for the controls and connectors. I do not have a printer model, print settings, or exact case measurements to share here. <!-- TODO: Add the printer model, print material, and case dimensions if available. -->
+A 3D-printed case gives me a way to make a shape that fits the computer and the emulator. It also lets me place openings for the controls and connectors. I do not have a printer model, print settings, or exact case measurements to share here.
 
 The next photo shows a separate black electronics enclosure and two printed parts. The enclosure is open, with an old circuit board inside. I cannot identify that board or its original purpose from the visible markings, so I will not guess. The printed pieces look like a shell and front panel for the new drive setup. Their surfaces show the fine lines left by the printer, but I do not see obvious damage.
 
@@ -31,21 +31,21 @@ I have wired the board inside a drive-sized enclosure, but the assembly is still
 
 ![Open Gotek emulator board wired inside a black drive enclosure.](https://i.imgur.com/0r5uJd2.jpeg)
 
-The Gotek’s original firmware is the software that controls how the device behaves. I am replacing the firmware as part of this project. Different firmware can change how an emulator handles disk images and controls, but I do not have the firmware name, version, or installation steps in these notes. <!-- TODO: Add the replacement firmware name, version, and installation details. --> The photo confirms the board type, but it does not show which firmware is installed or whether the replacement is complete.
+The Gotek’s original firmware is the software that controls how the device behaves. I am replacing the firmware as part of this project. Different firmware can change how an emulator handles disk images and controls, but I do not have the firmware name, version, or installation steps in these notes. The photo confirms the board type, but it does not show which firmware is installed or whether the replacement is complete.
 
 ## Adding an indicator light
 
 I am also working with a separate red LED. LED means light-emitting diode. It gives a simple visual signal when a device is active. Small indicator lights have been used in electronic equipment for many decades because they make basic status information easy to see.
 
-The LED in this close-up has wires soldered to its metal leads. Soldering joins metal parts using a melted metal alloy. The joints look hand-soldered, and one bare wire end remains visible. I cannot identify the exact LED type or its intended circuit from the image. <!-- TODO: Explain what the loose wire connects to and what the LED indicates. -->
+The LED in this close-up has wires soldered to its metal leads. Soldering joins metal parts using a melted metal alloy. The joints look hand-soldered, and one bare wire end remains visible. I cannot identify the exact LED type or its intended circuit from the image.
 
 ![Red LED with soldered wires on a green work surface.](https://i.imgur.com/ONVnXfI.jpeg)
 
-Another view shows a similar red indicator with black heat-shrink tubing around part of the connection. Heat-shrink tubing is a plastic sleeve that tightens when heated, helping cover and protect a wire joint. The parts look intact, but the photo does not show where the leads connect. I cannot confirm whether this is the same LED as in the previous image or a second one. <!-- VERIFY: Confirm whether the two LED photos show the same part. -->
+Another view shows a similar red indicator with black heat-shrink tubing around part of the connection. Heat-shrink tubing is a plastic sleeve that tightens when heated, helping cover and protect a wire joint. The parts look intact, but the photo does not show where the leads connect. I cannot confirm whether this is the same LED as in the previous image or a second one.
 
 ![Close-up of a red LED attached to a black wire on green fabric.](https://i.imgur.com/ctmDxXM.jpeg)
 
-There is also a close view of wires crossing a black plastic surface. Fine plastic strands and scraps are visible nearby, and a small patch of blue-purple material appears on the surface. The view does not make it clear whether this is a printing step, a repair, or another part of the assembly. The case and wiring look unfinished. <!-- TODO: Identify the blue-purple patch and explain what is happening in this photo. -->
+There is also a close view of wires crossing a black plastic surface. Fine plastic strands and scraps are visible nearby, and a small patch of blue-purple material appears on the surface. The view does not make it clear whether this is a printing step, a repair, or another part of the assembly. The case and wiring look unfinished.
 
 ![Close-up of colored wires and a small plastic patch inside a black 3D-printed enclosure.](https://i.imgur.com/6p4gy2E.jpeg)
 
@@ -79,4 +79,4 @@ The close-up of the CRT shows North Star Graphics Disk Operating System, Version
 
 ![CRT screen displaying North Star Graphics DOS startup text.](https://i.imgur.com/Z1vXBE4.jpeg)
 
-The printed cases and Gotek boards are now brought together inside the Advantage. The photos show the fit, the wiring, and the front controls, but they do not document a completed test with a disk image. I also need to add the name and version of the replacement firmware. For now, this part of the restoration is about building a usable physical fit for the emulators and preparing them for testing. <!-- TODO: Add the results of testing both Goteks with the Advantage. -->
+The printed cases and Gotek boards are now brought together inside the Advantage. The photos show the fit, the wiring, and the front controls, but they do not document a completed test with a disk image. I also need to add the name and version of the replacement firmware. For now, this part of the restoration is about building a usable physical fit for the emulators and preparing them for testing.
