@@ -2,7 +2,7 @@
 title = 'Changing the SGI Octane’s Light-Bar LEDs'
 date = 2026-10-25
 tags = ['retrocomputing', 'sgi', 'electronics', 'led', 'repair']
-draft = true
+draft = false
 +++
 
 ## A small change to an SGI workstation
