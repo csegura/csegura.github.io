@@ -1,0 +1,4 @@
+- [ ] Decide on `broken/06_02_20_mdx_generator.md_`: restore to `content/posts/2006/` or delete
+- [ ] Set a real `email_url` in `hugo.toml` if wanted
+- [ ] Normalize tag case and duplicates across posts
+- [ ] Review the generated post descriptions on the live site
