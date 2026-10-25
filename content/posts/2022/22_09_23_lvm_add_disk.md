@@ -1,8 +1,8 @@
 +++
 title = 'LVM Add Disk (work notes)'
-date = 2012-09-23T00:00:00+01:00
+date = 2022-09-23T00:00:00+01:00
 draft = false
-tags = ['lvm', 'disk', 'debian']
+tags = ['lvm', 'disks', 'debian']
 +++
 
 # Introduction & Explanation (pasted)

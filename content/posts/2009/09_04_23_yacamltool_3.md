@@ -33,7 +33,7 @@ catch (ParserException ex)
 
 Instanciamos el Parser (NParser), le pasamos la consulta en TSQL (textSql) y la factoría correspondiente a lo que queremos generar, por el momento solo está disponible la de CAML, en breve completaré la de CAML.Net; Por último inyectamos el Parser en el Generador de código, llamamos al método Generate y recogemos la consulta en CAML en generator.Code.
 
-![YACAMLQT](/images/Sharepoint/YACAMLQT_Sample_Gui.gif)
+![YACAMLQT](/images/Sharepoint/YACAMLQT_Sample_Gui.png)
 
 
 Las posibles excepciones tanto del Parser como del generador de código se pueden atrapar con ParserException y ScannerException.

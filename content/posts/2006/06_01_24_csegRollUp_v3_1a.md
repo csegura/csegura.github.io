@@ -1,7 +1,7 @@
 +++
 title = 'csegRollUp v3.1a'
 date = 2006-01-24T00:00:00+01:00
-tags = ['sharepoint', 'webpart']
+tags = ['sharepoint', 'webparts']
 +++
 
 csegRollUp 3.1a

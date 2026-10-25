@@ -1,7 +1,7 @@
 +++
 title = 'CAML XML Editor v1'
 date = 2005-12-18T00:00:00+01:00
-tags = ['sharepoint','caml']
+tags = ['sharepoint', 'caml']
 +++
 
 Days ago I showed my last toy project called CAML Editor, this first sketch was only a test application. Now I have the pleasure to announce that the first version is here to stay ;-) .

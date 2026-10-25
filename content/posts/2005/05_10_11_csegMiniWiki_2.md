@@ -1,7 +1,7 @@
 +++
 title = 'csegMiniWiki 2'
 date = 2005-10-11T00:00:00+01:00
-tags = ['sharepoint', 'webpart']
+tags = ['sharepoint', 'webparts']
 +++
 
 Jugando con mi nuevo webpart csegMiniWiki, he caído en la cuenta que en la lista de contenido hay ciertos campos ocultos (los que tienen todas las listas) de modo que he cogido mi webpart csegScriptWebPart para examinar la lista y ….

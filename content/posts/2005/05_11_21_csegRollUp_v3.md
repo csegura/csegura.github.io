@@ -1,7 +1,7 @@
 +++
 title = 'csegRollUp v3 out'
 date = 2005-11-21T00:00:00+01:00
-tags = ['sharepoint', 'webpart']
+tags = ['sharepoint', 'webparts']
 +++
 
 Finally csegRollUp v3 is here, first I want to give to thanks to all beta testers and and special thanks to Florian Rossmark and Dor Rotman.

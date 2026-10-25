@@ -1,7 +1,7 @@
 +++
 title = 'Querying an exchange server 2'
 date = 2006-01-27T00:00:00+01:00
-tags = ['sharepoint', 'webpart']
+tags = ['sharepoint', 'webparts']
 +++
 
 Part 2
@@ -34,7 +34,7 @@ function checkState()
 
 Better than parse DOM to get the results I prefer use XSL, now I can copy the XML results in my favorite XSLT editor and map the data. After I can add the xsl to the page and transform the xml usig it. The final result is as shown in the image.
 
-![](/images/Sharepoint/webcontent-exchange-query2.gif)
+![](/images/Sharepoint/webcontent-exchange-query-2.gif)
 
 
 ```html

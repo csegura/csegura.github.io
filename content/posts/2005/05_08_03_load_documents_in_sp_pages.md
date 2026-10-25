@@ -1,7 +1,7 @@
 +++
 title = 'Load documents in SharePoint pages'
 date = 2005-08-03T00:00:00+01:00
-tags = ['sharepoint', 'webpart']
+tags = ['sharepoint', 'webparts']
 +++
 
 SharePoint - Loading html documents inside of sharepoint pages

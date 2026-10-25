@@ -1,7 +1,7 @@
 +++
 title = 'Connecting WebParts'
 date = 2006-02-18T00:00:00+01:00
-tags = ['']
+tags = ['sharepoint', 'webparts']
 +++
 
 He estado pensando en las nuevas características que tendrá la versión 3.5 del csegRollUp (como siempre, si alguien tiene sugerencias que las diga)  por el momento dejo unas pequeñas pistas aquí. He estado trabajando con unas bibliotecas de documentos que contiene un meta dato llamado estado, la idea era mostrar los últimos archivos modificados por cada usuario dentro de un estado en particular, bien para esto basta con hacer una vista de la biblioteca de documentos y mostrar la vista organizada en categorías (cada estado una categoría). Esto esta muy bien pero en ocasiones el diseño ha de ser más funcional y esto es lo que ha salido usando el csegRollUp.

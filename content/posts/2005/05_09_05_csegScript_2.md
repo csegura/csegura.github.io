@@ -1,7 +1,7 @@
 +++
 title = 'csegScript 2'
 date = '2005-09-05T00:00:00+01:00'
-tags = ['sharepoint', 'webpart']
+tags = ['sharepoint', 'webparts']
 +++
 
 This weekend I have finished the first version of csegScript, now are two webparts in the package, the first webpart is the 0.99 version with some improvements in the code, the  operation basically is the same one. (See previous post)

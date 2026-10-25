@@ -1,7 +1,7 @@
 +++
 title = 'csegDocLib 2'
 date = 2005-08-10T00:00:00+01:00
-tags = ['sharepoint', 'webpart']
+tags = ['sharepoint', 'webparts']
 +++
 
 ## csegDocLibTools properties
@@ -15,8 +15,8 @@ Well, there is a preliminary version available, I’m testing it in my productio
 The properties are separated in two groups, the first group, contains the document library on which it works and the webpart if this is attached to one.
 
 
- ![](/images/Sharepoint/csegDocLibTools-Beta-prop1.gif)
- ![](/images/Sharepoint/csegDocLibTools-Beta-prop2.gif)
+ ![](/images/Sharepoint/csegDocLibTools-Beta-Prop1.gif)
+ ![](/images/Sharepoint/csegDocLibTools-Beta-Prop2.gif)
 
 The second group contains the webpart options. The four new options in the context menu, (Copy, Paste, Explore from here and Explore from root). There is also an option to show the files inside of the folder when the tree view is showed and an option to enable and disable the top menu.
 

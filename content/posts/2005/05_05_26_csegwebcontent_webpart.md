@@ -2,7 +2,7 @@
 title = 'Sharepoint – csegWebContent webpart'
 date = 2005-05-26T00:00:00+01:00
 draft = false
-tags = ['sharepoint', 'webpart']
+tags = ['sharepoint', 'webparts']
 +++
 
 This weekend I have been working in some improvements of the page viewer webpart and this is the result

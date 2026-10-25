@@ -6,11 +6,11 @@ tags = ['electronics', 'fonera', 'serial']
 
 Material - Un router la fonera.
 
-![](/images/Electronics/Fonera_serial1.jpg)
+![](/images/Electronics/fonera_serial1.jpg)
 
-![](/images/Electronics/Fonera_serial2.jpg)
+![](/images/Electronics/fonera_serial2.jpg)
 
-![](/images/Electronics/Fonera_serial3.jpg)
+![](/images/Electronics/fonera_serial3.jpg)
 
 
 Código

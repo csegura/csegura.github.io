@@ -1,7 +1,7 @@
 +++
 title = 'SparcStation Afternoon'
 date = 2024-12-28
-tags = ['retrocomputing', 'Sun', 'sparcstation5']
+tags = ['retrocomputing', 'sun', 'sparcstation5']
 +++
 
 

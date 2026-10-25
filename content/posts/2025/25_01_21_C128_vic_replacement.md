@@ -1,7 +1,7 @@
 +++
 title = 'C128 VICII video replacement'
 date = 2025-01-21
-tags = ['retrocomputing', 'C128', 'Commodore', 'VIC']
+tags = ['retrocomputing', 'c128', 'commodore', 'vic']
 +++
 
 ## C128 VIC video replacement

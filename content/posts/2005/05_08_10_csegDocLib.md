@@ -1,7 +1,7 @@
 +++
 title = 'csegDocLib'
 date = 2005-08-10T00:00:00+01:00
-tags = ['sharepoint', 'webpart']
+tags = ['sharepoint', 'webparts']
 +++
 
 ## Introducing csegDocLibTools
@@ -21,15 +21,15 @@ This weekend and some nights this week, I have a new webpart “**csegDocLibTool
 
 This first feature, is needed, of course documents and folders with your structure and with your metadata. Also I need copy and paste from a document library to another document library (in the same site). By example copy final documents to a new library.
 
-![](/images/SharePoint/csegDocLibCutAndPasteIdea.gif)
-![](/images/SharePoint/csegDocLibCutAndPasteFinal.gif)
+![](/images/Sharepoint/csegDocLibCutAndPasteIdea.gif)
+![](/images/Sharepoint/csegDocLibCutAndPasteFinal.gif)
 
 ## Explorer view
 
 I need a better explorer view than “folders.aspx”  (that in addition this link not exist in document libraries). But an explorer view from root folder in document libraries with many folders can be slow and large to show. And if my explorer view is in a diferent page I lose the context about what I am doing.
 
-![](/images/SharePoint/csegDocLibTreeIdea.gif)
-![](/images/SharePoint/csegDocLibTreeFinal1.gif)
+![](/images/Sharepoint/csegDocLibTreeIdea.gif)
+![](/images/Sharepoint/csegDocLibTreeFinal1.gif)
 
 ## Interface & Installation  
 

@@ -1,7 +1,8 @@
 +++
 title = 'csegRollUp v3 rc1'
 date = 2005-11-12T00:00:00+01:00
-tags = ['sharepoint', 'webpart']
+tags = ['sharepoint', 'webparts']
+aliases = ['/posts/2005/05_11_12_csegrollup_v3_rc1-copy/']
 +++
 
 I am finishing csegRollUp v3, at the moment some examples…. 

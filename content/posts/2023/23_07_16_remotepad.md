@@ -1,7 +1,7 @@
 +++
 title = 'RemotePad (Project Github Public)'
 date = 2023-07-16T00:00:00+01:00
-tags = ['node', 'c', 'X11', 'linux', 'remote']
+tags = ['node', 'c', 'x11', 'linux', 'remote']
 +++
 
 Crazy idea to draw over screen using any tablet or phone :-) of course on linux

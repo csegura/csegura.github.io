@@ -1,6 +1,6 @@
 +++
 title = 'NVidia Install (work notes)'
-date = 2022-09-23T07:07:07+01:00
+date = 2023-09-23T07:07:07+01:00
 draft = false
 tags = ['nvidia', 'docker', 'photon']
 +++

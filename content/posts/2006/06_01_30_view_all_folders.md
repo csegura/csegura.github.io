@@ -1,7 +1,7 @@
 +++
 title = 'View all folders in Document Libraries'
 date = 2006-01-27T00:00:00+01:00
-tags = ['sharepoint', 'webpart']
+tags = ['sharepoint', 'webparts']
 +++
 
 Some time ago I write a post with a little trick to add this “missed” option ["View all folders" in Document Libraries]. Now I have needed it in all my documents libraries and the best option is as always modify the list schema file.

@@ -1,4 +1,3 @@
-
 +++
 title = 'MVP Renewal'
 date = 2007-01-01T00:00:00+01:00

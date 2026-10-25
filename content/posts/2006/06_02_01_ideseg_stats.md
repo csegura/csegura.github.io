@@ -1,7 +1,7 @@
 +++
 title = 'ideseg stats'
 date = 2006-02-01T00:00:00+01:00
-tags = ['']
+tags = ['sharepoint']
 +++
 
 ![ideseg stats](/images/Sharepoint/stats-junary-2006-1.gif)

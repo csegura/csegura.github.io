@@ -1,7 +1,7 @@
 +++
 title = 'Replacing the 5.25" Disk Drive'
 date = 2025-03-29
-tags = ['retrocomputing', 'pc', 'disk']
+tags = ['retrocomputing', 'pc', 'disks']
 +++
 
 ## Replacing the 5.25" Disk Drive

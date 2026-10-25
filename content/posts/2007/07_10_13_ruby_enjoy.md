@@ -51,7 +51,7 @@ En cuanto a las ubicaciones del GPS, lo que he hecho es dejar un campo en cada e
 
   
 
-![](/images/Sharepoint/csegXBrain%25204.gif)
+![](/images/Sharepoint/csegXBrain_204.gif)
 
   
 
@@ -59,7 +59,7 @@ Yo lo que he tratado de hacer es mostrar la imagen de google maps, cuando se con
 
   
 
-![](/images/Sharepoint/csegXBrain%25205.gif)
+![](/images/Sharepoint/csegXBrain_205.gif)
 
   
 

@@ -1,7 +1,7 @@
 +++
 title = 'BDC Killer WebParts'
 date = 2008-01-14T00:00:00+01:00
-tags = ['sharepoint', 'webparts','bdc']
+tags = ['sharepoint', 'webparts', 'bdc']
 +++
 
 

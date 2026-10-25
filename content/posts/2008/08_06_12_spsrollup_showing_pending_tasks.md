@@ -6,7 +6,7 @@ tags = ['sharepoint', 'webparts']
 
 This is only a sample to show how we can use SPSRollUp to show the pending tasks from a list.
 
-![](/images/SharePoint/SPSRollUp_PendingTasks.gif)
+![](/images/Sharepoint/SPSRollUp_PendingTasks.gif)
  
 
 Select a Task list in the SPSRollUp properties, and select fields Title,DueDate and Status, check the include list data to get the url where you can edit the task item.

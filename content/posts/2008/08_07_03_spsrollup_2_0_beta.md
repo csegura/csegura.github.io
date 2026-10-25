@@ -10,8 +10,8 @@ Using SPSRollUp our customer can aggregate data from sub-projects and show all t
 
 These views shows as:
 
-![](/images/SharePoint/SPSRollUp_TaskCamp1.gif)
-![](/images/SharePoint/SPSRollUp_TaskCamp2.gif)
+![](/images/Sharepoint/SPSRollUp_TaskCamp1.gif)
+![](/images/Sharepoint/SPSRollUp_TaskCamp2.gif)
 
 To do it we are using two SPSRollUp webparts, the first one for the Late view, the CAML query is:
 

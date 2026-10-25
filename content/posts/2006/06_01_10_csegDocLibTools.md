@@ -1,7 +1,7 @@
 +++
 title = 'csegDocLibTools'
 date = 2006-01-10T00:00:00+01:00
-tags = ['sharepoint', 'webpart']
+tags = ['sharepoint', 'webparts']
 +++
 
 I have a stopped project that I want release in the nexts weeks, it’s called csegDocLibTools, this is a webpart to show a explorer like interface in document libraries and adds cut and paste features.

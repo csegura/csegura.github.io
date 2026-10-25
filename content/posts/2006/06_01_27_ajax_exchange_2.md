@@ -1,7 +1,7 @@
 +++
 title = 'Querying an exchange server'
 date = 2006-01-26T00:00:00+01:00
-tags = ['sharepoint', 'webpart']
+tags = ['sharepoint', 'webparts']
 +++
 
 We can use asynchronous data retrieval, inside of a WebContent webpart, this is a little sample of how to do it.

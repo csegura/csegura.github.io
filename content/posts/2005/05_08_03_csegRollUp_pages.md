@@ -1,7 +1,7 @@
 +++
 title = 'csegRollUp to support pages'
 date = 2005-08-03T00:00:00+01:00
-tags = ['sharepoint', 'webpart']
+tags = ['sharepoint', 'webparts']
 +++
 
 Yesterday looking a XML editor to edit complex xml files that I have in a Project that E&Y did in my company, I downloaded a trial version from  [Stylus Studio **XML** IDE](https://web.archive.org/web/20080613230259/http://www.ideseg.com/ct.ashx?id=d0576f81-0201-43f7-a89b-a56738e28f14&url=http%3a%2f%2fwww.stylusstudio.com%2findex.html) and I’m really surprised.  We could make a hard work in minutes. (Edit the data in a grid, sort the grid by levels and sublevels  etc...)  

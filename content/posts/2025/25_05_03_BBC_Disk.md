@@ -1,7 +1,7 @@
 +++
 title = 'BBC Disk field notes'
 date = 2025-05-03
-tags = ['retrocomputing', 'bbc', 'acorn', 'disk']
+tags = ['retrocomputing', 'bbc', 'acorn', 'disks']
 +++
 
 I recentrly bought a broken BBC Diskdrive and a Watford DFS disk controller card, to try to repair it. The disk drive is a dual 5.25" disk drive, and the controller card is a Watford Electronics DFS (Dual Disk Filing System) card version 1.54T.

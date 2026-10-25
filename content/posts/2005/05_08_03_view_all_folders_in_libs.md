@@ -1,7 +1,7 @@
 +++
 title = 'View all folders in Document Libraries'
 date = 2005-08-03T22:54:52+00:00
-tags = ['sharepoint', 'webpart']
+tags = ['sharepoint', 'webparts']
 +++
 
 There are things that I do not understand (too many) of SharePoint, today I have paid attention in the actions menu in image libraries, there is an action called “View all Folders” that not exist in document libraries, trying to solve this problem, I have had the idea to how to do a pretty webpart to **Copy and Paste** documents in documents libraries (this is in mind).

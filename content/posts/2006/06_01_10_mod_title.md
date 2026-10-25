@@ -1,7 +1,7 @@
 +++
 title = 'Modify title'
 date = 2006-01-10T00:00:00+01:00
-tags = ['sharepoint', 'webpart']
+tags = ['sharepoint', 'webparts']
 +++
 
 Lo primero advierto que esta practica no esta del todo recomendada. Pero seguro que en más de una ocasión os habéis encontrado con el problema que supone tener el campo Título pre-configurado por SharePoint, (por lo menos deja cambiarle el nombre) pero no deja de ser una limitación en muchos casos que el tipo predeterminado sea un campo alfanumérico de 255 caracteres.

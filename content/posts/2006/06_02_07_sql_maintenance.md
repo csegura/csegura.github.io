@@ -1,7 +1,7 @@
 +++
 title = 'SQL Maintenance'
 date = 2006-02-07T00:00:00+01:00
-tags = ['']
+tags = ['sharepoint', 'sql', 'maintenance']
 +++
 
 Hoy tocaba mantenimiento del Servidor SQL, revisión de espacio, compactación de bases de datos etc… (cosas del primer martes de cada mes) en fin una vez más nuestro portal crece desmesuradamente sobre todo el log de transacciones (como ocurre con todas las bbdd que se usan) así que como hoy no tenia nada más interesante que contar aquí quedan algunas de las tsqls que forman parte del pan de mantenimiento (yo prefiero hacerlo a mano, usando un PA en vez de usar el asistente programado, manias)

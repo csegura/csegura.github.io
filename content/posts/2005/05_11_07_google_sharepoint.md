@@ -81,7 +81,7 @@ Para ello he ideado un programa llamado "SiPaBu", SIstema PAranoico de BUsqueda 
 
 El programa se ejecuta en un bucle hasta que encuentra el documento que le hemos pedido, en caso de no encontrarlo, nos muestra los resultados que ha encontrado y nos pide que le indiquemos si el documento que buscamos se encuentra entre los resultados mostrados, si no es así, nos pide que le indiquemos que términos añadir a la búsqueda.
 
-![](/images/Sharepoint/SiPaBu.gig)
+![](/images/Sharepoint/SiPaBu.gif)
 
 Existen también otras posibilidades de búsqueda como :
 

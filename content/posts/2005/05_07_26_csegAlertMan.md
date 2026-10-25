@@ -1,7 +1,7 @@
 +++
 title = 'csegAlertMan'
 date = 2005-07-26T00:00:00+01:00
-tags = ['sharepoint', 'webpart']
+tags = ['sharepoint', 'webparts']
 +++
 
 I am working in three webparts for handling alerts in Sharepoint, as advance here is first of them. 

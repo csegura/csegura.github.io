@@ -1,7 +1,7 @@
 +++
 title = 'csegSearch Install'
 date = 2005-10-20T00:00:00+01:00
-tags = ['sharepoint', 'webpart']
+tags = ['sharepoint', 'webparts']
 +++
 
 1.- Load your search.aspx with http://server/search.aspx&Mode=Edit?PageView=Shared

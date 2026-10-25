@@ -1,7 +1,8 @@
 +++
 title = 'Multiple Templates'
 date = 2005-11-24T00:00:00+01:00
-tags = ['sharepoint', 'webpart']
+tags = ['sharepoint', 'webparts']
+aliases = ['/posts/2005/05_11_24_multiple_templates-copy/']
 +++
 
 I have a site with some document libraries to store documentation based in multiple templates, to save each template in the correct folder, I have created a custom list thats contains the name of the template, the template and the folder where documents created with this tempalte must be stored.

@@ -1,7 +1,7 @@
 +++
 title = 'cssegScriptWebPart'
 date = 2005-08-03T00:00:00+01:00
-tags = ['sharepoint', 'webpart']
+tags = ['sharepoint', 'webparts']
 +++
 
 Imagine test your webparts without compile, imagine an VBA for sharepoint, that was what I imagined yesterday and this is here... I have desire to say Yeahhhhh  

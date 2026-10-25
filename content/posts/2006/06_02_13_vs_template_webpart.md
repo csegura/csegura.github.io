@@ -1,7 +1,7 @@
 +++
 title = 'VS Template WebPart'
 date = 2006-02-13T00:00:00+01:00
-tags = ['']
+tags = ['sharepoint', 'webparts']
 +++
 
 Days ago I wrote about how to use msbee to do webparts with Visual Studio 2005, now the toolkit guys have a beta version, I have spent the weekend doing some tests with this beta release and now I’m doing my webparts using Visual Studio 2005. In the beginning I was using the external tools menu to launch the msbuild process with apropiate targets, and later launching other tool with the sign assembly process, finally I have modified the .csproj file because at the moment for SharePoint 2003 I only need use the Net 1.1 framework. Also I added at the Postbuild event the sign assembly process.
