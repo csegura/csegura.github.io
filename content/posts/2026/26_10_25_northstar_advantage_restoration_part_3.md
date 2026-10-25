@@ -3,11 +3,12 @@ title = 'NorthStar Advantage Restoration Part 3'
 date = 2026-10-25
 tags = ['retrocomputing', 'restoration', 'northstar', 'keyboard']
 draft = false
+description = "Replacing the worn foam-and-foil pads in the NorthStar Advantage's capacitive keyboard."
 +++
 
 This continues [NorthStar Advantage Restoration Part 2](/posts/2026/26_10_25_northstar_advantage_restoration_part_2/). This time, I focus on replacing the keyboard’s foam pads.
 
-I had to wait three months for the replacement pads to arrive. The first package was lost in transit, so I had to reorder them, which added to the delay.
+I had to wait three months for the replacement foam-and-foil pads to arrive. The first package was lost in transit, so I had to reorder them, which added to the delay.
 
 Once they were in hand, I could proceed with the restoration work on the keyboard.
 

@@ -61,6 +61,16 @@
 <meta property="og:description" content="{{ .Scratch.Get "description" }}" />
 <meta name="twitter:description" content="{{ .Scratch.Get "description" }}" />
 
+<!-- Structured data -->
+{{ if and .IsPage (eq .Section "posts") }}
+{{ $ld := dict "@context" "https://schema.org" "@type" "BlogPosting" "headline" .Title "description" (.Scratch.Get "description") "url" .Permalink "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00") "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00") "author" (dict "@type" "Person" "name" .Site.Params.brand) "mainEntityOfPage" .Permalink }}
+{{ with .Params.tags }}{{ $ld = merge $ld (dict "keywords" (delimit . ", ")) }}{{ end }}
+{{ with $.Site.Params.og_image }}{{ with resources.Get . }}{{ $ld = merge $ld (dict "image" .Permalink) }}{{ end }}{{ end }}
+<script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
+{{ else if .IsHome }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL "description" .Site.Params.Description | jsonify | safeJS }}</script>
+{{ end }}
+
 <!-- Link Tags -->
 <base href="{{ .Permalink }}" />
 <link rel="canonical" href="{{ .Permalink }}" itemprop="url" />

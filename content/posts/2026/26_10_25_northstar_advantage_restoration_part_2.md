@@ -3,6 +3,7 @@ title = 'NorthStar Advantage Restoration Part 2'
 date = 2026-10-25
 tags = ['retrocomputing', 'restoration', 'northstar', 'floppy-disk']
 draft = false
+description = "A closer look at the NorthStar Advantage's Tandon floppy drives and how hard-sectored disks mark sectors."
 +++
 
 ## Looking more closely at the drives
@@ -11,9 +12,15 @@ This continues [NorthStar Advantage Restoration Part 1](/posts/2026/26_10_25_nor
 
 Many computers from the late 1970s and early 1980s used 5¼-inch floppy drives. The Tandon TM100-2A is one example. These drives can become difficult to use as they age. Their radial alignment—the position of the read/write head across the disk’s tracks—can shift. If it moves far enough, the drive may not read or write disks reliably.
 
-The Tandon label identifies the drive in this photo as a TM100-2A. Tandon was an important maker of floppy drives during the early personal-computer era. The TM100-2A is a 5¼-inch drive, and the photograph shows its exposed mechanism, including a wheel marked for 50Hz and 60Hz operation. Its inspection labels and metal parts show age and grime, but I do not see obvious major damage. I am documenting the drive as part of this restoration; the photos do not show the results of any alignment or repair work.
+Further, find hard coded disk media for these old drives nowadays is very difficult, as it was used only for a few years and not much computer equipment supported it. Since 1984, with teh PC introduction and the rise of IBM-compatible systems, the use of hard-sectored disks declined rapidly, making them rare and hard to source today.
+
+The Tandon label identifies the drive in this photo as a TM100-2A. Tandon was an important maker of floppy drives during the early personal-computer era. The TM100-2A is a 5¼-inch drive, and the photograph shows its exposed mechanism, including a wheel marked for 50Hz and 60Hz calibration. A colleage tought me to calibrate the wheel for proper operation on an Apple 2 time ago. Its inspection labels and metal parts show age and grime, but I do not see obvious major damage. I am documenting the drive as part of this restoration.
 
 ![Open Tandon TM100-2A floppy drive with slotted wheel and inspection labels.](https://i.imgur.com/OWifgNP.jpeg)
+
+![Specs](https://retrocmp.de/fdd/tandon/tm100-specs.png)
+
+Upper image Tandon TM100-2A  drive's specifications from Thomas Brase's retro computing website.
 
 ## What is a sector?
 
@@ -29,7 +36,7 @@ Disks that use these physical holes are called **hard-sectored** disks. Here, �
 
 ## Shugart-style drives and hard-sector timing
 
-Shugart Associates helped establish an important design for small floppy drives. Alan Shugart founded the company in 1973, and the company’s SA-400, released in 1976, helped make the 5¼-inch drive size popular. Shugart-style drives and interfaces mattered because other computer makers could use a common approach to connecting and controlling drives.
+Shugart Associates helped establish an important design for small floppy drives. Alan Shugart founded the company in 1973, he invented the 8'' floppy disk at IBM and later founded Shugart Associates to produce floppy drives for the emerging personal-computer market. Shugart-style drives and interfaces mattered because other computer makers could use a common approach to connecting and controlling drives.
 
 In the NorthStar Advantage setup I am discussing, the drives use a Shugart-style design with hard-sector timing. These are related ideas, but they are not the same thing. “Shugart-style” describes the drive and its control interface. “Hard-sector” describes how the disk marks the positions of its sectors.
 
@@ -37,9 +44,11 @@ That distinction is useful when looking at old drive electronics. A compatible i
 
 The images here do not show a hard-sectored disk or its holes, so they cannot confirm the media format by themselves. The point is how the Advantage’s hard-sector arrangement works, not that every 5¼-inch drive in these photos must use hard-sectored disks.
 
-## The drive electronics
+Thomas Brase, has a good explanation of hard-sector timing and its relation to Shugart-style drives on his website. The image below illustrates the concept of hard-sector holes on a disk.
 
-This board is marked TANDON, so I can identify it as a Tandon floppy-drive circuit board. The exact drive model is not visible. Tandon made drives for computers during the period when 5¼-inch disks were becoming common. 
+![](https://retrocmp.de/fdd/8inch/hardsector_2.jpg)
+
+## The drive electronics
 
 The board looks aged and has some dust, but no clear damage or repair is visible. I am recording its condition while inspecting the drive assembly.
 
