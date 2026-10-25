@@ -20,7 +20,7 @@ The Advantage is an early-1980s computer made by North Star Computers. It follow
 
 This computer appeared around 1982 in the early 1980s as a high-end personal computer with integrated graphics and storage. Was the front image of the by at that time annual computer catalog.
 
-![Catalog image of the NorthStar Advantage computer.](/images/unsorted/Guia1983.jpg)
+![Catalog image of the NorthStar Advantage computer.](/images/unsorted/guia_1983.jpg)
 
 
 ## What the Advantage could do
