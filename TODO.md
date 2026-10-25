@@ -1,4 +1,6 @@
 - [ ] Decide on `broken/06_02_20_mdx_generator.md_`: restore to `content/posts/2006/` or delete
+- [ ] Missing images: `MSBee1.gif`, `ADPiPickerVideo.gif`, `CCP2_Publish2.gif`, `SPSRollUpTipImages.gif` (files are not in `static/images/Sharepoint/`)
+- [ ] Check the `c` tag (used once, next to `c#`) and the 89 tags used only once
+- [ ] Convert `content/about/about.md` front matter from YAML to TOML
 - [ ] Set a real `email_url` in `hugo.toml` if wanted
-- [ ] Normalize tag case and duplicates across posts
 - [ ] Review the generated post descriptions on the live site
