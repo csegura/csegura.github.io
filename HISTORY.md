@@ -19,3 +19,5 @@
 - Update the workflow actions (checkout v7, configure-pages v6, upload-pages-artifact v5, deploy-pages v5) to remove the Node.js 20 deprecation warnings.
 - Show a thumbnail next to each post on the front page (`layouts/index.html`, `assets/css/custom.css`): the `image` front matter, else the first image in the post.
 - Add an "Other sites" menu section with an external link to asm.romheat.net.
+- Style the sidebar "Recent" label as a section label (uppercase, smaller, lighter) so it no longer looks like a disabled link.
+- Reorder the sidebar menu (About, Other sites, Posts, Tags) and compact it on desktop (smaller avatar, one-line recent titles, no horizontal overflow) so the whole menu fits without scrolling.

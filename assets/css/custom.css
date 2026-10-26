@@ -56,3 +56,50 @@ code, pre {
         height: 10rem;
     }
 }
+
+
+/* Sidebar: show the "Recent" label as a section label, not as a disabled link */
+.sub-heading {
+    color: var(--sidebar-a-color);
+    opacity: 0.7;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+
+/* Sidebar: compact on desktop so the whole menu fits without scrolling */
+@media (min-width: 48em) {
+    .sidebar {
+        padding-top: 0.6rem;
+        padding-bottom: 0.4rem;
+        overflow-x: hidden;
+    }
+
+    .sidebar-about img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .sidebar-about h1 {
+        margin-top: 0.4rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .sidebar .lead {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .sidebar .bullet {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .sidebar-nav li {
+        line-height: 1.35;
+    }
+}

@@ -23,10 +23,10 @@ ignoreLogs = ['warning-goldmark-raw-html']
         # Limit:        If the files should be listed, how many should be shown.
     menu = [
         {Name = "About", URL = "/about/", HasChildren = false},
-        {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
-        {Name = "Tags", URL = "/tags/", Pre = "Recent", HasChildren = true, Limit = 5},
         {Name = "Other sites", URL = ""},
         {Name = "ASM", URL = "https://asm.romheat.net", External = true},
+        {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
+        {Name = "Tags", URL = "/tags/", Pre = "Recent", HasChildren = true, Limit = 5},
     ]
     front_page_content = ["posts"] # Equivalent to the default value, add page bundle names to include them on the front page.
 
