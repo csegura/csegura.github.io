@@ -11,7 +11,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
 [params]
     brand = "romheat"                      # name of your site - appears in the sidebar
     brand_image = "/images/me.png"    # path to the image shown in the sidebar
-    description = "Personal blog about software, SharePoint, retro computing and electronics." # Used as default meta description if not specified in front matter
+    description = "Personal blog about my hobbies" # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
 
