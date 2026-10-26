@@ -13,3 +13,46 @@ html {
 code, pre {   
     font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
 }
+
+/* Front page: post summary with a thumbnail */
+.post-card {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.post-summary {
+    flex: 1;
+    min-width: 0;
+}
+
+.post-thumb {
+    flex: 0 0 11rem;
+}
+
+.post-thumb img {
+    width: 100%;
+    height: 7.5rem;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+
+.has-thumb .post-summary img {
+    display: none;
+}
+
+@media (max-width: 40rem) {
+    .post-card {
+        flex-direction: column-reverse;
+    }
+
+    .post-thumb {
+        flex-basis: auto;
+        width: 100%;
+    }
+
+    .post-thumb img {
+        height: 10rem;
+    }
+}

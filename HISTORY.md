@@ -15,3 +15,7 @@
 - Add a 1200x630 social image (`assets/og-image.png`) as the default `og_image`; the 460x460 avatar looked poor when shared.
 - Add JSON-LD in the meta partial override: `BlogPosting` for posts, `WebSite` for the home page, so search engines get dates, keywords and image.
 - Add `description` to the four NorthStar posts; the first paragraph is only a fallback.
+
+- Update the workflow actions (checkout v7, configure-pages v6, upload-pages-artifact v5, deploy-pages v5) to remove the Node.js 20 deprecation warnings.
+- Show a thumbnail next to each post on the front page (`layouts/index.html`, `assets/css/custom.css`): the `image` front matter, else the first image in the post.
+- Add an "Other sites" menu section with an external link to asm.romheat.net.

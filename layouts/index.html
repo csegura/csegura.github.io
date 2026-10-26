@@ -1,0 +1,37 @@
+{{ define "main" -}}
+<div class="posts">
+    {{ $frontPageTypes := default (slice "posts") .Site.Params.front_page_content }}
+    {{ range (.Paginate (where .Site.RegularPages "Type" "in" $frontPageTypes)).Pages }}
+    {{ $post := . }}
+    {{ $thumb := .Params.image }}
+    {{ if not $thumb }}
+        {{ with findRESubmatch `!\[[^\]]*\]\(([^)\s]*(?:\([^)]*\)[^)\s]*)*)\)` .RawContent 1 }}
+            {{ $thumb = index (index . 0) 1 }}
+        {{ end }}
+    {{ end }}
+    <article class="post{{ if $thumb }} has-thumb{{ end }}">
+        {{ partial "post/info.html" . }}
+        <div class="post-card">
+            {{ with $thumb }}
+            <a class="post-thumb" href="{{ $post.RelPermalink }}" tabindex="-1" aria-hidden="true">
+                <img src="{{ . }}" alt="" loading="lazy">
+            </a>
+            {{ end }}
+            <div class="post-summary">
+                {{ if or (.Site.Params.noSummary) (.Params.noSummary) }}
+                {{ .Content }}
+                {{ else }}
+                {{ .Summary }}
+                {{ if .Truncated }}
+                <div class="read-more-link">
+                    <a href="{{ .RelPermalink }}">Read More…</a>
+                </div>
+                {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </article>
+    {{- end }}
+</div>
+{{ partial "pagination.html" . }}
+{{- end }}
