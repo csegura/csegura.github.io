@@ -18,7 +18,7 @@ The restoration took longer than expected, but it was a great journey to bring t
 
 The Advantage is an early-1980s computer made by North Star Computers. It followed the company’s earlier Horizon system, but put the computer, screen, keyboard, and two floppy drives in one case. That all-in-one design made it a complete workstation in a single unit. Its graphics were also an important feature for the time.
 
-This computer appeared around 1982 in the early 1980s as a high-end personal computer with integrated graphics and storage. Was the front image of the by at that time annual computer catalog.
+This computer appeared around 1982 in the early 1980s as a high-end personal computer with integrated graphics and storage. It was the image on the front cover of that year’s computer catalog..
 
 ![Catalog image of the NorthStar Advantage computer.](/images/unsorted/guia_1983.jpg)
 

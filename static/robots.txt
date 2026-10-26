@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://csegura.github.io/sitemap.xml
+Sitemap: https://blog.romheat.net/sitemap.xml
