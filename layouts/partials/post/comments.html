@@ -1,0 +1,56 @@
+<div class="comments">
+    {{ $g := .Site.Params.giscus }}
+    {{ if and $g $g.category_id (eq .Section "posts") (ne .Params.comments false) }}
+        <script src="https://giscus.app/client.js"
+                data-repo="{{ $g.repo }}"
+                data-repo-id="{{ $g.repo_id }}"
+                data-category="{{ $g.category }}"
+                data-category-id="{{ $g.category_id }}"
+                data-mapping="pathname"
+                data-strict="1"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="top"
+                data-theme="{{ if .Site.Params.dark_mode }}dark{{ else }}light{{ end }}"
+                data-lang="en"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+        </script>
+        <script>
+            (function () {
+                function current() {
+                    var saved = localStorage.getItem("theme");
+                    if (saved) return saved === "dark" ? "dark" : "light";
+                    return document.body.classList.contains("dark-theme") ? "dark" : "light";
+                }
+                function send(theme) {
+                    var frame = document.querySelector("iframe.giscus-frame");
+                    if (frame) frame.contentWindow.postMessage({ giscus: { setConfig: { theme: theme } } }, "https://giscus.app");
+                }
+                window.addEventListener("message", function (e) {
+                    if (e.origin === "https://giscus.app" && e.data && e.data.giscus) send(current());
+                });
+                new MutationObserver(function () { send(current()); })
+                    .observe(document.body, { attributes: true, attributeFilter: ["class"] });
+            })();
+        </script>
+    {{ else if .Site.Params.remark42 }}
+        <div id="remark42"></div>
+        <script>
+            themeFromLS = localStorage.getItem("theme")
+            themeFromHugo = document.body.classList.contains("dark-theme") ? "dark" : "light"
+            currentTheme = themeFromLS ? themeFromLS : themeFromHugo;
+
+            var remark_config = {
+                host: {{ site.Params.remark42_host }},
+                site_id: {{ site.Params.remark42_site_id }},
+                theme: currentTheme,
+                max_shown_comments: 100,
+            }
+        </script>
+        <script>!function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);</script>
+    {{ else if .Site.Config.Services.Disqus.Shortname }}
+        {{ template "_internal/disqus.html" . }}
+    {{ end }}
+</div>

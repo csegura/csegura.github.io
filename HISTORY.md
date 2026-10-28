@@ -21,3 +21,4 @@
 - Add an "Other sites" menu section with an external link to asm.romheat.net.
 - Style the sidebar "Recent" label as a section label (uppercase, smaller, lighter) so it no longer looks like a disabled link.
 - Reorder the sidebar menu (About, Other sites, Posts, Tags) and compact it on desktop (smaller avatar, one-line recent titles, no horizontal overflow) so the whole menu fits without scrolling.
+- Add Giscus comments (GitHub Discussions, category Announcements) on posts through a `layouts/partials/post/comments.html` override; a post can opt out with `comments = false`.

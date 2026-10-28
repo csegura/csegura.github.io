@@ -109,3 +109,10 @@ ignoreLogs = ['warning-goldmark-raw-html']
 [services]
     [services.googleAnalytics]
         id = "G-M8V8X35D3F"
+
+# Comments: Giscus (GitHub Discussions). Comments show only when category_id is set.
+[params.giscus]
+    repo = "csegura/csegura.github.io"
+    repo_id = "R_kgDOMMA1oQ"
+    category = "Announcements"
+    category_id = "DIC_kwDOMMA1oc4DJ0Ao"
