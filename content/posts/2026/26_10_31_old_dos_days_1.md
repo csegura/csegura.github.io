@@ -10,7 +10,7 @@ I'm working on an emulator for old dos systems, trying to let an agent play with
 
 By the way, I have reviewed some of my old DOS CLIPPER projects; The disk was not in very good condition, and many files were corrupted or unreadable but I was able to recover a few of them and it brought back a lot of memories.
 
-![Defragmented Disk](/static/images/unsorted/clipper/defrag.png)
+![Defragmented Disk](/images/unsorted/clipper/defrag.png)
 
 ## CAMES
 
@@ -18,21 +18,21 @@ CAMES was a construction company responsible for excavation and other constructi
 
 I did two times the program because the day that they saw it the first time they changed their requirements and wanted additional features. So I also thought that I could do it better and I began rewriting and enhancing the system to meet their new demands. It was a valuable learning experience in handling client feedback and adapting to evolving project needs. This was 1989, and it marked the beginning of my journey into professional software development.
 
-![CAMES Database](/static/images/unsorted/clipper/cames1.png)
-![CAMES Database](/static/images/unsorted/clipper/cames2.png)
-![CAMES Database](/static/images/unsorted/clipper/cames3.png)
+![CAMES Database](/images/unsorted/clipper/cames1.png)
+![CAMES Database](/images/unsorted/clipper/cames2.png)
+![CAMES Database](/images/unsorted/clipper/cames3.png)
 
 The second one was for a comercial agent "HERIAS Representaciones". This project involved creating a database to manage their client interactions, track orders, and receips.
 
-![HERIAS Database](/static/images/unsorted/clipper/herias1.png)
-![HERIAS Database](/static/images/unsorted/clipper/herias2.png)
+![HERIAS Database](/images/unsorted/clipper/herias1.png)
+![HERIAS Database](/images/unsorted/clipper/herias2.png)
 
 
 ## QUATTRO INFORMATICA Y GESTIÓN (1990)
 
 Later I began to work in a software company called "QUATTRO INFORMATICA Y GESTIÓN". Indeed it was a company tat originally was working with COBOL, I was finishing my studies and I don´t remember exactly how I ended up teaching Clipper there, also the owner helped me a lot with my accounting knowledge.
 
-![Reindex](/static/images/unsorted/clipper/reindex.png)
+![Reindex](/images/unsorted/clipper/reindex.png)
 
 I worked on various projects there, mainly focused on developing and maintaining business applications using Clipper.
 
@@ -44,15 +44,15 @@ Here  some examples of how the "Behaviors system" was used in different modules 
 
 You defined the keys and their corresponding actions for each module, and the "Behaviors system" would automatically handle the execution of these actions, ensuring consistent behavior throughout the application.
 
-![Behaviors System](/static/images/unsorted/clipper/motos1.png)
+![Behaviors System](/images/unsorted/clipper/motos1.png)
 
 Also many parts of the application benefited from the "Behaviors system", making it easier to implement consistent functionality and reducing the amount of repetitive code across different modules.
 
-![Behaviors System](/static/images/unsorted/clipper/code1.png)
+![Behaviors System](/images/unsorted/clipper/code1.png)
 
 Manual
 
-![Behaviors System](/static/images/unsorted/clipper/code3.png)
+![Behaviors System](/images/unsorted/clipper/code3.png)
 
 And of course, my favorite editor then was MultiEdit, was an incredible editor where you can create macros in your own language, automating repetitive tasks and enhancing productivity.
 
@@ -64,23 +64,23 @@ During this period, I learned a 4GL (Fourth Generation Language) called MultiBas
 
 I worked hard, to have a full accounting package developed using MultiBase, covering modules such as general ledger, accounts payable, accounts receivable, and inventory management.
 
-![MultiBase Accounting Package](/static/images/unsorted/clipper/conta1.png)
+![MultiBase Accounting Package](/images/unsorted/clipper/conta1.png)
 
-![MultiBase Accounting Package](/static/images/unsorted/clipper/conta2.png)
+![MultiBase Accounting Package](/images/unsorted/clipper/conta2.png)
 
-![MultiBase Accounting Package](/static/images/unsorted/clipper/conta3.png)
+![MultiBase Accounting Package](/images/unsorted/clipper/conta3.png)
 
-![MultiBase Accounting Package](/static/images/unsorted/clipper/fac2.png)
+![MultiBase Accounting Package](/images/unsorted/clipper/fac2.png)
 
-![MultiBase Accounting Package](/static/images/unsorted/clipper/fac3.png)
+![MultiBase Accounting Package](/images/unsorted/clipper/fac3.png)
 
 Sorry for the colors, multibase was like informix and had a TERMCAP configuration for terminal colors. I of course had my own configuration but I did´t find it to take the screenshot correctly.
 
 Check the code below for an example of how the MultiBase accounting package was implemented:
 
-![MultiBase Code Example](/static/images/unsorted/clipper/code_mbase.png)   
+![MultiBase Code Example](/images/unsorted/clipper/code_mbase.png)   
 
-![MultiBase Code Example](/static/images/unsorted/clipper/code_mbase2.png)
+![MultiBase Code Example](/images/unsorted/clipper/code_mbase2.png)
 
 
 
