@@ -44,7 +44,7 @@ Here  some examples of how the "Behaviors system" was used in different modules 
 
 You defined the keys and their corresponding actions for each module, and the "Behaviors system" would automatically handle the execution of these actions, ensuring consistent behavior throughout the application.
 
-![Behaviors System](/images/unsorted/clipper/motos1.png)
+![Behaviors System](/images/unsorted/clipper/motos.png)
 
 Also many parts of the application benefited from the "Behaviors system", making it easier to implement consistent functionality and reducing the amount of repetitive code across different modules.
 
