@@ -22,3 +22,5 @@
 - Style the sidebar "Recent" label as a section label (uppercase, smaller, lighter) so it no longer looks like a disabled link.
 - Reorder the sidebar menu (About, Other sites, Posts, Tags) and compact it on desktop (smaller avatar, one-line recent titles, no horizontal overflow) so the whole menu fits without scrolling.
 - Add Giscus comments (GitHub Discussions, category Announcements) on posts through a `layouts/partials/post/comments.html` override; a post can opt out with `comments = false`.
+- Add an EMUX86 external link under ASM in the "Other sites" menu.
+- Add two articles about the emu_x86 emulator (`26_11_15_emu_x86_part_1_*`, `part_2_*`) with six project screenshots in `static/images/emu_x86/`. The source repository is private, so the articles link only to the public demo and the emu_x86-disks repository.
