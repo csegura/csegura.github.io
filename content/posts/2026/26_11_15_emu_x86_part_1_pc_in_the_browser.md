@@ -1,88 +1,100 @@
 +++
-title = 'emu_x86 Part 1: An IBM PC/XT and a 386 PC in the Browser'
+title = 'emu_x86 Part 1: A PC in Your Browser'
 date = 2026-11-15
 tags = ['retrocomputing', 'emulation', 'emu_x86', 'webassembly', 'dos']
-description = "emu_x86 is a new emulator of an IBM PC/XT and a 386 PC, written in portable C. It runs in a web page and boots DOS, Windows and old Linux."
+description = "emu_x86 emulates an IBM PC/XT and a 386 PC in a web page. How to try it, load disks, save your work and use the keyboard, mouse and sound."
 draft = false
 +++
 
-I have just finished a new project: **emu_x86**, an emulator of two classic PCs. The same C code runs in a web page (as WebAssembly) and on Linux, so you can open a link and have a DOS computer on the screen. Nothing is installed on your computer.
+I have just finished a new project: **emu_x86**, an emulator of two classic PCs: an **IBM PC/XT** (Intel 8088) and a **386 PC** (it can also be a 486, a Pentium or a Pentium II). The same C code runs in a web page, compiled to WebAssembly, and on Linux. So you can open a link and have a DOS computer on the screen. Nothing is installed on your computer.
 
-You can try it now: **[a 386 PC that boots FreeDOS](https://emux86.romheat.net/?machine=386&hdd=https://blog.romheat.net/emu_x86-disks/freedos-hd.img.gz)** from a small hard disk image. Click the screen to type.
+This is the first of three articles. This one is for the person who wants to use it. [Part 2](/posts/2026/26_11_15_emu_x86_part_2_tools/) covers the tools around the emulator (disk manager, debugger, network, Linux window and a command line for scripts). [Part 3](/posts/2026/26_11_16_emu_x86_part_3_inside_the_emulator/) is about how it works inside.
+
+## Try it
+
+Open the **[live demo](https://emux86.romheat.net/?machine=386&hdd=https://blog.romheat.net/emu_x86-disks/freedos-hd.img.gz)**.
+
+1. Wait while the disk downloads (about 8 MB). A box over the screen shows how much has arrived.
+2. The 386 PC boots FreeDOS and shows `C:\>`.
+3. Click the screen. The light in the **Keyboard** panel comes on: your keys now go to the PC.
+4. Type `DIR` and press Enter.
 
 ![The 386 PC in the browser, booted from a FreeDOS hard disk.](/images/emu_x86/page-386.png)
 
-This is the first of two articles. This one tells what the emulator is and how the two PCs were built. [Part 2](/posts/2026/26_11_15_emu_x86_part_2_tools/) covers the tools around it: a disk manager, a debugger, a command line for scripts and a native window.
+They boot MS-DOS, FreeDOS, Windows 3.1, Windows 3.11, Windows 95 and old versions of Linux and FreeBSD from ordinary disk images. MS-DOS and Windows are not part of the project: you bring your own disks. Free FreeDOS images for both PCs are in a [separate repository](https://github.com/csegura/emu_x86-disks).
 
-## The two PCs
+## The page
 
-| | IBM PC/XT | 386 PC |
+- **The top bar** has the controls you use while the PC runs: the screen size, **Power**, **Pause**, **Reset**, **Ctrl+Alt+Del**, **Screenshot**, **Copy**, **Paste** and **Full screen**.
+- **The screen** is on the left. Click it to type into the PC.
+- **The side column** has three panels: **PC** (the machine, the sound, network and mouse buttons, and links to the debugger and the disk manager), **Disks**, and **Keyboard**.
+
+The page follows the light or dark theme of your system.
+
+## Choose the machine
+
+The **PC** panel shows the machine in one line, such as `AT 386 · Pentium II · 64 MB · PCI RTL8029 · Maximum`. **Change** opens the settings:
+
+![The PC panel with its settings open.](/images/emu_x86/pc-panel.png)
+
+| Setting | Choices | Notes |
 | --- | --- | --- |
-| CPU | Intel 8088, 4.77 MHz | 386 (also 486, Pentium or Pentium II) |
-| Firmware | GLaBIOS | SeaBIOS and SeaVGABIOS |
-| Video | MDA and CGA | VGA with VESA modes up to 1600x1200 |
-| Sound | PC speaker | PC speaker, Sound Blaster 16 with FM |
-| Disks | Floppies, a hard disk, a CD-ROM | Floppies, an IDE hard disk, a bootable CD-ROM |
-| Network | NE1000 | RTL8029 or NE2000 |
-| RAM | 640 KB | 16 MB by default |
+| Machine | IBM PC/XT (8088), AT 386 (SeaBIOS) | The XT runs DOS and programs for the first PCs. The 386 also runs Windows and Linux. |
+| CPU | 386, 486, Pentium, Pentium II | 386 PC only. Linux 6 and FreeBSD 14 need the Pentium II. Some old DOS programs want the 386. |
+| RAM | 16 to 512 MB (`?ram=` in the address takes 4 to 1024) | 386 PC only. Windows 95 wants 64 MB, Linux 6 and FreeBSD 256 MB. |
+| Card | PCI RTL8029, ISA NE2000 | 386 PC only. |
+| Speed | 4.77 MHz (real) on the XT or 33 MHz (real) on the 386, 2x, 5x, 10x, Maximum | The first choice is the speed of the real machine. Maximum runs as fast as your computer can. |
 
-Both PCs reach the Internet through a small network inside the server, so a DOS web browser or an FTP client in the PC works. They boot MS-DOS, FreeDOS, Windows 3.1, Windows 3.11, Windows 95, and old versions of Linux and FreeBSD from ordinary disk images. MS-DOS and Windows are not part of the project: you bring your own disks. Free FreeDOS images for both PCs are in a [separate repository](https://github.com/csegura/emu_x86-disks).
+![The XT booted from the FreeDOS floppy.](/images/emu_x86/page-xt.png)
 
-## One core, two hosts
+The XT above runs the FreeDOS boot floppy from drive A:.
 
-The emulator core is portable C with no calls to the operating system. That is what lets the same code run in two places:
+## Disks
 
-- in the browser, compiled to WebAssembly with Emscripten, with a web page of plain HTML and ES modules around it;
-- on Linux, as a command line program and as a native SDL2 window.
+![The Disks panel with FreeDOS in C:.](/images/emu_x86/disks-panel.png)
 
-The command line build matters more than it seems. All the tests run there, with no browser, and it is the base of the scripting tool in Part 2.
+Each drive has a line in the **Disks** panel: floppies A: and B:, the hard disk C:, and the CD-ROM or a second hard disk D:. **Mount** puts a disk in the drive: **Load file…** takes an image from your computer (**Load ISO…** on the CD-ROM line), and there are also images from the server (when you run it yourself) or from a web address. An image whose name ends in `.gz` is unpacked in the browser, which makes a smaller download.
 
-## Starting with the XT
+- A floppy image can be 160 KB up to 2.88 MB. A hard disk image is a complete disk with a partition table, as DOS makes it.
+- A disk from your computer stays in your browser, also after a reload, until you eject it. A hard disk over 256 MB is not kept.
+- **Save** downloads the changed image. The PC works on a copy, so nothing changes on your computer until you save.
+- **Add** puts files on the disk. On C: and D: the PC restarts so that DOS sees them. On A: and B: it keeps running. Long names are kept for Windows 95 and Linux, and DOS sees a short name.
+- The 386 PC has room for the CD-ROM *or* a second hard disk, not both. The **Secondary IDE slot** chooses.
 
-I began with the IBM PC/XT because MS-DOS 1.x to 6.x runs on it and it has the smallest scope. For the 8088 I did not write a new core. I took the one from [VirtualXT](https://codeberg.org/virtualxt/virtualxt), which already passes the full SingleStepTests suite for the 8088, and kept it unchanged. The rest is the chipset around it: the interrupt controller, the timer, the DMA controller, the keyboard, the floppy controller, and MDA and CGA video.
+**CD-ROM.** Mount an ISO image on the CD-ROM line. On the 386 any ATAPI CD driver works (FreeDOS has UDVD2), and you can tick **Boot from the CD first**. On the XT no normal CD driver runs on an 8088, so emu_x86 has its own, `EMUCD.SYS`. The CD-ROM reads data discs and does not play audio.
 
-Getting the chips to talk to a real BIOS took small details. GLaBIOS checks the DMA counter at the end of the memory test and reports an error if the refresh requests of the timer did not arrive. It also reads only one of the four interrupts that a floppy reset leaves, so the stale ones answered its first recalibrate and failed the self test. None of this is in a data book. The BIOS found it.
+## Keyboard, mouse and sound
 
-## The 386 core
+- **Keyboard.** Click the screen to give the keys to the PC, and click outside to take them back. The page sends the position of each key, as a real keyboard does, so the PC uses the layout that DOS loaded. With a Spanish keyboard, run `KEYB SP` in DOS.
+- **Paste** types the text of your clipboard into the PC. It presses keys, so set the paste layout (US or Spanish) to the one that DOS uses. A character with no key in that layout is skipped, and the page says so.
+- **Copy:** hold Shift and drag on the screen to select text, then press Copy or Ctrl+Shift+C. This works in text modes. In graphics modes, such as Windows, use **Screenshot**.
+- **Mouse.** Press **Mouse**, then click the screen. DOS needs a mouse driver (CTMOUSE in FreeDOS). Press Esc to get the pointer back.
+- **Sound.** The PC speaker, and on the 386 a Sound Blaster 16 with FM music. Browsers start sound only after a click on the page.
 
-For the 386 there was no core to borrow: VirtualXT has no 386 mode, and the other cores I know are GPL, which would change the licence of the project. So the 386 core is new. It supports real mode, protected mode, V86 mode, paging (also PAE on the Pentium II model) and a 387 FPU. It is an interpreter. Each segment register keeps a descriptor cache, and a fault leaves the state of the first byte of the instruction.
+## Link to a ready PC
 
-How do you know a CPU core is right? Two sources:
+You can add settings to the address of the page, which is handy for bookmarks and links, as in the demo above.
 
-- The **SingleStepTests** data for the 80386 gives the result of each instruction on a real 386EX. I took undefined behaviour from this data and not from the manuals, for example the flags after a shift.
-- The SingleStepTests have no protected mode. For that, small test programs print their exception frames and registers, and a script compares the output with `qemu-system-i386`. The programs avoid the few things where QEMU differs from the real chip.
+| Add | Does |
+| --- | --- |
+| `?machine=386` | the 386 PC (`xt` for the XT) |
+| `&cpu=686` | the chip: `386`, `486`, `586` (Pentium), `686` (Pentium II) |
+| `&ram=256` | the memory of the 386 PC in MB |
+| `&hdd=...` | a hard disk in C:, a server image or a full web address |
+| `&a=...`, `&b=...`, `&cd=...` | floppies and a CD image |
 
-The 486, Pentium and Pentium II models are one core with a switch. An instruction from a later chip raises an invalid opcode error on an earlier model, so a program that detects the CPU sees the right one.
+## Online or on your own computer
 
-## Making a PC that SeaBIOS accepts
+The online page has no server behind it. For some things you need to run emu_x86 on your own computer, where a small Python server (it listens on your computer only) adds:
 
-For the 386 PC I use SeaBIOS, the BIOS of QEMU. This decided the shape of the hardware. SeaBIOS finds the disks and the video ROM only through PCI, and it decides that it runs on QEMU from the id of the host bridge. So the 386 PC is a QEMU look-alike: a 440FX host bridge, a PIIX3 ISA bridge with an IDE function, and a standard VGA with the Bochs VESA extensions.
+- **Save to server**, which writes your changes back to the image file in your `disks` folder. It sends only the chunks that changed, so it is quick on a big disk, and it makes one backup of the original the first time;
+- the **disk manager** (see Part 2);
+- the **network**, so a DOS web browser or an FTP client in the PC reaches the Internet.
 
-One detail cost me some time: SeaBIOS prints nothing until the port 402h answers E9h on a read. Until I found that, it looked like a hang.
-
-Other small facts came the same way. The CPU keeps the segment limit on a real-mode segment load, because HIMEM uses "unreal mode" and looped for ever without it. SeaBIOS uses the BSWAP instruction in its CD code. BSWAP is a 486 instruction, and the CD boot crashed on the 386. Accepting BSWAP in the CPU would let the 386 run code that a real 386 cannot, so I patched SeaBIOS to swap bytes in C instead.
-
-## What runs on it
-
-The list grew by testing real systems:
-
-- **MS-DOS 6.22** boots in about 30 seconds in the browser. EMM386 gives expanded memory, and programs built with DJGPP and Watcom run under it.
-- **Windows 3.11** installs from an ISO image on a new disk, after MS-DOS 6.22 was installed from its setup floppies. It runs in standard and 386 enhanced mode, with DOS boxes and the mouse. This test found two faults in the core: a streamed disk write that stayed busy, and the 16-bit TSS that Windows loads in standard mode.
-- **Linux 2.2.16** (Slackware 7.1) boots to a shell. Linux drives the floppy controller itself and polls the disk change line, which read as "changed" all the time, so it never loaded the root disk.
-- **FreeBSD** boots as well, after the IDE bus master registers were added. Its disk driver resets a channel through them and panicked without.
-
-Each of these runs found a bug that no unit test had found, which is the reason I keep trying bigger systems.
-
-## Sound, disks and speed
-
-The PC speaker is sampled into 22050 Hz frames, so both tones and programs that toggle the speaker bit themselves can be heard. The 386 adds a Sound Blaster 16, with FM synthesis written from the YM3812 data sheet. It is not bit exact. The page plays one stream per machine with an AudioWorklet.
-
-Disk images up to 256 MB are copied into WebAssembly memory and kept in the browser (IndexedDB). A bigger 386 disk is streamed: the IDE controller keeps a cache of 64 KB chunks and stays busy while the page reads a missing chunk from the file, or from a web address with range requests. A 1 GB disk then needs only a few requests. CD images are always streamed.
-
-The core is an interpreter. It runs about 20 million instructions per second on a native build and about 15 million in the page. The emulated 386 is set to 10 million per second, so a guest is not slow; it is just not fast. The profile of a long Linux boot shows that the next big step for speed is a cache of decoded instructions.
+The source code is not public yet, so for now the online demo is the way to try it.
 
 ## Limits
 
-The XT has MDA and CGA only. The 386 core runs no MMX and SSE, has no NX bit and no APIC. The CD-ROM reads data discs only, no audio. The network has no IPv6. The source code is not public yet.
+The FM music is close to, but not the same as, a real Sound Blaster, and the Sound Blaster does not record. The CD-ROM reads data discs only. A hard disk of 256 MB or less runs from memory. A bigger one is read from its file when the PC needs it, which can be slower.
 
-In [Part 2](/posts/2026/26_11_15_emu_x86_part_2_tools/) I describe the disk manager, the debugger, `emuctl` and the native window.
+Next: [Part 2, the tools](/posts/2026/26_11_15_emu_x86_part_2_tools/).

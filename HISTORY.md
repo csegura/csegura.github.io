@@ -24,3 +24,5 @@
 - Add Giscus comments (GitHub Discussions, category Announcements) on posts through a `layouts/partials/post/comments.html` override; a post can opt out with `comments = false`.
 - Add an EMUX86 external link under ASM in the "Other sites" menu.
 - Add two articles about the emu_x86 emulator (`26_11_15_emu_x86_part_1_*`, `part_2_*`) with six project screenshots in `static/images/emu_x86/`. The source repository is private, so the articles link only to the public demo and the emu_x86-disks repository.
+- Rewrite the emu_x86 articles after the project docs changed: Part 1 (using the emulator), Part 2 (disk manager, debugger, network, Linux window, emuctl) and a new Part 3 (inside the emulator). Parts 1 and 2 keep their addresses.
+- Update the emu_x86 articles to the changed project docs: speed and RAM labels, formatted disk types, watch memory, and the ISA card for DOS and Windows 95.
