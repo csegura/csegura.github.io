@@ -24,8 +24,9 @@ ignoreLogs = ['warning-goldmark-raw-html']
     menu = [
         {Name = "About", URL = "/about/", HasChildren = false},
         {Name = "Other sites", URL = ""},
-        {Name = "ASM", URL = "https://asm.romheat.net", External = true},
-        {Name = "EMUX86", URL = "https://emux86.romheat.net/?machine=386&hdd=https://blog.romheat.net/emu_x86-disks/freedos-hd.img", External = true},
+        {Name = "ASM Course", URL = "https://asm.romheat.net", External = true},
+        {Name = "xt/at Emulator", URL = "https://emux86.romheat.net/?machine=386&hdd=https://blog.romheat.net/emu_x86-disks/freedos-hd.img", External = true},
+        {Name = "NorthStar Emulator", URL = "https://emuns.romheat.net/?a=CPMBASIC_120.NSI&hd=MS30D-30MB.NHD", External = true},
         {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
         {Name = "Tags", URL = "/tags/", Pre = "Recent", HasChildren = true, Limit = 5},
     ]
