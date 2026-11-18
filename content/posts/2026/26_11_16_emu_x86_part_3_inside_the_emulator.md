@@ -1,6 +1,6 @@
 +++
 title = 'emu_x86 Part 3: Inside the Emulator'
-date = 2026-11-16
+date = 2026-11-16T12:01:00+01:00
 tags = ['retrocomputing', 'emulation', 'emu_x86', 'webassembly', 'x86']
 description = "How emu_x86 is built: one portable C core, the 8088 and 386 CPUs, how they were tested, SeaBIOS, disks, speed, and the bugs that real systems found."
 draft = false
