@@ -2,9 +2,8 @@
 title = 'Old DOS Days 1'
 date = 2026-10-31
 tags = ['retrocomputing', 'dos']
+image = "/images/unsorted/clipper/code1.png"
 +++
-
-# Old DOS Days 1
 
 I'm working on an emulator for old dos systems, trying to let an agent play with it. Maybe let it finish some projects that I started back in the day.
 
