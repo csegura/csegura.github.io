@@ -18,17 +18,17 @@ I've maintained always a preference for using original hardware when possible, b
 
 I found a wonderful 3D designing tool, I have asked a friend to print it for me, to fit it in the Advantage’s drive bays. The pieces in this photo include flat panels, side walls, holes and slots. They have visible print layers, but look intact. 
 
-![Dark 3D-printed drive enclosure parts arranged on a green surface.](https://i.imgur.com/H1CU7Ns.jpeg)
+![Dark 3D-printed drive enclosure parts arranged on a green surface.](/images/photos/H1CU7Ns.jpg)
 
 A 3D-printed case gives me a way to make a shape that fits the computer and the gotek. It also lets me place openings for the controls and connectors. I do not have a printer model, print settings, or exact case measurements to share here. 
 
-![Open electronics enclosure beside 3D-printed replacement case parts.](https://i.imgur.com/OKFfFfW.jpeg)
+![Open electronics enclosure beside 3D-printed replacement case parts.](/images/photos/OKFfFfW.jpg)
 
 ## The Gotek board and its controls
 
 I bought the Gotek board separately, with oled display included and rotary encoder for control. The rotary encoder allows for navigating menus and selecting options on the display, providing a user-friendly interface for managing disk images.
 
-![Open Gotek emulator board wired inside a black drive enclosure.](https://i.imgur.com/0r5uJd2.jpeg)
+![Open Gotek emulator board wired inside a black drive enclosure.](/images/photos/0r5uJd2.jpg)
 
 The Gotek’s original firmware is the software that controls how the device behaves. I have replaced the firmware as part of this project. Different firmware can change how an emulator handles disk images and controls. I need one able to emulate the hard coded sector layout of the original floppy drives used in the NorthStar Advantage.
 
@@ -38,31 +38,31 @@ FlashFloppy is a popular replacement firmware for Gotek floppy emulators. It all
 
 I am also working with a separate red LED.  It gives a simple visual signal when a device is active.
 
-![Close-up of a red LED attached to a black wire on green fabric.](https://i.imgur.com/ctmDxXM.jpeg)
+![Close-up of a red LED attached to a black wire on green fabric.](/images/photos/ctmDxXM.jpg)
 
-![Close-up of colored wires and a small plastic patch inside a black 3D-printed enclosure.](https://i.imgur.com/6p4gy2E.jpeg)
+![Close-up of colored wires and a small plastic patch inside a black 3D-printed enclosure.](/images/photos/6p4gy2E.jpg)
 
 ## Checking the fit and front panel
 
 Here the Gotek board sits inside a black enclosure with a front panel. 
 
-![Open Gotek board and wiring in a black enclosure on green surface.](https://i.imgur.com/564Yjx9.jpeg)
+![Open Gotek board and wiring in a black enclosure on green surface.](/images/photos/564Yjx9.jpg)
 
 And this is the view of the front panel with the enclosure in place.
 
-![Open black 3D-printed drive enclosure with exposed circuit board and controls.](https://i.imgur.com/qTE06Ac.jpeg)
+![Open black 3D-printed drive enclosure with exposed circuit board and controls.](/images/photos/qTE06Ac.jpg)
 
 Looks great !!!
 
-![Two 3D-printed Gotek drive fronts inside a vintage computer.](https://i.imgur.com/dZ4phmm.jpeg)
+![Two 3D-printed Gotek drive fronts inside a vintage computer.](/images/photos/dZ4phmm.jpg)
 
 As system use two drives, it is important to ensure that both Gotek emulators are properly connected and recognized by the Advantage.
 
-![Close-up of a Gotek circuit board, connectors, and attached cables.](https://i.imgur.com/m5Jk04P.jpeg)
+![Close-up of a Gotek circuit board, connectors, and attached cables.](/images/photos/m5Jk04P.jpg)
 
 ## Testing in the Advantage
 
 
-![CRT screen displaying North Star Graphics DOS startup text.](https://i.imgur.com/Z1vXBE4.jpeg)
+![CRT screen displaying North Star Graphics DOS startup text.](/images/photos/Z1vXBE4.jpg)
 
 WORKS AMAZINGLY !!!!

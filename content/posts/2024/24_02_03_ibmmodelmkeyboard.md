@@ -7,9 +7,9 @@ tags = ['retrocomputing', 'ibm', 'hardware', 'keyboard']
 
 I have been repairing the model m keyboard, but not lucky this time. The membrane is broken and I have to replace it. I have to find a replacement membrane.
 
-![Model M](https://i.imgur.com/ZmDpXkr.jpg?1)
+![Model M](/images/photos/ZmDpXkr.jpg?1)
 
-![Model M](https://i.imgur.com/E3ozOSm.jpg)
+![Model M](/images/photos/E3ozOSm.jpg)
 
 {{< youtube HUPSx_GZwGc >}}
 

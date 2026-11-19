@@ -87,27 +87,27 @@ sy sync
 ..
 ```
 
-![1](https://imgur.com/gGn7yY9.jpeg)
+![1](/images/photos/gGn7yY9.jpg)
 
 Reboot the computer and go to `Install System Software`
 
 ## Installing the Software
 
-![2](https://imgur.com/n1ILUGn.jpeg)
+![2](/images/photos/n1ILUGn.jpg)
 
-![3](https://imgur.com/tgICVd2.jpeg)
+![3](/images/photos/tgICVd2.jpg)
 
-![4](https://imgur.com/cnp9A8U.jpeg)
+![4](/images/photos/cnp9A8U.jpg)
 
-![5](https://imgur.com/zODHHy9.jpeg)
-
-
-![6](https://imgur.com/tHKaqNz.jpeg)
+![5](/images/photos/zODHHy9.jpg)
 
 
-![7](https://imgur.com/jdwRNhs.jpeg)
+![6](/images/photos/tHKaqNz.jpg)
 
-![8](https://imgur.com/qSDPUb1.jpeg)
 
-![9](https://imgur.com/6IvZB2R.jpeg)
+![7](/images/photos/jdwRNhs.jpg)
+
+![8](/images/photos/qSDPUb1.jpg)
+
+![9](/images/photos/6IvZB2R.jpg)
 

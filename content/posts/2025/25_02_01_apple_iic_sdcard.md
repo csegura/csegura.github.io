@@ -18,10 +18,10 @@ The best thing is that you can use the SD card to load programs quickly, and you
 
 Some pics;
 
-![SpIISD](https://i.imgur.com/eOJ5K8R.jpg)
-![SPIISD](https://i.imgur.com/4jXJJGP.jpg)
+![SpIISD](/images/photos/eOJ5K8R.jpg)
+![SPIISD](/images/photos/4jXJJGP.jpg)
 
-![Apple IIc](https://i.imgur.com/bvQEYxZ.jpg)
+![Apple IIc](/images/photos/bvQEYxZ.jpg)
 
 ## Disk Images
 

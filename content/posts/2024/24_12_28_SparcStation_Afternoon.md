@@ -5,21 +5,21 @@ tags = ['retrocomputing', 'sun', 'sparcstation5']
 +++
 
 
-![](https://imgur.com/1XN3Rmt.png)
+![](/images/photos/1XN3Rmt.jpg)
 
 Some pictures about second attempt to install T2/Sde 24.12 on my Sun SparcStation 5.
 
-![](https://imgur.com/d3wvGAv.png)
-![](https://imgur.com/dyvty0t.png)
-![](https://imgur.com/LTi6lBz.png)
-![](https://imgur.com/As35aCD.png)
-![](https://imgur.com/ExKFBlQ.png)
-![](https://imgur.com/vPRXQcX.png)
-![](https://imgur.com/5bQTlyr.png)
+![](/images/photos/d3wvGAv.jpg)
+![](/images/photos/dyvty0t.jpg)
+![](/images/photos/LTi6lBz.jpg)
+![](/images/photos/As35aCD.jpg)
+![](/images/photos/ExKFBlQ.jpg)
+![](/images/photos/vPRXQcX.jpg)
+![](/images/photos/5bQTlyr.jpg)
 
 And the final result, the system crashed during the installation, with the whatchdog timer error.
 
-![](https://imgur.com/lgr1lmu.png)
+![](/images/photos/lgr1lmu.jpg)
 
 
 # A Technical Overview of the Sun SPARCstation 5

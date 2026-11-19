@@ -8,7 +8,7 @@ tags = ['retrocomputing', 'c128', 'commodore', 'vic']
 
 After spent a lot of hours trying to fix the video signal on my C128, checking signals, replacing capacitors, replacing the RF modulator with the TSH7316 module etc.. and with the cues that each try gave me, I've decided to replace the VIC-II chip. The VIC-II chip is the video controller chip used in the C128.
 
-![VIC-II](https://imgur.com/sffkCkt.jpg)
+![VIC-II](/images/photos/sffkCkt.jpg)
 
 [Documentation](https://en.wikipedia.org/wiki/MOS_Technology_VIC-II)
 
@@ -16,25 +16,25 @@ After spent a lot of hours trying to fix the video signal on my C128, checking s
 
 The main problem was that the video signal was faded, dull, it was dificult to see the letters on the screen and in C64 mode the screen was almost impossible to read.
 
-![Screen_C128](https://i.imgur.com/1CbRadV.jpg)
+![Screen_C128](/images/photos/1CbRadV.jpg)
 
 ## Replacing the VIC-II chip
 
 So I bought a new VIC-II chip and replaced the old one. The new chip is a 8566R3X. The old one was a 8566R3, its seems that the R3X is a newer version of the R3 but I can't find any information about the differences between them.
 
-![8566R3X](https://i.imgur.com/z5A2KPQ.jpg)
+![8566R3X](/images/photos/z5A2KPQ.jpg)
 
 An this is the result. The video signal is now perfect. The letters are sharp and the colors are bright. 
 
-![C64](https://i.imgur.com/QOz5UgQ.jpg)
+![C64](/images/photos/QOz5UgQ.jpg)
 
-![128](https://i.imgur.com/zb67d8f.jpg)
+![128](/images/photos/zb67d8f.jpg)
 
 This phoths were taken using the mos7801 that comes with the C128. And below with the TOLB (The other lilttle board) module to see if the video signal is better.
 
-![C64_2](https://i.imgur.com/QOz5UgQ.jpg)
+![C64_2](/images/photos/QOz5UgQ.jpg)
 
-![TSH](https://i.imgur.com/UABouIp.jpg)
+![TSH](/images/photos/UABouIp.jpg)
 
 The TOBL module is a little board that replaces the mos7801 with an ICS-525 clock chip. The ICS-525 can generate clock signals based on a programmable input. It's versatile and commonly used in systems requiring stable clock signals, like video game consoles or computers.
 
@@ -42,7 +42,7 @@ The TOBL module is a little board that replaces the mos7801 with an ICS-525 cloc
 
 As screen I'm using one normal computer with a unexpensive RGB to USB capture dongle. Using mplayer to capture the video signal.
 
-![Cable](https://i.imgur.com/yoqasxl.jpg)
-![Connection](https://i.imgur.com/BQWVLqP.jpg)
+![Cable](/images/photos/yoqasxl.jpg)
+![Connection](/images/photos/BQWVLqP.jpg)
  
 

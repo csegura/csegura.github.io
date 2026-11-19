@@ -15,16 +15,16 @@ The light bar is a narrow assembly in the front of the case. Its lights make the
 
 I opened the white plastic light-bar housing and removed its circuit board. A circuit board is a flat support that holds electronic parts and connects them with copper paths. This board has four white caps over the light positions. The caps help cover or diffuse the light.
 
-![Disassembled white computer light-bar housing with green circuit board and four caps.](https://i.imgur.com/EwHw2Bu.jpeg)
+![Disassembled white computer light-bar housing with green circuit board and four caps.](/images/photos/EwHw2Bu.jpg)
 
 The housing is marked “013-0918-001 REV C.” The board reads “94V-0 034-0949-001,” with other small codes nearby. The parts look intact, but lights don´t work as intended.
 
-![Two small indicator-light components resting on blue-gray fabric.](https://i.imgur.com/1MRk1uI.jpeg)
+![Two small indicator-light components resting on blue-gray fabric.](/images/photos/1MRk1uI.jpg)
 
 
 Here is a closer look at the board, with its copper paths, solder pads, and metal leads. Solder is a metal used to make electrical connections between components and a board.
 
-![Close-up of a marked green circuit board with protruding metal leads.](https://i.imgur.com/kkcnlHP.jpeg)
+![Close-up of a marked green circuit board with protruding metal leads.](/images/photos/kkcnlHP.jpg)
 
 The board has a rough-looking edge and some residue near its solder points. I do not see clear evidence of major damage. The labels and markings are useful clues, but they do not identify the board’s maker.
 
@@ -46,7 +46,7 @@ The result is 72 ohms. I used an 82-ohm resistor to leave some margin below the 
 
 Before fitting the LEDs, I tested them on a solderless breadboard. The photo shows blue and amber LEDs lit, along with resistors and jumper wires. I was indecisive about the color choice and wanted to see how each would look in practice before committing to the final selection.
 
-![Blue and amber LEDs glowing in a breadboard test circuit.](https://i.imgur.com/Fp8OfnQ.jpeg)
+![Blue and amber LEDs glowing in a breadboard test circuit.](/images/photos/Fp8OfnQ.jpg)
 
 The temporary circuit let me compare the LEDs and see how they looked with resistors. The blue and amber lights are bright in the dim photo, but the camera cannot show how they look in normal room light. I chose blue for the Octane. I wanted it to be bright enough for my desk at home, and I expect it will also work in most offices.
 
@@ -56,13 +56,13 @@ Finally I added a 220-ohm resistor to the temporary circuit to see how it affect
 
 The next photo shows two blue LEDs fitted at the board positions marked DS1 and DS2. These markings identify the LED locations on the board. The blue LED lenses are rounded, and their leads extend above the board.
 
-![Two blue LEDs soldered to a board labeled DS1 and DS2.](https://i.imgur.com/4kgB3rW.jpeg)
+![Two blue LEDs soldered to a board labeled DS1 and DS2.](/images/photos/4kgB3rW.jpg)
 
 The solder joints look uneven, but I do not see an obvious break in the board. The image does not clearly show the resistors, so I cannot confirm their positions from this view. The board appears to be the Octane light-bar board based on the project context, though no SGI name is visible on it.
 
 I added two resistors for the two LEDs. Each resistor limits the current through its LED. The close-up shows blue-bodied, banded resistors beside the LEDs. The bands are used to mark a resistor’s value, but I cannot read them clearly in the photo. <!-- TODO: confirm the resistor values visible on the finished board -->
 
-![Two blue LEDs and resistors soldered to a narrow circuit board.](https://i.imgur.com/4Y3psvV.jpeg)
+![Two blue LEDs and resistors soldered to a narrow circuit board.](/images/photos/4Y3psvV.jpg)
 
 This is a simple circuit change, but the details matter. The LEDs must face the correct way, and the resistors must be in the circuit so the LEDs do not draw excessive current. I used 82-ohm resistors because that gave me a balance between safe current and useful brightness. I also wanted the light to suit a desktop environment, rather than be as bright as possible.
 
@@ -70,7 +70,7 @@ This is a simple circuit change, but the details matter. The LEDs must face the 
 
 The last photo shows two blue LEDs inside the opened white light-bar housing on the Octane’s front panel. The housing sits below the black ventilation grille. There is some dust and wear around the surrounding metal, but no obvious major damage.
 
-![Two blue LEDs fitted inside an opened white light bar on a gray computer case.](https://i.imgur.com/8PRSSzJ.jpeg)
+![Two blue LEDs fitted inside an opened white light bar on a gray computer case.](/images/photos/8PRSSzJ.jpg)
 
  The completed assembly looks like a practical update to a small part of the workstation. I chose the blue LEDs for their appearance, but the resistor choice was also important. Without suitable current limiting, the LEDs could be damaged quickly.
 

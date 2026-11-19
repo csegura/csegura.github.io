@@ -8,9 +8,9 @@ I'm restoring this wonderful IBM XT 5150, machine powered up, but there wasn't o
 
 I ordered it on march 2024, and it arrived on may 2024. It was a great solution for my problem. I'm very happy with it.
 
-![ISA-PicoMem](https://imgur.com/ofRBe7F.jpg)
+![ISA-PicoMem](/images/photos/ofRBe7F.jpg)
 
-![ISA-PicoMem](https://imgur.com/s1e85DD.jpg)
+![ISA-PicoMem](/images/photos/s1e85DD.jpg)
 
 Finally, I could boot from an image using the card, after that I tried to format the hard drive and the surprise is that it was working
 
@@ -44,12 +44,12 @@ int 13h
 int 3
 -g=100
 ```
-![Format1](https://i.imgur.com/XJqf66p.jpg)
-![Format2](https://i.imgur.com/Xo4Ho5H.jpg)
+![Format1](/images/photos/XJqf66p.jpg)
+![Format2](/images/photos/Xo4Ho5H.jpg)
 
 ## mTCP
 
-![TCPIP](https://i.imgur.com/XkLLI3S.jpg)
+![TCPIP](/images/photos/XkLLI3S.jpg)
 
 
 

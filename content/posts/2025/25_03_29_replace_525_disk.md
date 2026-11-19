@@ -10,13 +10,13 @@ I have a 5.25" disk drive that is not working properly. I have tried to clean th
 
 The new disk drive is a Panasonic JU-475-5, (1.2Mb). I also found the full service manual for it, just in case. 
 
-![New disk](https://imgur.com/jbhfXNr.jpg)
+![New disk](/images/photos/jbhfXNr.jpg)
 
 The installation is quite simple, just remove the old disk drive and install the new one. The disk drive is connected to the disk controller card, and it is powered by the power supply of the computer.
 
-![Old Ibm disk](https://imgur.com/b5BE9XC.jpg)
+![Old Ibm disk](/images/photos/b5BE9XC.jpg)
 
-![Compare](https://imgur.com/jbhfXNr.jpg)
+![Compare](/images/photos/jbhfXNr.jpg)
 
 ## DS/DD Disks
 
@@ -35,7 +35,7 @@ A standard 360KB 5.25-inch double-sided, double-density (DSDD) floppy disk in MS
 - Interleave Factor: Typically 1:1. This means that sequential logical sectors are also physically sequential on the track. Older systems with slower controllers might have used a higher interleave (e.g., 2:1 or 3:1) to give the controller time to process data between reading sectors. However, for most standard PC systems with 360K drives, 1:1 was common.
 - Data Encoding: Modified Frequency Modulation (MFM)
 
-![ImageDisk](https://imgur.com/x9THyng.jpg)
+![ImageDisk](/images/photos/x9THyng.jpg)
 
 Early Floppy Disks used FM (Frequency Modulation): The very first floppy disk systems used FM encoding, often referred to as "single density." FM encoding was simpler to implement but less efficient in terms of storage capacity.   
 
@@ -52,7 +52,7 @@ them.
 format b: /f:360
 ```
 
-![Formated](https://imgur.com/XjLvrcT.jpg)
+![Formated](/images/photos/XjLvrcT.jpg)
 
 
 ## DS/HD Disks
@@ -72,7 +72,7 @@ soooo IMD again,
 - Interleave: **1:1**
 - Capacity: 1,228,800 bytes (1.2MB)
 
-![RecoverHD](https://imgur.com/CAAHU80.jpg)
+![RecoverHD](/images/photos/CAAHU80.jpg)
 
 I tried the same process with the DS/HD disks, but I was unable to recover the disk. So I have to use other program called "Omnidisk" 
 
@@ -88,7 +88,7 @@ FORMAT
 
 Finally 
 
-![Finally](https://imgur.com/JcUB8sq.jpg)
+![Finally](/images/photos/JcUB8sq.jpg)
 
 
 ## Parameters

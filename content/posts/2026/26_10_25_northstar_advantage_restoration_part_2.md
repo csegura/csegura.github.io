@@ -16,7 +16,7 @@ Further, find hard coded disk media for these old drives nowadays is very diffic
 
 The Tandon label identifies the drive in this photo as a TM100-2A. Tandon was an important maker of floppy drives during the early personal-computer era. The TM100-2A is a 5¼-inch drive, and the photograph shows its exposed mechanism, including a wheel marked for 50Hz and 60Hz calibration. A colleage tought me to calibrate the wheel for proper operation on an Apple 2 time ago. Its inspection labels and metal parts show age and grime, but I do not see obvious major damage. I am documenting the drive as part of this restoration.
 
-![Open Tandon TM100-2A floppy drive with slotted wheel and inspection labels.](https://i.imgur.com/OWifgNP.jpeg)
+![Open Tandon TM100-2A floppy drive with slotted wheel and inspection labels.](/images/photos/OWifgNP.jpg)
 
 ![Specs](https://retrocmp.de/fdd/tandon/tm100-specs.png)
 
@@ -52,14 +52,14 @@ Thomas Brase, has a good explanation of hard-sector timing and its relation to S
 
 The board looks aged and has some dust, but no clear damage or repair is visible. I am recording its condition while inspecting the drive assembly.
 
-![Vintage floppy-drive circuit board with components and wiring.](https://i.imgur.com/7OaA8kJ.jpeg)
+![Vintage floppy-drive circuit board with components and wiring.](/images/photos/7OaA8kJ.jpg)
 
-![Close-up of a Tandon floppy-drive circuit board and metal mechanism.](https://i.imgur.com/vvGFQl3.jpeg)
+![Close-up of a Tandon floppy-drive circuit board and metal mechanism.](/images/photos/vvGFQl3.jpg)
 
-![Dusty vintage electronics circuit board with chips and ribbon cables.](https://i.imgur.com/tJKrSKw.jpeg)
+![Dusty vintage electronics circuit board with chips and ribbon cables.](/images/photos/tJKrSKw.jpg)
 
-![Close-up of an aged circuit board with chips, connectors, and wires.](https://i.imgur.com/Ova9sv4.jpeg)
+![Close-up of an aged circuit board with chips, connectors, and wires.](/images/photos/Ova9sv4.jpg)
 
 The case with the drive assembly removed, showing the internal components.
 
-![Open vintage computer hardware with circuit boards, transformer, and metal drive assembly on a workbench.](https://i.imgur.com/JNiW2Rh.jpeg)
+![Open vintage computer hardware with circuit boards, transformer, and metal drive assembly on a workbench.](/images/photos/JNiW2Rh.jpg)

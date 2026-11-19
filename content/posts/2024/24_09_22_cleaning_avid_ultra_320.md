@@ -18,14 +18,14 @@ The drives are in good condition, but they have been sitting in storage for a wh
 I started by cleaning the drives with a microfiber cloth. I removed any dust and dirt from the drives. I then used a can of compressed air to blow out any remaining dust from the drives.
 
 
-![IBM-Ultrastar-dirty](https://imgur.com/IC9V8Yc.jpg)
-![Fan](https://imgur.com/cwKYM8R.jpg)
-![Disk-Label](https://imgur.com/xzvXK9Y.jpg)
+![IBM-Ultrastar-dirty](/images/photos/IC9V8Yc.jpg)
+![Fan](/images/photos/cwKYM8R.jpg)
+![Disk-Label](/images/photos/xzvXK9Y.jpg)
 
-![Cleaned](https://imgur.com/QE4HLIe.jpg)
-![Cleaned2](https://imgur.com/QE4HLIe.jpg)
-![Cleaned3](https://imgur.com/I2p0Qmd.jpg)
+![Cleaned](/images/photos/QE4HLIe.jpg)
+![Cleaned2](/images/photos/QE4HLIe.jpg)
+![Cleaned3](/images/photos/I2p0Qmd.jpg)
 
-![Unit](https://imgur.com/9v5J2nD.jpg)
-![Unit1](https://imgur.com/XmmRU9r.jpg)
+![Unit](/images/photos/9v5J2nD.jpg)
+![Unit1](/images/photos/XmmRU9r.jpg)
 

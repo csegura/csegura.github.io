@@ -18,14 +18,14 @@ There are not many places that sell these specific foam-and-foil pads, so findin
 
 I found these pads from Texelec, a supplier known for capacitive keyboard components.
 
-![Texelec foam-and-foil capacitive pads in a clear bag on green.](https://i.imgur.com/nCihOb0.jpeg)
+![Texelec foam-and-foil capacitive pads in a clear bag on green.](/images/photos/nCihOb0.jpg)
 
 ## Taking the key mechanisms apart
 
 With the keyboard disassembled and cleaned, the key mechanisms are ready for new foam-and-foil pads.
 
-![Disassembled keyboard mechanisms arranged beside a precision screwdriver.](https://i.imgur.com/jfDR2DV.jpeg)
+![Disassembled keyboard mechanisms arranged beside a precision screwdriver.](/images/photos/jfDR2DV.jpg)
 
 
-![Black housings with round pads and white inserts arranged on a workbench.](https://i.imgur.com/O21YNJP.jpeg)
+![Black housings with round pads and white inserts arranged on a workbench.](/images/photos/O21YNJP.jpg)
 

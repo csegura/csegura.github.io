@@ -6,20 +6,20 @@ tags = ['retrocomputing', 'bbc', 'acorn', 'disks']
 
 I recentrly bought a broken BBC Diskdrive and a Watford DFS disk controller card, to try to repair it. The disk drive is a dual 5.25" disk drive, and the controller card is a Watford Electronics DFS (Dual Disk Filing System) card version 1.54T.
 
-![BBC Disk Drive](https://i.imgur.com/zhAvJhK.png)
+![BBC Disk Drive](/images/photos/zhAvJhK.jpg)
 
 
 The unit comes with two different disk drives, a Mitsubishi MF503A and a Mitsubishi M4853-342MG. Each drive has a switch on the front panel to select between single-density (40 tracks) and double-density (80 tracks) operation. 
 
 Each drive’s track density is 96 tracks-per-inch (for 80-track mode), but they are also switchable to emulate 48 TPI 40-track operation for compatibility. The rotational speed is fixed at 300 RPM for double-density operation, which is standard for 5.25″ DD. At this speed, one revolution takes 200 ms, and at the double-density data rate of 250 kb/s, roughly 5 KB of data can be read per rotation (enough for up to 18 × 256-byte sectors). In single-density FM mode (used by the original Acorn DFS), the data rate is half (125 kb/s), and the standard format is 10 × 256-byte sectors. 
 
-![Disk 0](https://i.imgur.com/MlnR1M1.jpeg)
-![Disk 1](https://i.imgur.com/PUh14l1.jpeg)
+![Disk 0](/images/photos/MlnR1M1.jpg)
+![Disk 1](/images/photos/PUh14l1.jpg)
 
-![Disks models](https://i.imgur.com/V0Jhnlu.jpeg)
+![Disks models](/images/photos/V0Jhnlu.jpg)
 
-![Disk0a](https://i.imgur.com/tfmsOKY.jpeg)
-![Disk1a](https://i.imgur.com/2dyQ2RI.jpeg)
+![Disk0a](/images/photos/tfmsOKY.jpg)
+![Disk1a](/images/photos/2dyQ2RI.jpg)
 
 
 Mitsubishi drives were considered high-speed for their era – reading Watford’s documentation notes that these half-height drives offer faster access than older full-height units, and the BBC Micro can optimize for their speed via configuration links or FX commands. 
@@ -39,7 +39,7 @@ After performing the modifications (if necessary) to link S9 the next step is to
 
 Las step add the ROM
 
-![Controller Card](https://i.imgur.com/UP8czhV.jpeg)
+![Controller Card](/images/photos/UP8czhV.jpg)
 
 ## Drive Hardware and 40/80-Track Compatibility
 
