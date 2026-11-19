@@ -2,6 +2,7 @@
 title = 'CEUS, TTT, Code Camp'
 date = 2006-10-31T00:00:00+01:00
 tags = ['sharepoint']
+htmlLang = 'es'
 +++
 
 A TOPE, El jueves 26, se celebro la Segunda conferencia de usuarios de SharePoint, en donde intervine durante la mañana (un poco nervioso, como es lógico ya que había 300 personas y no estoy acostumbrado a una audiencia tan numerosa), quiero dar las gracias a Rafael Sanchez, jefe de producto de SharePoint y como no a los fenómenos de preventa, Oscar y Pablo por su ayuda.

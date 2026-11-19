@@ -2,6 +2,7 @@
 title = 'Vista usará gafas'
 date = 2007-09-25T00:00:00+02:00
 tags = ['misc']
+htmlLang = 'es'
 +++
 
 Vista usará gafas  

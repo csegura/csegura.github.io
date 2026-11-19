@@ -2,6 +2,7 @@
 title = 'Arduino LC24XX EPROM (paginated 2)'
 date = '2011-03-04T00:00:00+01:00'
 tags = ['electronics', 'arduino', 'eprom']
+htmlLang = 'es'
 +++
 Finalmente he hecho una biblioteca I2C_eeprom.
 Hay una parte que merece una explicación es el hecho de que estas memorias EEPROM tienen un modo de escritura más rápida (Page Write), en este modo podemos escribir 64bytes de golpe con lo que el proceso de escritura es considerablemente más rápido.

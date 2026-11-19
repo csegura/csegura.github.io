@@ -2,6 +2,7 @@
 title = 'Unit Testing 2'
 date = 2007-09-03T00:00:00+02:00
 tags = ['tests']
+htmlLang = 'es'
 +++
 
 Como comentaba hace unos días, realizar pruebas unitarias usando mocks, no se siempre la mejor solución, personalmente, creo que no se debe abusar de ellos y usarlos para todo.

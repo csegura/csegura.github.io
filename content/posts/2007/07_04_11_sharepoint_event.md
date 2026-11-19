@@ -2,6 +2,7 @@
 title = 'Sharepoint 2007 Event'
 date = 2007-04-11T00:00:00+02:00
 tags = ['sharepoint', 'navarradotnet']
+htmlLang = 'es'
 +++
 
 El próximo Jueves día 19 de Abril, tendremos un nuevo evento de NavarraDotNet en el Centro de Excelencia de Software (Pol. Industrial Mocholí, Plaza CEIN).

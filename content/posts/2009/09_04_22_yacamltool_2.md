@@ -2,6 +2,7 @@
 title = 'YACAMLQT (Yet another CAML query tool) Redux (2)'
 date = '2009-04-22T00:00:00+02:00'
 tags = ['sharepoint', 'caml', 'caml.net', 'yacamlqt']
+htmlLang = 'es'
 +++
 
 Habíamos visto la parte relacionada con el Lexer el analizador morfológico. Como es obvio detrás debe haber un analizador sintáctico y semántico el [Parser](https://web.archive.org/web/20130904001414/http://en.wikipedia.org/wiki/Parsing).

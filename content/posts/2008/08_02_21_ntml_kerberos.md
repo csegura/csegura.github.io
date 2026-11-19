@@ -2,6 +2,7 @@
 title = 'NTML y Kerberos'
 date = 2008-02-21T00:00:00+01:00
 tags = ['sharepoint']
+htmlLang = 'es'
 +++
 
 En todas las instalaciones hay un punto crítico, esa pregunta que no tenemos muy clara  y que en ocasiones va acompañada de un texto recomendando una de las opciones, por si no sabemos muy bien qué es lo que estamos haciendo. MOSS no es una excepción.

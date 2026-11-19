@@ -2,6 +2,7 @@
 title = 'MOSS 2007 WebParts 4'
 date = 2006-08-26T00:00:00+01:00
 tags = ['sharepoint']
+htmlLang = 'es'
 +++
 
 Otra de las mejoras importantes al usar las WebParts de ASP.Net 2.0 es la comunicación entre webparts, ya que ahora pasa a ser un proceso mucho menos tedioso que con las webparts de WSS2.

@@ -2,6 +2,7 @@
 title = 'Workflow Course 5'
 date = 2007-02-14T00:00:00+01:00
 tags = ['workflow']
+htmlLang = 'es'
 +++
 
 **5o Asalto – El servicio de planificación de tareas & Hosting in ASP.Net**

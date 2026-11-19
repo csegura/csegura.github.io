@@ -2,6 +2,7 @@
 title = 'Wiki Disection 3'
 date = 2007-06-04T00:00:00+02:00
 tags = ['sharepoint', 'wiki']
+htmlLang = 'es'
 +++
 
 En esta parte veremos cómo trabaja el campo especial **WikiField**, antes de nada recordaros un webpart, que escribí el año pasado y pasó sin pena ni gloria, pero resolvía el problema de los Wikis en WSS2.  

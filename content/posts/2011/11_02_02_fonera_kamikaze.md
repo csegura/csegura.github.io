@@ -2,6 +2,7 @@
 title = 'Fonera Kamikaze'
 date = 2011-02-02T00:00:00+01:00
 tags = ['electronics', 'fonera', 'kamikaze']
+htmlLang = 'es'
 +++
 
 Notas de la instalación

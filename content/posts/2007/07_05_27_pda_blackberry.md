@@ -2,6 +2,7 @@
 title = 'Palm, PDA, BlackBerry'
 date = 2007-05-27T00:00:00+02:00
 tags = ['mobile', 'palm', 'pda', 'blackberry']
+htmlLang = 'es'
 +++
 
 Buff, han pasado muchos dispositivos móviles por estos bolsillos, desde mi primer teléfono móvil un Nokia 232 (que era una gozada) a un segundo con la entrada del GSM, el Nokia 2110, después un 8110 como el de Matrix y después un 6210 y un 6310 y un sin fin de etc..

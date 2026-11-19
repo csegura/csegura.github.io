@@ -2,6 +2,7 @@
 title = 'Desarrollar no es solo picar código'
 date = 2008-04-30T00:00:00+01:00
 tags = ['navarradotnet', 'desarrollo', 'metodologias']
+htmlLang = 'es'
 +++
 
 Evento: Desarrollar software no es sólo picar codigo

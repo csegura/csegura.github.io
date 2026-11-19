@@ -2,6 +2,7 @@
 title = 'YACAMLQT (Yet another CAML query tool) Redux (1)'
 date = '2009-04-21T00:00:00+02:00'
 tags = ['sharepoint', 'caml', 'caml.net', 'yacamlqt']
+htmlLang = 'es'
 +++
 
 Hace un mes, John Holliday, me pidió a ver si podíamos integrar su CAML.net con mi YACAMLQT, a la vez que ampliar mi herramienta para soportar otro tipo de consultas como adds y updates.

@@ -2,6 +2,7 @@
 title = 'Old asp (no net) web content work'
 date = 2007-03-28T00:00:00+01:00
 tags = ['sharepoint', 'webparts']
+htmlLang = 'es'
 +++
 
 

@@ -2,6 +2,7 @@
 title = 'Veneno en los dedos'
 date = 2009-04-16T00:00:00+02:00
 tags = ['misc']
+htmlLang = 'es'
 +++
 
 En la vida de todo programador hay un “día especial”, algunos tendréis que hacer memoria, otros mucha memoria y algunos no lo recordareis pero es el día en que uno toma conciencia de sí mismo y se da cuenta de que es un “PROGRAMADOR”. (¡Qué fea palabra!… léase “CODER” please)

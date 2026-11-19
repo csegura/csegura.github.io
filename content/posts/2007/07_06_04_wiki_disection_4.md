@@ -2,6 +2,7 @@
 title = 'Wiki Disection 4'
 date = 2007-06-04T00:00:00+02:00
 tags = ['sharepoint', 'wiki']
+htmlLang = 'es'
 +++
 
 En está última parte de **Destripando el Wiki**, veremos como crear un campo personalizado para cambiar el comportamiento por defecto del **SPFieldMultiLineText** el usado por **WikiField,** de modo que podremos cambiar el comportamiento a la hora de visualizar los enlaces a entradas que no están definidas para que estas sean redirigidas a nuestra página **CustomCreatePage.aspx**.

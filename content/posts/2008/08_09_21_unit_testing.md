@@ -2,6 +2,7 @@
 title = 'Unit Testing'
 date = 2008-09-21T00:00:00+01:00
 tags = ['sharepoint', 'c#', 'unit testing']
+htmlLang = 'es'
 +++
 
 Aquí continúa el drama de Unit Test para SharePoint. Esta vez hemos reunido esfuerzos entre nosotros, Carlos Segura (http://www.ideseg.com ) y Gustavo Velez (http://www.gavd.net ), para intentar sacar algo en claro. Programadores del mundo de SharePoint, uníos! …

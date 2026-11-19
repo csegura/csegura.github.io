@@ -2,6 +2,7 @@
 title = 'Sharepoint Access Data'
 date = 2005-12-28T00:00:00+01:00
 tags = ['sharepoint', 'access']
+htmlLang = 'es'
 +++
 
 Continuando con el trabajo que estaba realizando en Access necesitaba poder acceder a las listas de SharePoint e ir agregando el contenido a una tabla de SQL Server.

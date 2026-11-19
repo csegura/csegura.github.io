@@ -2,6 +2,7 @@
 title = 'Y el 7º día descansó'
 date = 2007-09-25T00:00:00+02:00
 tags = ['misc']
+htmlLang = 'es'
 +++
 
 Y el séptimo día, descansó

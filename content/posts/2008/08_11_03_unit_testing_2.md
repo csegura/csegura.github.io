@@ -2,6 +2,7 @@
 title = 'Sharepoint Unit Testing'
 date = 2008-11-03T00:00:00+01:00
 tags = ['sharepoint', 'unit testing']
+htmlLang = 'es'
 +++
 
 Como sabéis tanto Gustavo como yo llevamos tiempo realizando pruebas sobre lo que programamos en SharePoint, ambos estamos usando TypeMock como framework para

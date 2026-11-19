@@ -2,6 +2,7 @@
 title = 'Caml Editor'
 date = 2005-12-01T00:00:00+01:00
 tags = ['sharepoint', 'caml']
+htmlLang = 'es'
 +++
 
 Para la mayoría de los que trabajamos con SharePoint, el personalizar listas, sitios o áreas usando CAML, seré suave, es un INFIERNO, pero para bien o para mal vamos a tener que convivir con el.

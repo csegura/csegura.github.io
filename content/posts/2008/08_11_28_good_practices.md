@@ -2,6 +2,7 @@
 title = 'Good Practices'
 date = 2008-11-28T00:00:00+01:00
 tags = ['misc']
+htmlLang = 'es'
 +++
 
 Cenando

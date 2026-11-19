@@ -2,6 +2,7 @@
 title = 'Menus de contexto personalizados'
 date = 2005-12-12T00:00:00+01:00
 tags = ['sharepoint']
+htmlLang = 'es'
 +++
 
 Hoy modificando un site (en el que tenía colocada la vista con las plantillas múltiples) he pensado en añadir un pequeño menú para modificar directamente las plantillas de la biblioteca de documentos en vez de crear un nuevo documento usando la plantilla. Finalmente lo he implementado usando el editor de de HTML e introduciendo un menú contextual en cada elemento para poder modificar cada plantilla.

@@ -2,6 +2,7 @@
 title = 'Unit Testing 3'
 date = 2007-12-12T00:00:00+02:00
 tags = ['sharepoint', 'unit testing']
+htmlLang = 'es'
 +++
 
 Alguien me ha recordado que empecé a escribir sobre el tema de las pruebas unitarias y finalmente no termine… o por lo menos no conté algunas de las prácticas que uso… cierto.

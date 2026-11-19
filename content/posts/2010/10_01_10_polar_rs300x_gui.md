@@ -2,6 +2,7 @@
 title = 'Polar RS300X GUI'
 date = 2010-01-10T00:00:00+01:00
 tags = ['c#', 'polar', 'rs300x', 'gui']
+htmlLang = 'es'
 +++
 
 Estas navidades el Olentzero, Santa Claus, Papa Noel ó uno mismo, vaya ud. a saber … me dejo un pulsometro Polar RS300x, uno de esos aparatitos que te miden las pulsaciones (para evitar que a los que nos vamos haciendo mayores nos dé un chunguito)

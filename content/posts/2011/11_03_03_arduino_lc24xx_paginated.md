@@ -2,6 +2,7 @@
 title = 'Arduino LC24XX EPROM (paginated)'
 date = '2011-03-03T00:00:00+01:00'
 tags = ['electronics', 'arduino', 'eprom']
+htmlLang = 'es'
 +++
 
 Habia algunas cosas que no me cuadraban ...

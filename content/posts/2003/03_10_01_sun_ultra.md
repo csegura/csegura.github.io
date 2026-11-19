@@ -3,6 +3,7 @@ title = 'Sun Ultra'
 date = 2003-10-01T00:00:00+01:00
 tags = ['vintage', 'sun']
 draft = false
+htmlLang = 'es'
 +++
 
 ## Enredadndo con la Sun Ultra 1

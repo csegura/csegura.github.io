@@ -2,6 +2,7 @@
 title = 'MDA for Dummies'
 date = 2008-04-21T00:00:00+01:00
 tags = ['navarradotnet', 'eventos']
+htmlLang = 'es'
 +++
 
 El viernes tuvimos una charla en el grupo de usuarios llamada “MDA para dummies”, en la que David Marzo de Solnatec, nos explico varias cosas sobre la arquitectura dirigida por modelos, hasta aquí,  todo normal y corriente, una charla bien organizada y dada por alguien que controla, ¿Qué más se puede pedir?.

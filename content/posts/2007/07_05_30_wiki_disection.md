@@ -2,6 +2,7 @@
 title = 'Wiki Disection'
 date = 2007-05-30T00:00:00+02:00
 tags = ['sharepoint', 'wiki']
+htmlLang = 'es'
 +++
 
 Mucha gente me ha preguntado sobre la posibilidad de realizar cambios en el diseño del Wiki de SharePoint. (¿Será porque en una de mis demos enseño un Fantástico Wiki?), bueno, la respuesta es… que no se puede cambiar grrrr y explicaré  porque no.  

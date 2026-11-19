@@ -2,6 +2,7 @@
 title = 'csEG Library'
 date = 2006-03-01T00:00:00+01:00
 tags = ['sharepoint']
+htmlLang = 'es'
 +++
 
 Estos días he estado trabajando en una nueva biblioteca de clases para SharePoint, bueno, en parte nueva y en parte adaptando a mis necesidades  algunas de las clases del SDK, (¡Que grande es la POO!). Aquí como siempre existirán discrepancias en cuanto al diseño, allí donde se reúnan programadores siempre habrá más puristas y otros más prácticos. Yo me decanto por los segundos. Con esto no quiero decir que estropee la magia de una clase introduciendo metodusHorribilis, pero sí que soy partidario de subclasear aquello que dispone de una interfaz poco agradable, creando una fachada más práctica y coherente con la aplicación que se está desarrollando, de este modo más adelante podremos intercambiar el subsistema haciendo unos pequeños cambios en nuestra subclase sin retocar nada más.

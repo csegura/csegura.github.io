@@ -2,6 +2,7 @@
 title = 'CAS Policies'
 date = 2008-07-23T00:00:00+01:00
 tags = ['c#', 'security']
+htmlLang = 'es'
 +++
 
 Muchos de los desarrolladores de SharePoint, terminan optando por desplegar sus aplicaciones en el GAC, para evitar problemas de seguridad. Esta no es la manera más correcta y cada vez más administradores de sistemas, exigen que las soluciones se desplieguen en los directorios de aplicación.

@@ -2,6 +2,7 @@
 title = 'Virtualizando'
 date = 2007-05-20T00:00:00+02:00
 tags = ['vmware']
+htmlLang = 'es'
 +++
 
 No me he podido aguantar, el viernes pasado mientras explicaba cómo realizar una extranet con SharePoint, estábamos trabajando con todos los equipos de producción virtualizados con [**VMWare ESX**](https://web.archive.org/web/20130623103246/http://www.vmware.com/products/vi/esx/).  

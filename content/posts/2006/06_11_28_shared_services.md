@@ -2,6 +2,7 @@
 title = 'Shared Services'
 date = 2006-11-28T00:00:00+01:00
 tags = ['sharepoint']
+htmlLang = 'es'
 +++
 
 Los proveedores de servicios compartidos (SSPs), son una de las nuevas características de MOSS 2007 que reemplaza la infraestructura de Servicios compartidos de Sharepoint 2003. Los SSPs son un conjunto de servicios que pueden ser compartidos en diferentes portales y sitios. Estos servicios son el Catalogo de datos profesionales, los servicios de Excel, las búsquedas, los perfiles de usuarios, las audiencias, y los sitios personales.

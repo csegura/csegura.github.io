@@ -2,6 +2,7 @@
 title = 'Wtf staff'
 date = 2007-01-26T00:00:00+01:00
 tags = ['navarradotnet', 'wtf']
+htmlLang = 'es'
 +++
 
 Ayer tuvimos en la Universidad Pública de Navarra,  un evento de 5 horas sobre  [AJAX, XNA, WF, WCF y WPF](https://web.archive.org/web/20130623124824/http://www.ideseg.com/AJAXXNAWFWCFWPFWTFDoesThatMean.aspx)  

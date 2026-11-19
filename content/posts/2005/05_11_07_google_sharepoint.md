@@ -2,6 +2,7 @@
 title = 'Google Sharepoint'
 date = 2005-11-07T00:00:00+01:00
 tags = ['sharepoint']
+htmlLang = 'es'
 +++
 
 Al igual que otros usuarios de SharePoint, en su día me encontré con la limitación que tienen las búsquedas de SharePoint. Por ello desarrolle el csegSearchWebPart, añadiendo funcionalidad extra a las búsquedas del portal.

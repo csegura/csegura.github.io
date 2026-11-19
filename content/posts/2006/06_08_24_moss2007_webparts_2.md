@@ -2,6 +2,7 @@
 title = 'MOSS 2007 WebParts 2'
 date = 2006-08-24T00:00:00+01:00
 tags = ['sharepoint']
+htmlLang = 'es'
 +++
 
 Continuando con el post anterior, usando las características de las WebParts de ASP Net 2.0,  podemos añadir propiedades a nuestras webparts para que se muestren en el area de edición.

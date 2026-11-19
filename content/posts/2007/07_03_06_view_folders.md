@@ -2,6 +2,7 @@
 title = 'View Folders in document libraries'
 date = 2007-03-06T00:00:00+01:00
 tags = ['sharepoint', 'webparts']
+htmlLang = 'es'
 +++
 
 

@@ -2,6 +2,7 @@
 title = 'SQL Maintenance - Sharepoint'
 date = 2008-07-03T00:00:00+01:00
 tags = ['sharepoint', 'sql', 'maintenance']
+htmlLang = 'es'
 +++
 
 Hace algún tiempo comente un plan de mantenimiento para las bases de datos de SharePoint 2003, básicamente para SharePoint 2007 los pasos son los mismos, solo que las bases de datos a tener en cuenta son otras.

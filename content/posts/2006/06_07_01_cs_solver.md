@@ -3,6 +3,7 @@ title = 'cs-solver'
 date = 2006-07-01T00:00:00+01:00
 draft = false
 tags = ['excel', 'vsto']
+htmlLang = 'es'
 +++
 
 Hace ya algún tiempo que escribí **CS-Solver**, estos días me he propuesto convertirlo de VBA a VSTO.

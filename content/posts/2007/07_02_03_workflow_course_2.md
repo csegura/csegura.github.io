@@ -2,6 +2,7 @@
 title = 'Workflow Course 2'
 date = 2007-02-03T00:00:00+01:00
 tags = ['workflow']
+htmlLang = 'es'
 +++
 
 Bueno, en la [**primera parte**](https://web.archive.org/web/20130623100537/http://www.ideseg.com/CursoDeWorkflowFoundation1.aspx) hemos visto en que consiste el motor de flujos de trabajo, poco a poco nos iremos introduciendo en los detalles, también hemos visto que un flujo de trabajo esta compuesto de actividades. Cuando ejecutamos un flujo de trabajo dentro del motor, la representación del mismo (**SequentialWorkflowActivity ó**  **StateMachineWorkflowActivity)** en ejecución es un **WorkflowInstance.**  

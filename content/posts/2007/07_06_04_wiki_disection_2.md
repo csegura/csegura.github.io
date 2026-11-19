@@ -2,6 +2,7 @@
 title = 'Wiki Disection 2'
 date = 2007-06-04T00:00:00+02:00
 tags = ['sharepoint', 'wiki']
+htmlLang = 'es'
 +++
 
 Continuando con el Wiki, hemos visto como esta construido básicamente y donde oculta el secreto de las páginas que se generan, ahora bien

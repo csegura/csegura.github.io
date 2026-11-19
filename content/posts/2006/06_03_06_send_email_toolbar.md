@@ -2,6 +2,7 @@
 title = 'Send Email Toolbar'
 date = 2006-03-06T00:00:00+01:00
 tags = ['sharepoint']
+htmlLang = 'es'
 +++
 
 Hace ya algún tiempo  Mark Bower, explicaba como personalizar el menú de opciones con un bonito ejemplo para enviar el enlace de un documento por correo electrónico. Este fin de semana he tratado de mejorarlo, ya que enviar un enlace está muy bien cuando se envían correos a personas de la misma empresa, evitando duplicar información. Sin embargo si queremos enviar dicho documento a una persona del exterior, tenemos que salvar primero el documento en el escritorio para después adjuntarlo a un mensaje.

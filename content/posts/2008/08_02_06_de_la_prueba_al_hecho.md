@@ -2,6 +2,7 @@
 title = 'De la prueba al hecho xUnit'
 date = 2008-02-06T00:00:00+01:00
 tags = ['testing']
+htmlLang = 'es'
 +++
 
 James W. Newkirk, uno de los co-autores de NUnit, trabaja desde el año pasado junto con Brad Wilson en un framework para realizar “pruebas” llamado xUnit.

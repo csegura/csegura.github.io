@@ -2,6 +2,7 @@
 title = 'Fuzzy Logic & lambda expressions'
 date = 2010-01-16T00:00:00+01:00
 tags = ['c#', 'fuzzy', 'lambda', 'logic']
+htmlLang = 'es'
 +++
 
 Para un proyecto que estoy realizando, he realizado una prueba de concepto probado a aplicar lógica difusa con el fin de realizar ciertas acciones a partir de una serie de datos imprecisos.

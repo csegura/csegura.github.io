@@ -2,6 +2,7 @@
 title = 'Workflow Course 4'
 date = 2007-02-04T00:00:00+01:00
 tags = ['workflow']
+htmlLang = 'es'
 +++
 
 Muchos de los procesos con los que trabajamos habitualmente, requieren de datos o eventos que llegan desde el exterior. Anteriormente, vimos como WF puede comunicarse con el mundo exterior, para recibir esos datos o eventos usando el servicio de intercambio de datos.

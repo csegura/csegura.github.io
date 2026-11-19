@@ -2,6 +2,7 @@
 title = 'cc.net fx cop'
 date = 2008-03-27T00:00:00+01:00
 tags = ['ci', 'fxcop', 'msbuild']
+htmlLang = 'es'
 +++
 
 Dentro del proceso de integración continua que uso, los proyectos que no tienen un archivo FxCop, los proceso usando una plantilla a la que añado mediante una tarea en el MsBuild, los targets necesarios para después poder ver si hay algo muy cantoso …

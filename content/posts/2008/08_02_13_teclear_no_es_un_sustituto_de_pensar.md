@@ -2,6 +2,7 @@
 title = 'Teclear no es un sustituto de pensar'
 date = 2008-02-13T00:00:00+01:00
 tags = ['navarradotnet', 'eventos']
+htmlLang = 'es'
 +++
 
 NavarraDotNet te invita

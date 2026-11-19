@@ -2,6 +2,7 @@
 title = 'Excel Series'
 date = 2006-03-27T00:00:00+01:00
 tags = ['sharepoint']
+htmlLang = 'es'
 +++
 
 No se si lo he comentado alguna vez, pero en el trabajo suelo usar mucho Excel para hacer una gran variedad de cosas, en general mucho de lo que tiene que ver con el área económico financiera (lo terminamos haciendo en Excel).

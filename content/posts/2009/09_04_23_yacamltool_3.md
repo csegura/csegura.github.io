@@ -2,6 +2,7 @@
 title = 'YACAMLQT (Yet another CAML query tool) Redux (2)'
 date = '2009-04-22T00:00:00+02:00'
 tags = ['sharepoint', 'caml', 'caml.net', 'yacamlqt']
+htmlLang = 'es'
 +++
 
 

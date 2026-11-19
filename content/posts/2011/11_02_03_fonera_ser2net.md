@@ -2,6 +2,7 @@
 title = 'Fonera ser2net'
 date = 2011-02-03T00:00:00+01:00
 tags = ['electronics', 'fonera', 'serial']
+htmlLang = 'es'
 +++
 
 He tenido muchos problemas y no he conseguido hacer funcionar el ipkg correctamente en la fonera, creo que es un problema de rutas .. al final he hecho una serie de inventos.

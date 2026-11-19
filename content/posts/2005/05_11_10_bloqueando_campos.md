@@ -2,6 +2,7 @@
 title = 'Bloqueando campos'
 date = 2005-11-10T00:00:00+01:00
 tags = ['sharepoint']
+htmlLang = 'es'
 +++
 
 Hace unos días necesitaba bloquear un campo en una lista de sharepoint, esto se puede hacer modificando las páginas newform.aspx y editform.aspx y añadiendo un pequeño script.

@@ -2,6 +2,7 @@
 title = 'Ruby, enjoy!'
 date = 2007-10-13T00:00:00+02:00
 tags = ['ruby']
+htmlLang = 'es'
 +++
 
 

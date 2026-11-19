@@ -2,6 +2,7 @@
 title = 'Workflow Course 1'
 date = 2007-02-01T00:00:00+01:00
 tags = ['workflow']
+htmlLang = 'es'
 +++
 
 Tenía que impartir un curso de **Workflow Foundation** que finalmente no voy a dar, ya que estoy muy liado con otros temas. Ayer por la noche pensé que era una pena desaprovechar todo este trabajo, más aún porque estaba deseando montar un curso distinto, me explico:

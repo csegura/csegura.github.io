@@ -2,6 +2,7 @@
 title = 'Loading pages in an iframe'
 date = 2005-07-26T00:00:00+01:00
 tags = ['sharepoint', 'webparts']
+htmlLang = 'es'
 +++
 
 Uno de los problemas con los que me he encontrado cuando se cargan documentos html en una biblioteca de documentos es que cuando Sharepoint indexa el contenido de dichos documentos, al cárgalos  se pierde toda la estética del portal, esto también ocurre cuando abrimos los documentos desde una biblioteca de documentos.

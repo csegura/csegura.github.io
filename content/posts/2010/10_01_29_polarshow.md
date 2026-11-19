@@ -2,6 +2,7 @@
 title = 'Polarshow'
 date = 2010-01-29T00:00:00+01:00
 tags = ['polar', 'rs300x']
+htmlLang = 'es'
 +++
 
 Mi pequeño proyecto PolarShow ha tomado un poquito más de cuerpo, estoy ya en la versión 0.70 y prácticamente tiene ya todas las características que se pueden encontrar en polarpersonaltrainer.com

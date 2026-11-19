@@ -2,6 +2,7 @@
 title = 'Ruby: Enjoy.succ'
 date = 2007-10-14T00:00:00+02:00
 tags = ['ruby']
+htmlLang = 'es'
 +++
 
 Finalmente le he dedicado todo el fin de semana a **Ruby**, y la verdad es que estoy contento, el aprendizaje es lento pero los resultados y los avances son espectaculares, rápidos y satisfactorios.  

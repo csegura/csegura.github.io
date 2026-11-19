@@ -2,6 +2,7 @@
 title = 'Backpack'
 date = 2007-07-25T00:00:00+02:00
 tags = ['misc']
+htmlLang = 'es'
 +++
 
 Llevo días pensando en hacer una limpieza de la mochila, antes de ir de vacaciones. Hoy finalmente me he decidido a hacerlo, la muy …  pesa casi 8Kg

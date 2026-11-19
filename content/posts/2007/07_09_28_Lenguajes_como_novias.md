@@ -2,6 +2,7 @@
 title = 'Lenguajes como novias'
 date = 2007-09-28T00:00:00+02:00
 tags = ['misc']
+htmlLang = 'es'
 +++
 
 Si, seguro que también alguno de vosotros os habéis dejado seducir por otros lenguajes de programación. Los que comenzamos a tener una edad, seguro que hemos pasado ya por varios.  

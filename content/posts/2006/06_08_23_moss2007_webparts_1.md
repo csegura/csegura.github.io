@@ -2,6 +2,7 @@
 title = 'MOSS 2007 WebParts 1'
 date = 2006-08-23T00:00:00+01:00
 tags = ['sharepoint']
+htmlLang = 'es'
 +++
 
 Como ya sabéis Windows SharePoints Services 3.0 está construido sobre ASP.Net 2.0, esto nos brinda la posibilidad de crear webparts que podríamos llamar nativas de ASP.Net 2.0 dentro de WSS3, estas webparts nativas vendrían derivados de System.Web.UI.WebControls.WebParts.WebPart.

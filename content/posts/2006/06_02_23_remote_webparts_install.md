@@ -2,6 +2,7 @@
 title = 'Remote WebParts Install'
 date = 2006-02-23T00:00:00+01:00
 tags = ['sharepoint', 'webparts']
+htmlLang = 'es'
 +++
 
 El otro día chateando con Gustavo sobre su post (Un VisualStudio 2005 señor? No gracias, déme un 2003, por favor) hablamos sobre la instalación de los webparts en las maquinas de pruebas. Yo le comente que lo que hacía era copiar el archivo CAB en la máquina remota y ejecutar el stsadm y el RecycleAppPool usando un enlace de terminal server. (archivo .rdp), esto lo tengo en un batch, y necesito un archivo RDP para cada webpart (ya que el nombre del archivo CAB va dentro del RDP). Luego en el Visual Studio tengo un enlace en las herramientas externas que lanza los comandos.

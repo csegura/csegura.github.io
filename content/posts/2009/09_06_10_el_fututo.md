@@ -2,6 +2,7 @@
 title = 'El Futuro'
 date = 2009-06-10T00:00:00+02:00
 tags = ['navarradotnet', 'charlas', 'futuro']
+htmlLang = 'es'
 +++
 
 

@@ -2,6 +2,7 @@
 title = 'Workflow Course 3a'
 date = 2007-02-13T00:00:00+01:00
 tags = ['workflow']
+htmlLang = 'es'
 +++
 
 El proyecto WinHostWorkflow esta formado a su vez por dos proyectos, WinHostWorkflow contiene el motor de flujos de trabajo (WorkflowEngine.cs) y el interface de usuario (WorkflowSampleApp.cs),  la carpeta ExternalDataServices, contiene los servicios de intercambio de datos del 3er asalto, (CalculatorService.cs y MessengerService.cs)

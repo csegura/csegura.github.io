@@ -2,6 +2,7 @@
 title = 'NavarraDotNet Agenda'
 date = 2008-04-17T00:00:00+01:00
 tags = ['navarradotnet', 'eventos']
+htmlLang = 'es'
 +++
 
 Evento:  “MDA para Dummies, continuación…”

@@ -2,6 +2,7 @@
 title = 'Aniversario NavarraDotNet'
 date = 2008-01-21T00:00:00+01:00
 tags = ['navarradotnet']
+htmlLang = 'es'
 +++
 
 

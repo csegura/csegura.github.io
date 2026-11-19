@@ -2,6 +2,7 @@
 title = 'Servo calibration'
 date = 2011-11-01T00:00:00+01:00
 tags = ['electronics', 'arduino', 'servo']
+htmlLang = 'es'
 +++
 
 Este experimento es para tratar de calibrar los servos que se van a usar como motores.

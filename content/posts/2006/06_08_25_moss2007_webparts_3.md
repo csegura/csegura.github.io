@@ -2,6 +2,7 @@
 title = 'MOSS 2007 WebParts 3'
 date = 2006-08-25T00:00:00+01:00
 tags = ['sharepoint']
+htmlLang = 'es'
 +++
 
 Siguiendo con lo expuesto anteriormente, lo primero es revisar el formato en que se exportan las webparts basadas en Asp.Net 2.0. Una vez exportado nuestro webpart lo primero que vemos es que la extensión a cambiado, de .dwp (las webparts de WSS2) a .webpart
