@@ -742,10 +742,12 @@ dialog.lightbox .lb-next {
 /* The "Read next" block at the end of a post */
 .related {
     margin: 1.8rem 0 1rem;
+    border-top: 0; /* the theme's .related rule draws a line above */
 }
 
 .related h2 {
     font-size: 1.1rem;
+    margin-top: 3em;
     margin-bottom: 0.4rem;
 }
 
@@ -763,4 +765,18 @@ dialog.lightbox .lb-next {
     color: var(--date-color);
     font-size: 0.8rem;
     margin-left: 0.4rem;
+}
+
+/* Space under a paragraph, and a little less for a paragraph in a nested list */
+p {
+    margin-bottom: 1.2em;
+}
+
+.content li li > p {
+    margin-bottom: 0.5em;
+}
+
+/* Space above the headings (a margin on an inline element such as strong has no effect) */
+h1, h2, h3, h4, h5, strong {
+    margin-top: 2em;
 }

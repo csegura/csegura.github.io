@@ -60,6 +60,12 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Check the build
+        run: |
+          for need in 'js/zoom.min' 'apple-touch-icon' 'rel=canonical' 'application/ld+json'; do
+            grep -q "$need" public/index.html || { echo "public/index.html has no $need"; exit 1; }
+          done
+          grep -q 'js/zoom.min' "public/posts/2026/26_10_25_northstar_advantage_restoration_part_4/index.html" || { echo "a post has no picture viewer"; exit 1; }
       - name: Build the search index
         run: npm exec --yes pagefind@1.6.0 -- --site public
       - name: Upload artifact
