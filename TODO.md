@@ -1,5 +1,6 @@
 - [ ] Decide on `broken/06_02_20_mdx_generator.md_`: restore to `content/posts/2006/` or delete
-- [ ] Missing images: `MSBee1.gif`, `ADPiPickerVideo.gif`, `CCP2_Publish2.gif`, `SPSRollUpTipImages.gif` (files are not in `static/images/Sharepoint/`)
+- [x] Fixed two broken picture links: `ADPiPickerVideo.gif` is `PickerVideo.gif` and `SPSRollUpTipImages.gif` is `SPSRollUp_TipImages.gif` (checked by eye against their posts)
+- [ ] Missing images with no file to match: `MSBee1.gif` (post `2006/06_01_13_using_msbee.md`) and `CCP2_Publish2.gif` (post `2008/08_04_21_cut_copy_paste_beta.md`; `CCP2_Publish1.gif` and `CCP2_Rename.gif` exist but are other steps)
 - [ ] Check the `c` tag (used once, next to `c#`) and the 89 tags used only once
 - [ ] Convert `content/about/about.md` front matter from YAML to TOML
 - [ ] Set a real `email_url` in `hugo.toml` if wanted

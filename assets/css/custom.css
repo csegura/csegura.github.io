@@ -725,3 +725,8 @@ dialog.lightbox .lb-next {
     right: 1rem;
     top: 50%;
 }
+
+/* The tag chips of a post are a little wider (this was a change inside the theme folder, which cannot be committed) */
+.tags li a {
+    padding: 0em 0.9em;
+}

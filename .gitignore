@@ -3,4 +3,6 @@ public
 .hugo_cache/
 
 
-resources/
+# The Hugo cache and the original photos stay on this computer; the notes about the photos are kept
+resources/*
+!resources/photos.md

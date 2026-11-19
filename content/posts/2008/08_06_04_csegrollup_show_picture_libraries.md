@@ -10,7 +10,7 @@ Select the desired lists that you want to aggregate and add the fields in the fi
 
 The result shows as
 
-![](/images/Sharepoint/SPSRollUpTipImages.gif)
+![](/images/Sharepoint/SPSRollUp_TipImages.gif)
 
 The XSL that we are using
 

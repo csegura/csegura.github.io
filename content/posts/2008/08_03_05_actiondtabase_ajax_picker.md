@@ -6,7 +6,7 @@ tags = ['sharepoint', 'webparts', 'spsprofessional']
 
 Some demos of the Action Database Ajax Picker:
 
-![](/images/Sharepoint/ADPiPickerVideo.gif)
+![](/images/Sharepoint/PickerVideo.gif)
 
 ![](/images/Sharepoint/Generator1.gif)
 

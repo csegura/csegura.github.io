@@ -140,5 +140,8 @@
 
 {{ with resources.Get "js/zoom.js" }}{{ $zoom := . | minify | fingerprint }}<script defer src="{{ $zoom.RelPermalink }}"></script>{{ end }}
 
+<link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}">
+<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | absURL }}">
+
 <!-- Hugo Generator Attribution -->
 {{ hugo.Generator }}
