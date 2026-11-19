@@ -780,3 +780,9 @@ p {
 h1, h2, h3, h4, h5, strong {
     margin-top: 2em;
 }
+
+/* Colour and space for list items, and for a paragraph inside one */
+.content li, li > p {
+    color: var(--list-color);
+    margin-bottom: 0.6em;
+}

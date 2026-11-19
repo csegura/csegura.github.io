@@ -47,3 +47,4 @@
 - Paragraph spacing: `p` gets `margin-bottom: 1.2em` and `.content li li > p` gets `margin-bottom: 0.5em` (the second rule matches no post today, because tight lists have no paragraphs).
 - Heading spacing: `h1`-`h5` get `margin-top: 2em`. The rule also lists `strong`, but a margin has no effect on an inline element, so it does nothing there.
 - Restore the picture viewer: my SEO rewrite of `layouts/partials/head/meta.html` dropped the `zoom.js` script and the favicon and touch icon links, so the viewer was dead on the live site. Add a "Check the build" step to the workflow that fails when the index or a post lacks the viewer script, icons, canonical link or JSON-LD.
+- List spacing: `.content li, li > p` get the theme list colour and `margin-bottom: 0.6em`; nested list paragraphs keep their smaller margin by specificity.
