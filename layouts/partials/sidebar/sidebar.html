@@ -1,0 +1,17 @@
+<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open the menu">
+<header class="mobile-bar">
+    <a class="mobile-brand" href="{{ .Site.BaseURL }}">
+        {{ with .Site.Params.brand_image }}<img src="{{ . }}" alt="">{{ end }}
+        <b>{{ .Site.Params.brand }}</b>
+    </a>
+    <label for="nav-toggle" class="nav-button" title="Menu">&#9776;</label>
+</header>
+<aside class="sidebar">
+    <div class="container sidebar-sticky">
+        {{ partial "light_dark.html" . }}
+        {{ partial "sidebar/title.html" . }}
+        {{ partial "sidebar/menu.html" . }}
+        <div class="socials-row">{{ partial "sidebar/socials.html" . }}</div>
+        {{ partial "sidebar/copyright.html" . }}
+  </div>
+</aside>

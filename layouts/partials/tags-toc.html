@@ -1,0 +1,14 @@
+{{/* The contents panel with all terms of a taxonomy in alphabetical order (wide windows only).
+     Call: partial "tags-toc.html" (dict "title" "Tags" "terms" $terms) */}}
+<div class="article-toc tags-toc">
+    <div class="toc-wrapper">
+        <h4>{{ .title }} A-Z</h4>
+        <nav>
+            <ul>
+                {{ range .terms }}
+                <li><a href="{{ .Page.RelPermalink }}">{{ .Term }}</a> <span class="tag-count">{{ .Count }}</span></li>
+                {{ end }}
+            </ul>
+        </nav>
+    </div>
+</div>

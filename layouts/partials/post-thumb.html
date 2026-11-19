@@ -1,0 +1,9 @@
+{{/* The thumbnail of a post: the image of its front matter, else the first image of its text, else the default one.
+     Call: partial "post-thumb.html" $page. Returns a path or a URL. */}}
+{{- $thumb := .Params.image -}}
+{{- if not $thumb -}}
+  {{- with findRESubmatch `!\[[^\]]*\]\(([^)\s]*(?:\([^)]*\)[^)\s]*)*)\)` .RawContent 1 -}}
+    {{- $thumb = index (index . 0) 1 -}}
+  {{- end -}}
+{{- end -}}
+{{- return ($thumb | default "/images/default-thumb.png") -}}

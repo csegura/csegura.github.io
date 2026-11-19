@@ -1,0 +1,25 @@
+{{- /* Pictures in a post: lazy loading, the size of the picture (so the text does not jump), smaller copies for
+       small screens, a caption when the alt text is a real sentence, and click to enlarge. */ -}}
+{{- $dest := .Destination -}}
+{{- $alt := .PlainText | default .Text -}}
+{{- $caption := "" -}}
+{{- if ge (len (findRE `\s+` $alt)) 3 }}{{ $caption = $alt }}{{ end -}}
+{{- if findRE `^[:;]-?[)(DPp]$` $alt -}}
+<img src="{{ $dest }}" alt="{{ $alt }}" loading="lazy">
+{{- else if findRE `(?i)\.mp4$` $dest -}}
+<video class="post-video" controls muted loop playsinline preload="metadata" src="{{ $dest }}"></video>
+{{- else -}}
+{{- $res := partial "image-resource.html" $dest -}}
+{{- if $res -}}
+  {{- $w := $res.Width -}}
+  {{- $small := $res -}}
+  {{- if gt $w 900 }}{{ $small = $res.Resize "800x webp q80" }}{{ end -}}
+  {{- $big := $res -}}
+  {{- if gt $w 1700 }}{{ $big = $res.Resize "1600x webp q82" }}{{ end -}}
+<span class="fig"><a class="zoom" href="{{ $big.RelPermalink }}"{{ with $caption }} data-caption="{{ . }}"{{ end }}><img src="{{ $res.RelPermalink }}"
+ {{- if gt $w 900 }} srcset="{{ $small.RelPermalink }} {{ $small.Width }}w, {{ $big.RelPermalink }} {{ $big.Width }}w" sizes="(min-width: 64em) 880px, (min-width: 48em) calc(100vw - 25rem), 100vw"{{ end }}
+ width="{{ $w }}" height="{{ $res.Height }}" alt="{{ $alt }}" loading="lazy" decoding="async"{{ with .Title }} title="{{ . }}"{{ end }}></a>{{ with $caption }}<span class="figcap">{{ . }}</span>{{ end }}</span>
+{{- else -}}
+<span class="fig"><a class="zoom" href="{{ $dest }}"{{ with $caption }} data-caption="{{ . }}"{{ end }}><img src="{{ $dest }}" alt="{{ $alt }}" loading="lazy" decoding="async"{{ with .Title }} title="{{ . }}"{{ end }}></a>{{ with $caption }}<span class="figcap">{{ . }}</span>{{ end }}</span>
+{{- end -}}
+{{- end -}}

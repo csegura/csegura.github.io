@@ -1,0 +1,19 @@
+{{/* All terms of a taxonomy, in alphabetical order and grouped by their first letter.
+     Call: partial "tag-index.html" (dict "terms" $terms "compact" false) */}}
+{{ $terms := .terms }}
+{{ $letters := partial "tag-letters.html" $terms }}
+<div class="tag-index{{ if .compact }} compact{{ end }}">
+  {{ range $letters }}
+  {{ $l := . }}
+  <section class="tag-group">
+    {{ if $.compact }}<span class="tag-letter">{{ $l }}</span>{{ else }}<h2 id="tag-{{ if eq $l "#" }}other{{ else }}{{ lower $l }}{{ end }}">{{ $l }}</h2>{{ end }}
+    <ul>
+      {{ range $terms }}
+        {{ $first := upper (substr .Term 0 1) }}
+        {{ if not (findRE `^[A-Z]$` $first) }}{{ $first = "#" }}{{ end }}
+        {{ if eq $first $l }}<li><a href="{{ .Page.RelPermalink }}">{{ .Term }}</a> <span class="tag-count">{{ .Count }}</span></li>{{ end }}
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+</div>

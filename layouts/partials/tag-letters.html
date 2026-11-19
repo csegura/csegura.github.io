@@ -1,0 +1,8 @@
+{{/* The letters (A to Z, and # for the others) that start a term. Call: partial "tag-letters.html" $terms. Returns a slice. */}}
+{{- $letters := slice -}}
+{{- range . -}}
+  {{- $l := upper (substr .Term 0 1) -}}
+  {{- if not (findRE `^[A-Z]$` $l) }}{{ $l = "#" }}{{ end -}}
+  {{- if not (in $letters $l) }}{{ $letters = $letters | append $l }}{{ end -}}
+{{- end -}}
+{{- return $letters -}}

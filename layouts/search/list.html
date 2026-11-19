@@ -1,0 +1,102 @@
+{{ define "main" -}}
+<div data-pagefind-ignore class="search-page">
+  {{/* The theme's contents script looks for a .post element and fails without one */}}
+  <div class="post" hidden></div>
+  <h1 class="title">{{ .Title }}</h1>
+  <form class="search-box" role="search" onsubmit="return false">
+    <input id="q" type="search" placeholder="Search the posts" autocomplete="off" autofocus aria-label="Search the posts">
+    <button type="button" id="clear" class="search-clear" hidden>Clear</button>
+  </form>
+  <p id="status" class="search-status" aria-live="polite"></p>
+  <div id="results" class="search-results"></div>
+  <button type="button" id="more" class="search-more" hidden>Show more results</button>
+  <noscript>Search needs JavaScript.</noscript>
+
+  {{ with site.Taxonomies.tags }}
+  <div class="tag-fallback">
+    <h2 class="tag-heading">Browse by tag</h2>
+    {{ partial "tag-index.html" (dict "terms" .Alphabetical "compact" true) }}
+  </div>
+  {{ end }}
+</div>
+<script>
+(function () {
+  var base = {{ "pagefind/pagefind.js" | absURL }};
+  var q = document.getElementById("q"), clearBtn = document.getElementById("clear"), status = document.getElementById("status"),
+      out = document.getElementById("results"), more = document.getElementById("more");
+  var pf = null, current = null, shown = 0, timer = null, PAGE = 8;
+
+  function esc(s) { return String(s || "").replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+
+  function card(d) {
+    var m = d.meta || {}, tags = (m.tags || "").split(", ").filter(Boolean);
+    var subs = (d.sub_results || []).filter(function (s) { return s.url !== d.url; }).slice(0, 3);
+    return '<article class="result">' +
+      '<a class="result-thumb" href="' + esc(d.url) + '" tabindex="-1" aria-hidden="true"><img src="' + esc(m.image || "/images/default-thumb.png") + '" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'/images/default-thumb.png\'"></a>' +
+      '<div class="result-body">' +
+      '<h2><a href="' + esc(d.url) + '">' + esc(m.title || d.url) + '</a></h2>' +
+      '<div class="post-line">' + esc(m.date || "") + (m.series ? ' <span class="series-badge">' + esc(m.series) + '</span>' : "") + '</div>' +
+      '<p class="result-excerpt">' + d.excerpt + '</p>' +
+      (subs.length ? '<ul class="result-subs">' + subs.map(function (s) { return '<li><a href="' + esc(s.url) + '">' + esc(s.title) + '</a> <span>' + s.excerpt + '</span></li>'; }).join("") + '</ul>' : "") +
+      (tags.length ? '<ul class="home-tags">' + tags.map(function (t) { return '<li><a href="/tags/' + encodeURIComponent(t.toLowerCase()) + '/">' + esc(t) + '</a></li>'; }).join("") + '</ul>' : "") +
+      '</div></article>';
+  }
+
+  // Pagefind also matches single letters inside code, so a made-up word still gives "results".
+  // A result counts only when a highlighted word shares most of its letters in a row with the longest word typed.
+  function common(a, b) {
+    var best = 0, prev = new Array(b.length + 1).fill(0);
+    for (var i = 1; i <= a.length; i++) {
+      var row = new Array(b.length + 1).fill(0);
+      for (var j = 1; j <= b.length; j++) {
+        if (a[i - 1] === b[j - 1]) { row[j] = prev[j - 1] + 1; if (row[j] > best) { best = row[j]; } }
+      }
+      prev = row;
+    }
+    return best;
+  }
+
+  function strong(d, term) {
+    var longest = term.toLowerCase().split(/\s+/).sort(function (x, y) { return y.length - x.length; })[0];
+    if (longest.length < 4) { return true; }
+    var marks = (d.excerpt.match(/<mark>(.*?)<\/mark>/g) || []).map(function (m) { return m.replace(/<[^>]+>/g, "").toLowerCase(); });
+    return marks.some(function (m) { return common(longest, m) >= longest.length * 0.6; });
+  }
+
+  async function showMore() {
+    var part = current.results.slice(shown, shown + PAGE), data = await Promise.all(part.map(function (r) { return r.data(); }));
+    out.insertAdjacentHTML("beforeend", data.map(card).join(""));
+    shown += part.length;
+    more.hidden = shown >= current.results.length;
+  }
+
+  async function run() {
+    var term = q.value.trim();
+    clearBtn.hidden = !q.value;
+    if (!term) { current = null; out.innerHTML = ""; status.textContent = ""; more.hidden = true; return; }
+    try {
+      if (!pf) { pf = await import(base); await pf.init(); }
+      current = await pf.debouncedSearch(term);
+    } catch (e) { status.textContent = "The search is not available here. It needs the index that is built when the site is published."; return; }
+    if (current === null) { return; }
+    out.innerHTML = ""; shown = 0;
+    var n = current.results.length;
+    if (n) {
+      var probe = await Promise.all(current.results.slice(0, 3).map(function (r) { return r.data(); }));
+      if (!probe.some(function (d) { return strong(d, term); })) { n = 0; current.results = []; }
+    }
+    status.textContent = n === 0 ? "No results for “" + term + "”. Try another word, or choose a tag." : n + (n === 1 ? " result" : " results") + " for “" + term + "”";
+    if (n) { await showMore(); }
+  }
+
+  q.addEventListener("input", function () { clearTimeout(timer); timer = setTimeout(run, 120); });
+  clearBtn.addEventListener("click", function () { q.value = ""; run(); q.focus(); });
+  more.addEventListener("click", showMore);
+  var start = new URLSearchParams(location.search).get("q");
+  if (start) { q.value = start; run(); }
+})();
+</script>
+{{- end }}
+{{ define "sidebar" }}
+{{ with site.Taxonomies.tags }}{{ partial "tags-toc.html" (dict "title" "Tags" "terms" .Alphabetical) }}{{ end }}
+{{ end }}

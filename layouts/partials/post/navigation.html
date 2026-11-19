@@ -1,0 +1,25 @@
+<hr>
+<div class="footer">
+    {{ $series := partial "post-meta.html" . }}
+    {{ if $series }}
+        {{ $pages := $series.pages }}
+        {{ $i := sub $series.pos 1 }}
+        <nav class="series-nav" aria-label="Series navigation" data-pagefind-ignore>
+            {{ if gt $i 0 }}{{ $prev := index $pages (sub $i 1) }}
+            <a class="series-prev" href="{{ $prev.RelPermalink }}"><small>Previous in the series</small>{{ $prev.Title }}</a>
+            {{ else }}<span></span>{{ end }}
+            {{ if lt (add $i 1) (len $pages) }}{{ $next := index $pages (add $i 1) }}
+            <a class="series-next" href="{{ $next.RelPermalink }}"><small>Next in the series</small>{{ $next.Title }}</a>
+            {{ end }}
+        </nav>
+    {{ else }}
+        {{ if .PrevInSection }}
+            <a class="previous-post" href="{{ .PrevInSection.Permalink }}?ref=footer"><span style="font-weight:bold;">« Previous</span><br>{{ .PrevInSection.Title | truncate 50 "..."}}</a>
+        {{ end }}
+        {{ if .NextInSection }}
+            <div class="next-post">
+                <a href="{{ .NextInSection.Permalink }}?ref=footer"><span style="font-weight:bold;">Next »</span><br>{{ .NextInSection.Title | truncate 50 "..." }}</a>
+            </div>
+        {{ end }}
+    {{ end }}
+</div>

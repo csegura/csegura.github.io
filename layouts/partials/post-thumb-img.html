@@ -1,0 +1,5 @@
+{{/* The <img> of a thumbnail: one size for a normal screen and a double one for a sharp screen.
+     Call: partial "post-thumb-img.html" (dict "page" $page "w" 380 "h" 214 "lazy" true) */}}
+{{- $one := partial "post-thumb-url.html" (dict "page" .page "w" .w "h" .h) -}}
+{{- $two := partial "post-thumb-url.html" (dict "page" .page "w" (mul .w 2) "h" (mul .h 2)) -}}
+<img src="{{ $one }}"{{ if ne $one $two }} srcset="{{ $one }} 1x, {{ $two }} 2x"{{ end }} width="{{ .w }}" height="{{ .h }}" alt=""{{ if .lazy }} loading="lazy"{{ end }} decoding="async" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/images/default-thumb.png'">

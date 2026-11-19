@@ -1,0 +1,10 @@
+{{/* Finds a local picture as a Hugo resource, so that it can be resized. Returns the resource, or false.
+     The folder static/images is also mounted as assets/images (see hugo.toml).
+     GIFs are left alone (an animated one would lose its frames) and so are remote pictures.
+     Call: partial "image-resource.html" "/images/photos/abc.jpg" */}}
+{{- $res := false -}}
+{{- $path := . | replaceRE `%20` " " -}}
+{{- if and (hasPrefix $path "/images/") (findRE `(?i)\.(jpe?g|png|webp)$` $path) -}}
+  {{- with resources.Get (strings.TrimPrefix "/" $path) }}{{ $res = . }}{{ end -}}
+{{- end -}}
+{{- return $res -}}

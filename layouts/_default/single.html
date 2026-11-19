@@ -1,6 +1,14 @@
 {{ define "main" -}}
-<div class="post">
-  {{ partial "post/info.html" . }}
+<div class="post" data-pagefind-body>
+  <span hidden data-pagefind-meta="title[data-title], image[data-image], date[data-date], series[data-series], tags[data-tags]"
+        data-title="{{ .Title }}" data-image="{{ partial "post-thumb-url.html" (dict "page" . "w" 320 "h" 180) }}" data-date="{{ .Date.Format "January 2, 2006" }}"
+        data-series="{{ with partial "post-meta.html" . }}{{ .name }} · Part {{ .pos }} of {{ .count }}{{ end }}"
+        data-tags="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}"></span>
+  <div data-pagefind-ignore>
+    {{ partial "post/info.html" . }}
+    {{ partial "series-box.html" . }}
+  </div>
+  <span hidden>{{ .Title }}</span>
   {{ .Content }}
   {{ if (.Site.Params.listmonk) }}
     {{ partial "post/listmonk_email_newsletters.html" . }}

@@ -1,37 +1,33 @@
 {{ define "main" -}}
-<div class="posts">
-    {{ $frontPageTypes := default (slice "posts") .Site.Params.front_page_content }}
-    {{ range (.Paginate (where .Site.RegularPages "Type" "in" $frontPageTypes)).Pages }}
-    {{ $post := . }}
-    {{ $thumb := .Params.image }}
-    {{ if not $thumb }}
-        {{ with findRESubmatch `!\[[^\]]*\]\(([^)\s]*(?:\([^)]*\)[^)\s]*)*)\)` .RawContent 1 }}
-            {{ $thumb = index (index . 0) 1 }}
-        {{ end }}
-    {{ end }}
-    <article class="post{{ if $thumb }} has-thumb{{ end }}">
-        {{ partial "post/info.html" . }}
-        <div class="post-card">
-            {{ with $thumb }}
-            <a class="post-thumb" href="{{ $post.RelPermalink }}" tabindex="-1" aria-hidden="true">
-                <img src="{{ . }}" alt="" loading="lazy">
-            </a>
-            {{ end }}
-            <div class="post-summary">
-                {{ if or (.Site.Params.noSummary) (.Params.noSummary) }}
-                {{ .Content }}
-                {{ else }}
-                {{ .Summary }}
-                {{ if .Truncated }}
-                <div class="read-more-link">
-                    <a href="{{ .RelPermalink }}">Read More…</a>
-                </div>
-                {{ end }}
-                {{ end }}
-            </div>
+{{ $frontPageTypes := default (slice "posts") .Site.Params.front_page_content }}
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" $frontPageTypes) }}
+<div class="home-posts">
+    {{ range $i, $post := $paginator.Pages }}
+    {{ $desc := $post.Description | default ($post.Summary | plainify | htmlUnescape | replaceRE `\s+` " " | strings.TrimSpace | truncate 220) }}
+    {{ if and (eq $i 0) (eq $paginator.PageNumber 1) }}
+    <article class="feature">
+        <a class="feature-thumb" href="{{ $post.RelPermalink }}" tabindex="-1" aria-hidden="true">{{ partial "post-thumb-img.html" (dict "page" $post "w" 760 "h" 428) }}</a>
+        <div class="feature-body">
+            {{ partial "series-badge.html" $post }}
+            <h2><a href="{{ $post.RelPermalink }}">{{ $post.Title }}</a></h2>
+            <div class="post-line">{{ $post.Date.Format "January 2, 2006" }} &middot; {{ $post.ReadingTime }} min read</div>
+            <p>{{ $desc }}</p>
+            {{ partial "home-tags.html" $post }}
         </div>
     </article>
-    {{- end }}
+    {{ if gt (len $paginator.Pages) 1 }}<h3 class="home-section">Earlier posts</h3>{{ end }}
+    {{ else }}
+    <article class="home-row">
+        <a class="row-thumb" href="{{ $post.RelPermalink }}" tabindex="-1" aria-hidden="true">{{ partial "post-thumb-img.html" (dict "page" $post "w" 380 "h" 214 "lazy" true) }}</a>
+        <div class="row-body">
+            <h2><a href="{{ $post.RelPermalink }}">{{ $post.Title }}</a></h2>
+            <div class="post-line">{{ $post.Date.Format "January 2, 2006" }} &middot; {{ $post.ReadingTime }} min read {{ partial "series-badge.html" $post }}</div>
+            <p>{{ $desc }}</p>
+            {{ partial "home-tags.html" $post }}
+        </div>
+    </article>
+    {{ end }}
+    {{ end }}
 </div>
 {{ partial "pagination.html" . }}
 {{- end }}

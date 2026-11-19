@@ -1,0 +1,12 @@
+{{ with partial "post-meta.html" . }}
+<aside class="series-box" aria-label="Series" data-pagefind-ignore>
+  <div class="series-title">Series: <a href="{{ .url }}">{{ .name }}</a> <span>{{ .count }} parts</span></div>
+  <ol>
+    {{ range $i, $p := .pages }}
+    <li{{ if eq $p.Permalink $.Permalink }} class="current"{{ end }}>
+      {{ if eq $p.Permalink $.Permalink }}{{ $p.Title }} <em>you are here</em>{{ else }}<a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>{{ end }}
+    </li>
+    {{ end }}
+  </ol>
+</aside>
+{{ end }}

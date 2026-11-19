@@ -23,6 +23,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
         # Limit:        If the files should be listed, how many should be shown.
     menu = [
         {Name = "About", URL = "/about/", HasChildren = false},
+        {Name = "Search", URL = "/search/", HasChildren = false},
         {Name = "Other sites", URL = ""},
         {Name = "ASM Course", URL = "https://asm.romheat.net", External = true},
         {Name = "xt/at Emulator", URL = "https://emux86.romheat.net/?machine=386&hdd=https://blog.romheat.net/emu_x86-disks/freedos-hd.img", External = true},
@@ -118,3 +119,30 @@ ignoreLogs = ['warning-goldmark-raw-html']
     repo_id = "R_kgDOMMA1oQ"
     category = "Announcements"
     category_id = "DIC_kwDOMMA1oc4DJ0Ao"
+
+# static/images is also an asset folder, so that the pictures can be resized when the site is built
+[module]
+    [[module.mounts]]
+        source = "archetypes"
+        target = "archetypes"
+    [[module.mounts]]
+        source = "assets"
+        target = "assets"
+    [[module.mounts]]
+        source = "content"
+        target = "content"
+    [[module.mounts]]
+        source = "data"
+        target = "data"
+    [[module.mounts]]
+        source = "i18n"
+        target = "i18n"
+    [[module.mounts]]
+        source = "layouts"
+        target = "layouts"
+    [[module.mounts]]
+        source = "static"
+        target = "static"
+    [[module.mounts]]
+        source = "static/images"
+        target = "assets/images"

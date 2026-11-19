@@ -138,5 +138,7 @@
 
 {{ end }}
 
+{{ with resources.Get "js/zoom.js" }}{{ $zoom := . | minify | fingerprint }}<script defer src="{{ $zoom.RelPermalink }}"></script>{{ end }}
+
 <!-- Hugo Generator Attribution -->
 {{ hugo.Generator }}

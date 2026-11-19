@@ -1,0 +1,15 @@
+{{/* Series data of a post: returns a dict (name, pos, count, pages, url), or false when the post has no series.
+     Parts are ordered by date, so a later part needs a later date. Call: partial "post-meta.html" . */}}
+{{- $result := false -}}
+{{- $series := .Params.series -}}
+{{- if $series -}}
+  {{- with site.GetPage (printf "/series/%s" ($series | urlize)) -}}
+    {{- $pages := .Pages.ByDate -}}
+    {{- $pos := 0 -}}
+    {{- range $i, $p := $pages -}}
+      {{- if eq $p.Permalink $.Permalink -}}{{- $pos = add $i 1 -}}{{- end -}}
+    {{- end -}}
+    {{- $result = dict "name" $series "pos" $pos "count" (len $pages) "pages" $pages "url" .RelPermalink -}}
+  {{- end -}}
+{{- end -}}
+{{- return $result -}}

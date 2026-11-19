@@ -1,0 +1,10 @@
+{{/* A small thumbnail of the thumbnail of a post, made when the site is built.
+     Call: partial "post-thumb-url.html" (dict "page" $page "w" 480 "h" 270). Returns a path.
+     A picture that cannot be resized (remote, GIF, smaller than the size) is returned as it is. */}}
+{{- $src := partial "post-thumb.html" .page -}}
+{{- $out := $src -}}
+{{- $res := partial "image-resource.html" $src -}}
+{{- if and $res (ge $res.Width .w) -}}
+  {{- $out = ($res.Fill (printf "%dx%d TopLeft webp q78" .w .h)).RelPermalink -}}
+{{- end -}}
+{{- return $out -}}
