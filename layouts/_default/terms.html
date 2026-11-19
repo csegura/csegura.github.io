@@ -1,8 +1,6 @@
 {{/* The list of tags (or series) as before: one line for each, grouped by the year of its last post.
      The contents panel at the right (wide windows only) holds all of them in alphabetical order. */}}
 {{ define "main" -}}
-{{/* The theme's contents script looks for a .post element and fails without one */}}
-<div class="post" hidden></div>
 <h1 class="title">{{ .Title }}</h1>
 <ul class="entries">
     {{ range .Pages.GroupByDate "2006" }}

@@ -14,6 +14,7 @@
     {{ partial "post/listmonk_email_newsletters.html" . }}
   {{ end }}
   {{ partial "post/navigation.html" . }}
+  {{ partial "related.html" . }}
   {{ if or (.Site.Params.giscus) (.Site.Params.remark42) (.Site.Config.Services.Disqus.Shortname) }}
     {{ partial "post/comments.html" . }}
   {{ end }}

@@ -1,0 +1,22 @@
+{{/* The name of the site is the h1 of the home page only; on other pages the h1 is the title of the page. */}}
+<div class="sidebar-about">
+    <div class="brand">
+        {{ if .Site.Params.remote_brand_image }}
+            <a href="{{ .Site.BaseURL }}">
+                <img src="{{ .Site.Params.remote_brand_image }}" alt="brand image">
+            </a>
+        {{ else if .Site.Params.brand_image }}
+            <a href="{{ .Site.BaseURL }}">
+                <img src="{{ .Site.Params.brand_image }}" alt="brand image">
+            </a>
+        {{ end }}
+        {{ if .Site.Params.brand }}
+            <a href="{{ .Site.BaseURL }}">
+                {{ if .IsHome }}<h1 class="brand-name">{{ .Site.Params.brand }}</h1>{{ else }}<div class="brand-name">{{ .Site.Params.brand }}</div>{{ end }}
+            </a>
+        {{ end }}
+    </div>
+    <p class="lead">
+    {{ with .Site.Params.description }}{{. | safeHTML}}{{end}}
+    </p>
+</div>

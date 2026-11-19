@@ -1,7 +1,5 @@
 {{ define "main" -}}
 <div data-pagefind-ignore class="search-page">
-  {{/* The theme's contents script looks for a .post element and fails without one */}}
-  <div class="post" hidden></div>
   <h1 class="title">{{ .Title }}</h1>
   <form class="search-box" role="search" onsubmit="return false">
     <input id="q" type="search" placeholder="Search the posts" autocomplete="off" autofocus aria-label="Search the posts">

@@ -1,82 +1,117 @@
-{{ .Scratch.Set "title" .Site.Title }}
+{{/* Head metadata: title, description, language, robots, social picture and structured data. */}}
+{{- $brand := .Site.Params.brand -}}
+{{- $tagline := .Site.Params.description -}}
+{{- $lang := .Params.htmlLang | default (.Site.LanguageCode | default "en") -}}
+{{- $isPost := and .IsPage (eq .Section "posts") -}}
+{{- $isTag := and (eq .Kind "term") (eq .Data.Plural "tags") -}}
+{{- $pageNum := 1 -}}
+{{- $homePager := false -}}
+{{- if .IsHome -}}
+  {{- $homePager = .Paginate (where .Site.RegularPages "Type" "in" (default (slice "posts") .Site.Params.front_page_content)) -}}
+  {{- $pageNum = $homePager.PageNumber -}}
+{{- end -}}
+{{- $canonical := .Permalink -}}
+{{- if and .IsHome (gt $pageNum 1) }}{{ $canonical = absURL $homePager.URL }}{{ end -}}
+{{- if and .IsPage (eq .Section "about") }}{{ $canonical = absURL "about/" }}{{ end -}}
+{{- $seriesName := .Title -}}
+{{- if and (eq .Kind "term") (eq .Data.Plural "series") .Pages }}{{ with (index .Pages 0).Params.series }}{{ $seriesName = . }}{{ end }}{{ end -}}
 
-{{ .Scratch.Set "publisherIcon" .Site.Params.favicon }}
-{{ if .Site.Params.publisherIcon }}
-    {{ .Scratch.Set "publisherIcon" .Site.Params.publisher_icon }}
-{{ end }}
+{{/* The title: the words of the page first, the name of the site last. */}}
+{{- $title := "" -}}
+{{- if .IsHome -}}
+  {{- $title = printf "%s | %s" $brand $tagline -}}
+  {{- if gt $pageNum 1 }}{{ $title = printf "%s - Page %d" $title $pageNum }}{{ end -}}
+{{- else if eq .Kind "term" -}}
+  {{- if eq .Data.Plural "series" }}{{ $title = printf "Series: %s | %s" $seriesName $brand }}{{ else }}{{ $title = printf "Posts tagged “%s” | %s" .Data.Term $brand }}{{ end -}}
+{{- else if eq .Kind "taxonomy" -}}
+  {{- $title = printf "All %s | %s" (lower .Title) $brand -}}
+{{- else -}}
+  {{- $title = printf "%s | %s" .Title $brand -}}
+{{- end -}}
 
-{{ if eq .Kind "home" }}
-  {{ .Scratch.Set "title" $.Site.Params.brand }}
-  {{ .Scratch.Set "description" .Site.Params.Description }}
-{{ else }}
-  {{ .Scratch.Set "description" (.Description | default (.Summary | plainify | htmlUnescape | replaceRE `^From my old blog posted on [^\n]*` "" | replaceRE `\s+` " " | strings.TrimSpace | truncate 160) | default .Site.Params.Description) }}
-{{ end }}
+{{/* The description: 155 characters at most, and different for each page. */}}
+{{- $desc := "" -}}
+{{- if .IsHome -}}
+  {{- $desc = $tagline -}}
+  {{- if gt $pageNum 1 }}{{ $desc = printf "%s - page %d of %d." $tagline $pageNum $homePager.TotalPages }}{{ end -}}
+{{- else if eq .Kind "term" -}}
+  {{- $names := slice -}}
+  {{- range first 3 .Pages.ByDate.Reverse }}{{ $names = $names | append .Title }}{{ end -}}
+  {{- if eq .Data.Plural "series" -}}
+    {{- $desc = printf "The %d parts of the series %s on %s." (len .Pages) $seriesName $brand -}}
+  {{- else -}}
+    {{- $desc = printf "%d post%s tagged “%s” on %s, newest first: %s." (len .Pages) (cond (eq (len .Pages) 1) "" "s") .Data.Term $brand (delimit $names "; ") -}}
+  {{- end -}}
+{{- else if eq .Kind "taxonomy" -}}
+  {{- $desc = printf "All the %s of %s, from A to Z, with the number of posts of each." (lower .Title) $brand -}}
+{{- else if eq .Section "search" -}}
+  {{- $desc = printf "Search all the posts of %s, and browse them by tag." $brand -}}
+{{- else if and (eq .Kind "section") (eq .Section "posts") -}}
+  {{- $desc = printf "All the %d posts of %s, grouped by year, from the newest." (len .Pages) $brand -}}
+{{- else -}}
+  {{- $desc = .Description -}}
+  {{- if not $desc -}}
+    {{- $desc = .Plain | replaceRE `^From my old blog posted on [^\n]*` "" | replaceRE `\s+` " " | strings.TrimSpace -}}
+    {{- if lt (len $desc) 40 -}}
+      {{- $about := "" -}}{{- with .Params.tags }}{{ $about = printf " about %s" (delimit (first 3 .) ", ") }}{{ end -}}
+      {{- $desc = printf "%s: a post of %s%s on %s." .Title (.Date.Format "January 2006") $about $brand -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if gt (len $desc) 160 }}{{ $desc = $desc | truncate 155 }}{{ end -}}
+{{- .Scratch.Set "title" $title -}}
+{{- .Scratch.Set "description" $desc -}}
 
-{{ if .IsSection }}
-  {{ .Scratch.Set "title" ($.Site.Params.brand) }}
-  {{ .Scratch.Add "title" " - " }}
-  {{ .Scratch.Add "title" .LinkTitle }}
-{{ end }}
+{{/* Pages that Google should not list: tags with fewer than 3 posts, and the search page. */}}
+{{- $robots := "index,follow,max-image-preview:large" -}}
+{{- if or (and $isTag (lt (len .Pages) 3)) (eq .Section "search") (and .IsPage (eq .Section "about")) }}{{ $robots = "noindex,follow" }}{{ end -}}
 
-{{ if .IsPage }}
-  {{ .Scratch.Set "title" ($.Site.Params.brand) }}
-  {{ .Scratch.Add "title" " - " }}
-  {{ .Scratch.Add "title" .LinkTitle }}
-{{ end }}
-
+<meta property="og:locale" content="{{ if eq $lang "es" }}es_ES{{ else }}en_US{{ end }}" />
 {{ "<!-- Open Graph image and Twitter Card metadata -->" | safeHTML }}
-{{ $image_path := .Params.image | default .Site.Params.og_image -}}
-{{ with $image_path }}
-  {{ $image_path_local :=  printf "assets/%s" $image_path -}}
-  {{ $image_ext := trim (path.Ext $image_path | lower) "." -}}
-  {{ if fileExists $image_path_local -}} 
-    {{ $image_path:= resources.Get $image_path}}
-    <meta property="og:image" content="{{ $image_path.Permalink }}" />
-    {{/* If not SVG, read image aspect ratio and define Twitter Card and Open Graph width and height  */ -}}
-    {{ if ne $image_ext "svg" -}}
-      {{ with (imageConfig $image_path_local) -}}
-        {{ if (and (gt .Width 144) (gt .Height 144)) -}}
-          <meta name="twitter:image" content="{{ $image_path.Permalink }}"/>
-          <meta name="twitter:card" content="summary{{ if (and (gt .Width 300) (gt .Height 157) (not (eq .Width .Height))) }}_large_image{{ end }}">
-        {{ end -}}
-        <meta property="og:image:width" content="{{ .Width }}">
-        <meta property="og:image:height" content="{{ .Height }}">
-      {{ end -}}
-    {{ end -}}
-    <meta property="og:image:type" content="image/{{ if eq $image_ext `svg` }}svg+xml{{ else }}{{ replaceRE `^jpg$` `jpeg` $image_ext }}{{ end }}">
-  {{ end -}}
+{{ $og := partial "og-image.html" . -}}
+{{ with $og -}}
+  <meta property="og:image" content="{{ .url }}" />
+  <meta property="og:image:width" content="{{ .width }}" />
+  <meta property="og:image:height" content="{{ .height }}" />
+  <meta property="og:image:type" content="{{ .type }}" />
+  <meta name="twitter:image" content="{{ .url }}" />
+  <meta name="twitter:card" content="{{ if .large }}summary_large_image{{ else }}summary{{ end }}" />
 {{ end -}}
 
 <!-- Title Tags -->
-<title itemprop="name">{{ .Scratch.Get "title" }}</title>
-<meta property="og:title" content={{ .Scratch.Get "title" }} />
-<meta name="twitter:title" content={{ .Scratch.Get "title" }} />
-<meta itemprop="name" content={{ .Scratch.Get "title" }} />
-<meta name="application-name" content={{ .Scratch.Get "title" }} />
+<title itemprop="name">{{ $title }}</title>
+<meta property="og:title" content="{{ $title }}" />
+<meta name="twitter:title" content="{{ $title }}" />
+<meta itemprop="name" content="{{ $title }}" />
+<meta name="application-name" content="{{ .Site.Title }}" />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 
 <!-- Description Tags -->
-<meta name="description" content="{{ .Scratch.Get "description" }}" />
-<meta itemprop="description" content="{{ .Scratch.Get "description" }}" />
-<meta property="og:description" content="{{ .Scratch.Get "description" }}" />
-<meta name="twitter:description" content="{{ .Scratch.Get "description" }}" />
+<meta name="description" content="{{ $desc }}" />
+<meta itemprop="description" content="{{ $desc }}" />
+<meta property="og:description" content="{{ $desc }}" />
+<meta name="twitter:description" content="{{ $desc }}" />
 
 <!-- Structured data -->
-{{ if and .IsPage (eq .Section "posts") }}
-{{ $ld := dict "@context" "https://schema.org" "@type" "BlogPosting" "headline" .Title "description" (.Scratch.Get "description") "url" .Permalink "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00") "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00") "author" (dict "@type" "Person" "name" .Site.Params.brand) "mainEntityOfPage" .Permalink }}
+{{ if $isPost }}
+{{ $ld := dict "@context" "https://schema.org" "@type" "BlogPosting" "headline" .Title "description" $desc "url" .Permalink "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00") "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00") "author" (dict "@type" "Person" "name" $brand) "mainEntityOfPage" .Permalink "inLanguage" $lang }}
 {{ with .Params.tags }}{{ $ld = merge $ld (dict "keywords" (delimit . ", ")) }}{{ end }}
-{{ with $.Site.Params.og_image }}{{ with resources.Get . }}{{ $ld = merge $ld (dict "image" .Permalink) }}{{ end }}{{ end }}
+{{ with $og }}{{ $ld = merge $ld (dict "image" .url) }}{{ end }}
 <script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
+{{ $crumbs := slice (dict "@type" "ListItem" "position" 1 "name" $brand "item" .Site.BaseURL) (dict "@type" "ListItem" "position" 2 "name" "Posts" "item" (absURL "posts/")) }}
+{{ with partial "post-meta.html" . }}{{ $crumbs = $crumbs | append (dict "@type" "ListItem" "position" 3 "name" .name "item" (absURL .url)) }}{{ end }}
+{{ $crumbs = $crumbs | append (dict "@type" "ListItem" "position" (add (len $crumbs) 1) "name" .Title "item" .Permalink) }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $crumbs | jsonify | safeJS }}</script>
 {{ else if .IsHome }}
-<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL "description" .Site.Params.Description | jsonify | safeJS }}</script>
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL "description" $tagline "inLanguage" "en" "potentialAction" (dict "@type" "SearchAction" "target" (dict "@type" "EntryPoint" "urlTemplate" (printf "%ssearch/?q={search_term_string}" .Site.BaseURL)) "query-input" "required name=search_term_string") | jsonify | safeJS }}</script>
 {{ end }}
 
 <!-- Link Tags -->
 <base href="{{ .Permalink }}" />
-<link rel="canonical" href="{{ .Permalink }}" itemprop="url" />
-<meta name="url" content="{{ .Permalink }}" />
-<meta name="twitter:url" content="{{ .Permalink }}" />
-<meta property="og:url" content="{{ .Permalink }}" />
+<link rel="canonical" href="{{ $canonical }}" itemprop="url" />
+<meta name="url" content="{{ $canonical }}" />
+<meta name="twitter:url" content="{{ $canonical }}" />
+<meta property="og:url" content="{{ $canonical }}" />
 
 <!-- Date Tags -->
 <meta property="og:updated_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}" />
@@ -88,8 +123,8 @@
 {{ end -}}
 
 <!-- Search Engine Crawler Tags -->
-<meta name="robots" content="index,follow" />
-<meta name="googlebot" content="index,follow" />
+<meta name="robots" content="{{ $robots }}" />
+<meta name="googlebot" content="{{ $robots }}" />
 
 <!-- Social Media Tags -->
 {{if (or (ne .Site.Params.twitter_url nil) (ne .Site.Params.x_url nil))}}
@@ -97,7 +132,6 @@
     <meta name="twitter:site" content="@{{ $twitter_user }}" />
     <meta name="twitter:creator" content="@{{ $twitter_user }}" />
 {{end}}
-<meta property="fb:admins" content="{{ .Site.Params.fb.admins }}" />
 
 <!-- Other Tags -->
 <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}" />
@@ -105,43 +139,17 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
 <!-- Article Specific Tags -->
-<!-- To make sure this renders only in the article page, we check the section -->
-{{ if and (eq .Section "posts") (.Page.IsNode) }}
-<!-- Pagination meta tags for list pages only -->
-{{ $paginator := .Paginate (where .Pages "Type" "posts") }}
-{{ if $paginator }}
-  <link rel="first" href="{{ $paginator.First.URL }}" />
-  <link rel="last" href="{{ $paginator.Last.URL }}" />
-  {{ if $paginator.HasPrev }}
-    <link rel="prev" href="{{ $paginator.Prev.URL }}" />
-  {{end }}
-  {{ if $paginator.HasNext }}
-    <link rel="next" href="{{ $paginator.Next.URL }}" />
-  {{end }}
-{{end }}
-
+{{ if $isPost }}
 <meta property="og:type" content="article" />
-<meta property="article:publisher" content="{{ .Site.Params.facebook_url }}" />
-<meta property="og:article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" />
-<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00"  }}" />
-
-{{ with (or (.Params.Author) (.Site.Language.Params.Author.Name)) }}
-  <meta property="og:article:author" content="{{ . }}" />
-  <meta property="article:author" content="{{ . }}" />
-  <meta name="author" content="{{ . }}" />
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" />
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}" />
+{{ range .Params.tags }}<meta property="article:tag" content="{{ . }}" />
 {{ end }}
-
-{{ with.Params.category }}
-  <meta name="news_keywords" content="{{ index . 0 }}" />
-  <meta property="article:section" content="{{ index . 0 }}" />
+<meta name="author" content="{{ $brand }}" />
+{{ else }}
+<meta property="og:type" content="website" />
 {{ end }}
-
+{{ if .IsHome }}
+  {{ if $homePager.HasPrev }}<link rel="prev" href="{{ absURL $homePager.Prev.URL }}" />{{ end }}
+  {{ if $homePager.HasNext }}<link rel="next" href="{{ absURL $homePager.Next.URL }}" />{{ end }}
 {{ end }}
-
-{{ with resources.Get "js/zoom.js" }}{{ $zoom := . | minify | fingerprint }}<script defer src="{{ $zoom.RelPermalink }}"></script>{{ end }}
-
-<link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}">
-<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | absURL }}">
-
-<!-- Hugo Generator Attribution -->
-{{ hugo.Generator }}

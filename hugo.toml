@@ -146,3 +146,15 @@ ignoreLogs = ['warning-goldmark-raw-html']
     [[module.mounts]]
         source = "static/images"
         target = "assets/images"
+
+# Posts that go together (the "Read next" block): tags first, the series counts more
+[related]
+    includeNewer = true
+    threshold = 50
+    toLower = true
+    [[related.indices]]
+        name = "tags"
+        weight = 100
+    [[related.indices]]
+        name = "series"
+        weight = 150

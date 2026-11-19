@@ -1,0 +1,16 @@
+{{/* "Read next": posts with the same tags, from other series, newest first. Call: partial "related.html" $page */}}
+{{- $self := . -}}
+{{- $series := .Params.series -}}
+{{- $found := slice -}}
+{{- range (where .Site.RegularPages "Section" "posts").Related . -}}
+  {{- if and (ne .Permalink $self.Permalink) (or (not $series) (ne .Params.series $series)) (lt (len $found) 5) }}{{ $found = $found | append . }}{{ end -}}
+{{- end -}}
+{{- if $found -}}
+<aside class="related" aria-label="Read next" data-pagefind-ignore>
+  <h2>Read next</h2>
+  <ul>
+    {{ range $found }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a> <span class="related-date">{{ .Date.Format "January 2006" }}</span></li>
+    {{ end }}
+  </ul>
+</aside>
+{{- end -}}

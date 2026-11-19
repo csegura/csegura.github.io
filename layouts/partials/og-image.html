@@ -1,0 +1,18 @@
+{{/* The picture for a link that is shared: the picture of the post (its front matter image, else its first picture),
+     else the picture of the site. A big one is cut to 1200x630 as a JPEG; a small one is used as it is.
+     Call: partial "og-image.html" $page. Returns a dict: url, width, height, type, large. */}}
+{{- $src := "" -}}
+{{- if and .IsPage (eq .Section "posts") }}{{ $src = partial "post-thumb.html" . }}{{ else if .Params.image }}{{ $src = .Params.image }}{{ end -}}
+{{- if eq $src "/images/default-thumb.png" }}{{ $src = "" }}{{ end -}}
+{{- $res := false -}}
+{{- if $src }}{{ $res = partial "image-resource.html" $src }}{{ end -}}
+{{- if $res -}}
+  {{- if ge $res.Width 1200 }}{{ $res = $res.Fill "1200x630 TopLeft jpg q82" }}{{ end -}}
+{{- else -}}
+  {{- with .Site.Params.og_image }}{{ $res = resources.Get . }}{{ end -}}
+{{- end -}}
+{{- if $res -}}
+  {{- return (dict "url" $res.Permalink "width" $res.Width "height" $res.Height "type" $res.MediaType.Type "large" (and (ge $res.Width 600) (ne $res.Width $res.Height))) -}}
+{{- else -}}
+  {{- return false -}}
+{{- end -}}

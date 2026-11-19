@@ -306,11 +306,6 @@ code, pre {
         height: 120px;
     }
 
-    .sidebar-about h1 {
-        margin-top: 0.4rem;
-        margin-bottom: 0.2rem;
-    }
-
     .sidebar .lead {
         margin-top: 0;
         margin-bottom: 0.5rem;
@@ -729,4 +724,43 @@ dialog.lightbox .lb-next {
 /* The tag chips of a post are a little wider (this was a change inside the theme folder, which cannot be committed) */
 .tags li a {
     padding: 0em 0.9em;
+}
+
+/* The theme had two nested h1 (27 px outside, the name of 40.5 px inside). One h1 is enough for a page, so the name is
+   an h1 on the home page only and a div elsewhere, with the same look as before. */
+.sidebar-about div.brand,
+.sidebar-about .brand-name {
+    color: var(--sidebar-h1-color);
+    margin-top: 0.4rem;
+    margin-bottom: 0.2rem;
+    font-weight: 300;
+    font-size: 1.5em;
+    font-family: "Abril Fatface", serif;
+    line-height: 1.25;
+}
+
+/* The "Read next" block at the end of a post */
+.related {
+    margin: 1.8rem 0 1rem;
+}
+
+.related h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+}
+
+.related ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.related li {
+    margin: 0.3rem 0;
+}
+
+.related-date {
+    color: var(--date-color);
+    font-size: 0.8rem;
+    margin-left: 0.4rem;
 }
