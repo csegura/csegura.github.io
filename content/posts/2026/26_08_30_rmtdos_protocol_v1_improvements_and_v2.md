@@ -2,6 +2,7 @@
 title = 'The rmtdos Protocol: V1, My Improvements, and V2'
 date = 2026-08-30T12:01:00+01:00
 tags = ['retrocomputing', 'dos', 'networking', 'rmtdos', 'protocol']
+series = 'rmtdos'
 description = "How the rmtdos protocol works, what was slow in the original V1 on an XT, the optimisations I made to it, and how the new V2 sends the screen."
 draft = false
 +++

@@ -2,6 +2,8 @@
 title = 'emu_x86 Part 3: Inside the Emulator'
 date = 2026-11-16T12:01:00+01:00
 tags = ['retrocomputing', 'emulation', 'emu_x86', 'webassembly', 'x86']
+series = 'emu_x86'
+image = "/images/emu_x86/debugger.png"
 description = "How emu_x86 is built: one portable C core, the 8088 and 386 CPUs, how they were tested, SeaBIOS, disks, speed, and the bugs that real systems found."
 draft = false
 +++
@@ -42,6 +44,8 @@ How do you know a CPU core is right? Two sources:
 
 - The **SingleStepTests** data for the 80386 gives the result of each instruction on a real 386EX. I took undefined behaviour from this data and not from the manuals, for example the flags after a shift.
 - The SingleStepTests have no protected mode. For that, small test programs print their exception frames and registers, and a script compares the output with `qemu-system-i386`. The programs avoid the few things where QEMU differs from the real chip.
+
+![The emu_x86 debugger stopped in 32-bit protected mode code, with the CPU state of the 386 core: registers, control registers and segment descriptors.](/images/emu_x86/debugger.png)
 
 The 486, Pentium and Pentium II models are one core with a switch. An instruction from a later chip raises an invalid opcode error on an earlier model, so a program that detects the CPU sees the right one. The Pentium II model also runs **MMX, SSE and SSE2**, about a thousand lines of C in their own file. The floating point of SSE uses the host's `float` and `double`. The rounding control of the MXCSR register is honoured by the conversions to integers, but the exception flags are only kept, not raised, and denormals are not flushed. That is enough for operating systems, which set the default masked state. MMX registers are kept apart from the x87 ones, so a program that mixes MMX and x87 data in one register is not modelled. The core has test programs for MMX and SSE2, and CPUID reports these features only on the Pentium II model.
 

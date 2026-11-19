@@ -2,6 +2,7 @@
 title = 'NorthStar Advantage Emulator Part 2: Disks, a Hard Disk and CP/M'
 date = 2026-11-07
 tags = ['retrocomputing', 'emulation', 'northstar', 'cpm', 'disks']
+series = 'North Star emulator'
 description = "Floppy and hard disk images for the North Star Advantage emulator: mount modes, the hard disk board, an image inspector and a 'best of CP/M' disk."
 draft = false
 +++

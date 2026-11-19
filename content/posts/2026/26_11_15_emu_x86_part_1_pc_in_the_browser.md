@@ -2,6 +2,7 @@
 title = 'emu_x86 Part 1: A PC in Your Browser'
 date = 2026-11-15T12:00:00+01:00
 tags = ['retrocomputing', 'emulation', 'emu_x86', 'webassembly', 'dos']
+series = 'emu_x86'
 description = "emu_x86 emulates an IBM PC/XT and a 386 PC in a web page. How to try it, load disks, save your work and use the keyboard, mouse and sound."
 draft = false
 +++

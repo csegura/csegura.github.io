@@ -2,6 +2,7 @@
 title = 'emu_x86 Part 2: Disk Manager, Debugger, Network and Command Line'
 date = 2026-11-15T12:01:00+01:00
 tags = ['retrocomputing', 'emulation', 'emu_x86', 'webassembly', 'debugging']
+series = 'emu_x86'
 description = "The tools around the emu_x86 emulator: a two-panel disk manager, a debugger, a network, a Linux window and emuctl for scripts and agents."
 draft = false
 +++

@@ -2,6 +2,7 @@
 title = 'rmtdos 0.2: Remote Control for DOS PCs over Ethernet'
 date = 2026-08-30T12:00:00+01:00
 tags = ['retrocomputing', 'dos', 'networking', 'rmtdos', 'c']
+series = 'rmtdos'
 description = "rmtdos controls a DOS PC from another computer over raw Ethernet. Version 0.2 adds a faster protocol, a DOS client, XT support and keymap editors."
 draft = false
 +++

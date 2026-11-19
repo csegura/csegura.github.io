@@ -2,6 +2,7 @@
 title = 'NorthStar Advantage Emulator Part 1: The Machine and the Core'
 date = 2026-11-01
 tags = ['retrocomputing', 'emulation', 'northstar', 'z80', 'cpm']
+series = 'North Star emulator'
 description = "emu_ns emulates the North Star Advantage, a Z80 computer with CP/M. One portable core runs in a browser, on Linux and on an ESP32."
 draft = false
 +++

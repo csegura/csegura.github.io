@@ -2,6 +2,7 @@
 title = 'NorthStar Advantage Emulator Part 3: Debugger, Serial Terminal and ESP32'
 date = 2026-11-08
 tags = ['retrocomputing', 'emulation', 'northstar', 'z80', 'esp32', 'debugging']
+series = 'North Star emulator'
 description = "The Z80 debugger of the North Star emulator, the serial board with a terminal, copy and paste, and the emulator running on an ESP32."
 draft = false
 +++
